@@ -39,7 +39,6 @@ export const login = createAsyncThunk(
       
       // Apply user's language preference after login
       // Priority: localStorage > user.language > default
-      const user = response.data.user;
       const savedLanguage = localStorage.getItem('language');
       if (savedLanguage && savedLanguage !== i18n.language) {
         i18n.changeLanguage(savedLanguage);

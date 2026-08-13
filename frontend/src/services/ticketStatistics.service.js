@@ -102,4 +102,6 @@ class TicketStatisticsService {
   }
 }
 
-export default new TicketStatisticsService();
+const ticketStatisticsService = new TicketStatisticsService();
+
+export default ticketStatisticsService;
