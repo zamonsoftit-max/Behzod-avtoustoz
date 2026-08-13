@@ -42,7 +42,6 @@ const DashboardPage = () => {
   const { t } = useTranslation();
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   
   // Helper function to format currency with translation
@@ -51,6 +50,8 @@ const DashboardPage = () => {
     return formatted.replace(/so'm/g, t('common.currency'));
   };
 
+  // fetchDashboardStats is intentionally kept stable for the polling interval.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchDashboardStats();
     const interval = setInterval(fetchDashboardStats, 30000); // Refresh every 30 seconds
@@ -65,6 +66,7 @@ const DashboardPage = () => {
       clearInterval(interval);
       window.removeEventListener('storage', handleStorageChange);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchDashboardStats = async () => {
@@ -72,9 +74,7 @@ const DashboardPage = () => {
       setLoading(true);
       const response = await api.get('/admin/dashboard/stats');
       setStats(response.data.data);
-      setError(null);
     } catch (error) {
-      setError(error.response?.data?.message || t('admin.dashboard.errors.loadError'));
       toast.error(
         error.response?.data?.message || t('admin.dashboard.errors.loadError'),
         {

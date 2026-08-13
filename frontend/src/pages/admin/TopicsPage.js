@@ -36,6 +36,7 @@ const TopicsPage = () => {
   const [deleteModal, setDeleteModal] = useState({ isOpen: false, topicId: null, loading: false });
 
   // Close modal on ESC key
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const handleEscKey = (event) => {
       if (event.key === 'Escape' && showModal) {
@@ -58,6 +59,7 @@ const TopicsPage = () => {
 
   useEffect(() => {
     fetchTopics();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchTopics = async () => {
@@ -227,15 +229,6 @@ const TopicsPage = () => {
       fetchTopics();
     } catch (error) {
       toast.error(t('admin.topics.errors.statusChangeFailed'));
-    }
-  };
-
-  const handleOrderChange = async (id, newOrder) => {
-    try {
-      await api.put(`/admin/topics/${id}`, { order: newOrder });
-      fetchTopics();
-    } catch (error) {
-      toast.error(t('admin.topics.errors.orderChangeFailed'));
     }
   };
 

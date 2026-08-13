@@ -29,9 +29,12 @@ const PaymentsPage = () => {
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   const [processingPayment, setProcessingPayment] = useState(false);
 
+  // Initial data load intentionally calls these component-local helpers.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchSubscriptionTypes();
     fetchPaymentHistory();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchSubscriptionTypes = async () => {

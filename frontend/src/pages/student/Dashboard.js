@@ -66,7 +66,6 @@ const StudentDashboard = () => {
       });
   }, [dispatch, t]);
 
-  const stats = dashboardStats?.statistics || {};
   const subscription = dashboardStats?.subscription || user?.subscription || {};
   const isSubscriptionActive = subscription?.isActive;
   const daysUntilExpiry = (() => {

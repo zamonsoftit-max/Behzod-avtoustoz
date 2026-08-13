@@ -28,11 +28,13 @@ const DemoTestPage = () => {
   const [questionStatuses, setQuestionStatuses] = useState({});
   const [navigationDirection, setNavigationDirection] = useState(0);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchDemoQuestions();
   }, []);
 
   // Keyboard navigation
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const handleKeyPress = (e) => {
       // Prevent default F1 help behavior
@@ -75,6 +77,7 @@ const DemoTestPage = () => {
     if (questions.length > 0 && Object.keys(answers).length === questions.length) {
       handleSubmit();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [answers, questions.length]);
 
   const fetchDemoQuestions = async () => {

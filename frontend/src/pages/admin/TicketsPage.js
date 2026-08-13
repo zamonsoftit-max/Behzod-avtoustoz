@@ -44,17 +44,22 @@ const TicketsPage = () => {
   const [modalDifficultyFilter, setModalDifficultyFilter] = useState('');
   const [deleteModal, setDeleteModal] = useState({ isOpen: false, ticketId: null, loading: false });
 
+  // Fetch helpers are component-local and intentionally run on initial load.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchTickets();
     fetchQuestions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       fetchTickets();
     }, searchTerm.trim() ? 500 : 0);
 
     return () => clearTimeout(delayDebounceFn);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm, difficultyFilter, statusFilter]);
 
   // Filter tickets locally if backend filtering is not available

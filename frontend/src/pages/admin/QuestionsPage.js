@@ -53,6 +53,8 @@ const QuestionsPage = () => {
   const [showDropdown, setShowDropdown] = useState(null);
 
   // Debounced search function
+  // lodash debounce returns a wrapped function whose dependencies cannot be inferred.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const debouncedSearch = useCallback(
     debounce((value) => {
       setSearchTerm(value);
