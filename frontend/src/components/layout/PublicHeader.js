@@ -23,6 +23,7 @@ const PublicHeader = () => {
     if (savedLang && savedLang !== i18n.language && i18n.options.supportedLngs.includes(savedLang)) {
       i18n.changeLanguage(savedLang);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

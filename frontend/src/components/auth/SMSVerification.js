@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FiPhone, FiShield, FiClock } from 'react-icons/fi';
-import { toast } from 'react-toastify';
+import { FiShield, FiClock } from 'react-icons/fi';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 const SMSVerification = ({ 
