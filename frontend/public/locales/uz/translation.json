@@ -1,0 +1,1817 @@
+{
+  "common": {
+    "appName": "Behzod Avtoustoz",
+    "theme": "Mavzu",
+    "welcome": "Xush kelibsiz",
+    "loading": "Yuklanmoqda...",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "delete": "O'chirish",
+    "edit": "Tahrirlash",
+    "search": "Qidirish",
+    "filter": "Filtr",
+    "sort": "Saralash",
+    "yes": "Ha",
+    "no": "Yo'q",
+    "confirm": "Tasdiqlash",
+    "back": "Orqaga",
+    "next": "Keyingi",
+    "previous": "Oldingi",
+    "close": "Yopish",
+    "submit": "Yuborish",
+    "create": "Yaratish",
+    "update": "Yangilash",
+    "view": "Ko'rish",
+    "download": "Yuklab olish",
+    "upload": "Yuklash",
+    "select": "Tanlash",
+    "all": "Hammasi",
+    "none": "Hech biri",
+    "or": "yoki",
+    "and": "va",
+    "of": "dan",
+    "to": "ga",
+    "from": "dan",
+    "with": "bilan",
+    "without": "siz",
+    "per": "har",
+    "page": "sahifa",
+    "pages": "sahifalar",
+    "item": "element",
+    "items": "elementlar",
+    "result": "natija",
+    "results": "natijalar",
+    "showing": "Ko'rsatilmoqda",
+    "total": "Jami",
+    "selected": "ta tanlangan",
+    "selectedLowercase": "tanlangan",
+    "clear": "Tozalash",
+    "reset": "Qayta o'rnatish",
+    "apply": "Qo'llash",
+    "confirmDelete": "O'chirishni tasdiqlang",
+    "confirmDeleteMessage": "Bu amalni qaytarib bo'lmaydi. Davom etishni xohlaysizmi?",
+    "deleting": "O'chirilmoqda...",
+    "remove": "O'chirish",
+    "add": "Qo'shish",
+    "copy": "Nusxalash",
+    "copied": "Nusxalandi",
+    "share": "Ulashish",
+    "print": "Chop etish",
+    "export": "Eksport",
+    "import": "Import",
+    "refresh": "Yangilash",
+    "retry": "Qayta urinish",
+    "warning": "Ogohlantirish",
+    "info": "Ma'lumot",
+    "success": "Muvaffaqiyat",
+    "errors": {
+      "network": "Internet ulanishi yo'q. Iltimos, internetingizni tekshiring",
+      "dataNotFound": "Ma'lumot topilmadi",
+      "subscriptionRequired": "Obuna talab qilinadi",
+      "unauthorized": "Ruxsat yo'q",
+      "networkConnection": "Internet aloqasi yo'q",
+      "somethingWentWrong": "Xatolik yuz berdi",
+      "server": "Server xatosi",
+      "sessionExpired": "Sessiya muddati tugadi",
+      "deviceChanged": "Qurilma o'zgargan",
+      "tooManyAttempts": "Juda ko'p urinish"
+    },
+    "error": "Xatolik",
+    "confirmMessage": "Bu amalni bajarmoqchimisiz?",
+    "language": "Til",
+    "send": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "priority": {
+      "low": "Past",
+      "medium": "O'rtacha",
+      "high": "Yuqori",
+      "urgent": "Juda muhim"
+    },
+    "phoneNumber": "Telefon raqami",
+    "password": "Parol",
+    "fullName": "To'liq ism",
+    "admin": "Admin",
+    "logout": "Chiqish",
+    "uz": "O'zbek (lotin)",
+    "uzCyrl": "Ўзбек (кирилл)",
+    "ru": "Русский",
+    "currency": "so'm",
+    "no_notifications": "Bildirishnomalar yo'q",
+    "notAvailable": "Mavjud emas",
+    "days": "kun",
+    "ticket": "Bilet",
+    "select": "Tanlang",
+    "update": "Yangilash",
+    "notifications": "Bildirishnomalar",
+    "view_all": "Hammasini ko'rish",
+    "deleted": "O'chirilgan",
+    "months": {
+      "january": "Yanvar",
+      "february": "Fevral", 
+      "march": "Mart",
+      "april": "Aprel",
+      "may": "May",
+      "june": "Iyun",
+      "july": "Iyul",
+      "august": "Avgust",
+      "september": "Sentabr",
+      "october": "Oktabr",
+      "november": "Noyabr",
+      "december": "Dekabr"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "BEHZOD AVTOUSTOZ",
+      "subtitle": "Professional haydovchilik imtihoniga tayyorgarlik",
+      "cta": "TIZIMGA KIRISH",
+      "safeReliable": "100% xavfsiz va ishonchli",
+      "register": "Ro'yxatdan o'tish",
+      "login": "Kirish",
+      "students": "{{count}} o'quvchi"
+    },
+    "features": {
+      "title": "Xizmatlarimiz",
+      "subtitle": "Bizning platformamizda siz uchun kerak bo'lgan barcha imkoniyatlar mavjud",
+      "tests": {
+        "title": "1000+ test savollari",
+        "description": "Barcha mavzular bo'yicha"
+      },
+      "tickets": {
+        "title": "100+ bilet",
+        "description": "Har birida 10 ta savol"
+      },
+      "online": {
+        "title": "24/7 onlayn",
+        "description": "Istalgan vaqtda o'qish imkoniyati"
+      },
+      "auto": {
+        "title": "Avtomatik tekshirish",
+        "description": "Natijalar darhol"
+      }
+    },
+    "statistics": {
+      "title": "Natijalar",
+      "subtitle": "Bizning yutuqlarimiz raqamlarda",
+      "students": "Ro'yxatdan o'tgan o'quvchilar",
+      "passed": "Imtihondan o'tganlar",
+      "questions": "Test savollari soni",
+      "active": "Faol o'quvchilar soni"
+    },
+    "functions": {
+      "subtitle": "Bizning platformamiz orqali haydovchilik imtihoniga tayyorgarlik ko'ring",
+      "practice": {
+        "title": "Test Mashqlari",
+        "description": "1000+ test savollaridan iborat to'plam bilan bilimingizni mustahkamlang"
+      },
+      "simulation": {
+        "title": "Imtihon Simulyatsiyasi",
+        "description": "Haqiqiy imtihon sharoitida o'z bilimingizni sinab ko'ring"
+      },
+      "analysis": {
+        "title": "Natijalar Tahlili",
+        "description": "Batafsil statistika va tahlil bilan o'z bilimingizni baholang"
+      }
+    },
+    "tryTest": {
+      "subtitle": "Ro'yxatdan o'tishdan oldin platformamizni sinab ko'ring",
+      "demo": {
+        "title": "Bepul demo test",
+        "description": "10 ta savoldan iborat demo test orqali platformamizning qulayliklarini his eting",
+        "button": "Demo testni boshlash"
+      }
+    },
+    "cta": {
+      "title": "Haydovchilik imtihoniga tayyor bo'ling!",
+      "subtitle": "Minglab o'quvchilar bizning platformamiz orqali muvaffaqiyatli imtihon topshirgan. Siz ham ularning safiga qo'shiling!",
+      "startNow": "Hozir boshlang",
+      "haveAccount": "Akkauntingiz bormi? Kirish",
+      "safe": "100% Xavfsiz",
+      "verified": "Tasdiqlangan",
+      "users": "5K+ Foydalanuvchi"
+    },
+    "stats": {
+      "success": "Muvaffaqiyat",
+      "online": "Onlayn"
+    }
+  },
+  "navigation": {
+    "home": "Bosh sahifa",
+    "dashboard": "Boshqaruv paneli",
+    "features": "Xizmatlar",
+    "functions": "Imkoniyatlaringiz",
+    "statistics": "Natijalar",
+    "timeRange": {
+      "week": "Hafta",
+      "month": "Oy",
+      "all": "Barchasi"
+    },
+    "tryTest": "Testni sinab ko'ring",
+    "contact": "Aloqa",
+    "profile": "Profil",
+    "tests": "Testlar",
+    "results": "Natijalar",
+    "notifications": "Bildirishnomalar",
+    "settings": "Sozlamalar",
+    "logout": "Chiqish",
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "help": "Yordam",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "payments": "To'lovlar"
+  },
+  "tests": {
+    "random_test": "Tasodifiy Test",
+    "exam": "Imtihon Topshirish"
+  },
+  "demoTest": {
+    "title": "Demo Test",
+    "questionFormat": "Savol {{current}} / {{total}}",
+    "ticketNumber": "Bilet №{{number}}",
+    "testResults": "Test natijalari",
+    "demoTestResult": "Demo test natijalari",
+    "overallResult": "Umumiy natija",
+    "correctAnswers": "To'g'ri javoblar",
+    "wrongAnswers": "Xato javoblar",
+    "answerAnalysis": "Javoblar tahlili",
+    "yourAnswer": "Sizning javobingiz",
+    "correctAnswer": "To'g'ri javob",
+    "noAnswerGiven": "Javob berilmagan",
+    "homePageButton": "Bosh sahifa",
+    "registerButton": "Ro'yxatdan o'tish",
+    "previousButton": "Oldingi",
+    "nextButton": "Keyingi",
+    "finishTestButton": "Testni yakunlash",
+    "answersGivenFormat": "{{answered}} / {{total}} javob berildi",
+    "testInfo": "Test ma'lumotlari",
+    "testType": "Test turi",
+    "demo": "Demo test",
+    "totalQuestions": "Jami savollar",
+    "timeTaken": "Sarflangan vaqt",
+    "explanation": "Izoh"
+  },
+  "auth": {
+    "loginTitle": "Tizimga kirish",
+    "welcomeBack": "Xush kelibsiz! Davom etish uchun tizimga kiring",
+    "phoneNumber": "Telefon raqami",
+    "phoneNumberRequired": "Telefon raqami kiritilishi shart",
+    "phoneNumberLength": "Telefon raqami 9 ta raqamdan iborat bo'lishi kerak",
+    "password": "Parol",
+    "passwordRequired": "Parol kiritilishi shart",
+    "passwordTooShort": "Parol kamida 6 ta belgidan iborat bo'lishi kerak",
+    "confirmPassword": "Parolni tasdiqlang",
+    "forgotPassword": "Parolni unutdingizmi?",
+    "resetPassword": "Parolni tiklash",
+    "newPassword": "Yangi parol",
+    "passwordMismatch": "Parollar mos kelmayapti",
+    "loginButton": "Kirish",
+    "registerButton": "Ro'yxatdan o'tish",
+    "dontHaveAccount": "Hisobingiz yo'qmi?",
+    "alreadyHaveAccount": "Hisobingiz bormi?",
+    "registerTitle": "Ro'yxatdan o'tish",
+    "createAccount": "Yangi hisob yarating",
+    "fullName": "To'liq ism",
+    "login": {
+      "title": "Tizimga kirish",
+      "subtitle": "Davom etish uchun tizimga kiring",
+      "phone_placeholder": "+998 90 123 45 67",
+      "password_placeholder": "Parolingizni kiriting",
+      "remember_me": "Meni eslab qol",
+      "forgot_password": "Parolni unutdingizmi?",
+      "login_button": "Kirish",
+      "no_account": "Hisobingiz yo'qmi?",
+      "register_link": "Ro'yxatdan o'ting"
+    },
+    "register": {
+      "title": "Ro'yxatdan o'tish",
+      "subtitle": "Yangi hisob yarating",
+      "full_name_placeholder": "Ism Familya",
+      "phone_placeholder": "+998 90 123 45 67",
+      "password_placeholder": "Parol",
+      "confirm_password_placeholder": "Parolni tasdiqlang",
+      "register_button": "Ro'yxatdan o'tish",
+      "have_account": "Hisobingiz bormi?",
+      "login_link": "Tizimga kiring",
+      "terms_agree": "Ro'yxatdan o'tish orqali siz",
+      "terms_link": "foydalanish shartlari",
+      "and": "va",
+      "privacy_link": "maxfiylik siyosati",
+      "agree_suffix": "ga rozilik bildirasiz",
+      "fullname_required": "Ism familiya kiritilishi shart",
+      "fullname_min_length": "Ism familiya kamida 3 ta belgidan iborat bo'lishi kerak",
+      "fullname_pattern": "Faqat harflar kiritilishi mumkin",
+      "phone_required": "Telefon raqami kiritilishi shart",
+      "phone_pattern": "Telefon raqami noto'g'ri formatda",
+      "password_required": "Parol kiritilishi shart",
+      "password_min_length": "Parol kamida 8 ta belgidan iborat bo'lishi kerak",
+      "password_pattern": "Parol kamida bitta katta harf, bitta kichik harf va bitta raqam o'z ichiga olishi kerak",
+      "confirm_password_required": "Parolni tasdiqlash shart",
+      "passwords_not_match": "Parollar mos kelmayapti"
+    },
+    "logout": {
+      "confirm_title": "Chiqishni tasdiqlash",
+      "confirm_message": "Tizimdan chiqmoqchimisiz?",
+      "confirm_button": "Ha, chiqish",
+      "cancel_button": "Bekor qilish"
+    },
+    "sendCode": "Kod yuborish",
+    "enterPhone": "Telefon raqamingizni kiriting, SMS orqali kod yuboramiz",
+    "verificationCode": "Tasdiqlash kodi",
+    "enterCode": "SMS orqali yuborilgan kodni kiriting",
+    "resendCode": "Kodni qayta yuborish",
+    "codeExpired": "Kod muddati tugagan",
+    "invalidCode": "Kod noto'g'ri",
+    "codeSent": "Kod yuborildi",
+    "verifyCode": "Kodni tasdiqlash",
+    "enterCodeAndPassword": "SMS kodni va yangi parolni kiriting",
+    "updatePassword": "Parolni yangilash",
+    "sendToAnotherNumber": "Boshqa raqamga yuborish",
+    "phoneNumberHelp": "Telefon raqamingizni kiriting, SMS orqali kod yuboramiz",
+    "fullNameLabel": "To'liq ism",
+    "fullNamePlaceholder": "Ism Familya",
+    "codeInvalidLength": "Kod 6 ta raqamdan iborat bo'lishi kerak",
+    "password_reset_success": "Parol muvaffaqiyatli yangilandi",
+    "passwordResetSuccess": "Parol muvaffaqiyatli yangilandi",
+    "rememberPassword": "Parolingiz esda qoldimi?",
+    "enterNewPassword": "Yangi parolni kiriting",
+    "codeRequired": "SMS kod kiritilishi shart",
+    "codeVerified": "Код тасдиқланди",
+    "devMode": {
+      "title": "Ishlab chiqish rejimi - SMS Kod",
+      "copyCode": "Kodni nusxalash",
+      "codeCopied": "Kod nusxalandi!",
+      "invalidToken": "Noto'g'ri token. Yuqorida ko'rsatilgan tokenni ishlating.",
+      "smsCode": "SMS Kod"
+    },
+    "maxAttemptsReached": "Maksimal urinishlar soniga yetdingiz. 24 soat kutib turing",
+    "smsBlocked": "SMS yuborish bloklangan",
+    "attemptsRemaining": "({{remaining}} ta qoldi)"
+  },
+  "profile": {
+    "title": "Mening profilim",
+    "subtitle": "Shaxsiy ma'lumotlar va sozlamalar",
+    "personal_info": "Shaxsiy ma'lumotlar",
+    "joined_date": "Ro'yxatdan o'tgan",
+    "security": "Xavfsizlik",
+    "change_password": "Parolni o'zgartirish",
+    "language_settings": "Til sozlamalari",
+    "theme_settings": "Mavzu sozlamalari",
+    "light_theme": "Yorug' mavzu",
+    "dark_theme": "Qorong'u mavzu",
+    "danger_zone": "Xavfli zona",
+    "delete_account_warning": "Akkauntingizni o'chirsangiz, barcha ma'lumotlaringiz butunlay o'chib ketadi.",
+    "delete_account": "Akkauntni o'chirish",
+    "cancel": "Bekor qilish",
+    "save": "Saqlash",
+    "current_password": "Joriy parol",
+    "new_password": "Yangi parol",
+    "confirm_new_password": "Yangi parolni tasdiqlang",
+    "errors": {
+      "name_required": "Ism kiritilishi shart",
+      "image_too_large": "Rasm hajmi juda katta (5MB gacha ruxsat berilgan)",
+      "password_mismatch": "Parollar mos kelmadi",
+      "password_too_short": "Parol kamida 6 ta belgidan iborat bo'lishi kerak"
+    },
+    "success": {
+      "profile_updated": "Profil muvaffaqiyatli yangilandi",
+      "image_uploaded": "Rasm muvaffaqiyatli yuklandi",
+      "password_updated": "Parol muvaffaqiyatli yangilandi"
+    },
+    "delete_account_confirm": "Akkauntingizni o'chirmoqchimisiz? Bu amalni qaytarib bo'lmaydi.",
+    "confirm_delete_password": "Parolingizni kiriting",
+    "yes_delete": "Ha, o'chirish"
+  },
+  "student": {
+    "dashboard": {
+      "welcome": "Xush kelibsiz, {{name}}!",
+      "subscription_status": "Obuna holati",
+      "tests_today": "Bugungi testlar",
+      "average_score": "O'rtacha ball",
+      "best_score": "Eng yaxshi natija",
+      "quick_actions": "Tez harakatlar",
+      "start_test": "Test boshlash",
+      "view_results": "Natijalarni ko'rish",
+      "study_materials": "O'quv materiallari",
+      "recent_tests": "So'nggi testlar",
+      "no_recent_tests": "So'nggi testlar yo'q",
+      "view_all": "Hammasini ko'rish",
+      "progress": "O'sish",
+      "topics_mastered": "O'zlashtirilgan mavzular",
+      "improvement_needed": "Yaxshilash kerak",
+      "subscriptionExpired": "Obuna muddati tugagan",
+      "subscriptionDaysLeft": "Obuna muddati {{days}} kun qoldi",
+      "averageScore": "O'rtacha ball",
+      "weeklyActivity": "Haftalik faollik",
+      "testResults": "Test natijalari",
+      "totalQuestions": "Jami savollar",
+      "correctAnswers": "To'g'ri javoblar",
+      "wrongAnswers": "Xato javoblar",
+      "testTypes": {
+        "title": "Test turlari",
+        "topicTraining": "Mavzu bo'yicha trenirovkani boshlash",
+        "topicExam": "Mavzular bo'yicha imtihon topshirish",
+        "intermediate": "Oraliq Nazorat",
+        "ticketTraining": "Biletlar bo'yicha trenirovkani boshlash",
+        "wrongAnswers": "Barcha xato qilingan savollar",
+        "myWrongAnswers": "Mening xato savollarim",
+        "randomTest": "Tasodifiy Test",
+        "exam": "Imtihon Topshirish"
+      },
+      "weekDays": ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"],
+      "hoursLabel": "Soatlar",
+      "stats": {
+        "dailyActivity": "Kunlik faollik",
+        "preparationLevel": "Tayyorgarlik darajasi",
+        "totalTests": "Jami testlar",
+        "averageScore": "O'rtacha ball",
+        "weeklyProgress": "Haftalik progress"
+      },
+      "title": "Boshqaruv paneli",
+      "subscriptionExpiredMessage": "Testlardan foydalanish uchun obunani yangilang",
+      "subscriptionExpiringMessage": "Obunangizni yangilashni unutmang",
+      "subscription": {
+        "title": "Obuna holati",
+        "active": "Faol",
+        "expired": "Muddati tugagan",
+        "expires": "Tugash sanasi",
+        "warning": "Obuna muddati tugagandan keyin 30 kun ichida to'lov qilmasangiz, profilingiz o'chiriladi",
+        "daysLeft": "{{days}} kun qoldi",
+        "renew": "Obunani yangilash"
+      },
+      "errors": {
+        "fetchStats": "Statistika yuklanmadi"
+      }
+    },
+    "tests": {
+      "title": "Testlar",
+      "select_type": "Test turini tanlang",
+      "selectTypeDescription": "Test turini tanlang va bilimingizni sinab ko'ring",
+      "subscriptionRequired": "Obuna talab qilinadi",
+      "subscribeFirst": "Testlardan foydalanish uchun avval obuna bo'ling",
+      "select_topic": "Mavzuni tanlang",
+      "select_ticket": "Biletni tanlang",
+      "questions": "ta savol",
+      "minutesUnit": "daqiqa",
+      "passingScoreUnit": "o'tish bali",
+      "start_test": "Testni boshlash",
+      "startTest": "Testni boshlash",
+      "no_questions": "Bu tur uchun savollar mavjud emas",
+      "loading": "Savollar yuklanmoqda...",
+      "examTime": "20 daqiqa",
+      "back": "Orqaga",
+      "topicsCount": "{{count}} ta mavzu",
+      "ticketsCount": "{{count}} ta bilet",
+      "types": {
+        "topicTraining": {
+          "title": "Mavzu bo'yicha trenirovkani boshlash",
+          "description": "Tanlangan mavzu bo'yicha cheksiz mashq qiling"
+        },
+        "topicExam": {
+          "title": "Mavzular bo'yicha imtihon topshirish",
+          "description": "Mavzu bo'yicha bilimingizni sinab ko'ring"
+        },
+        "intermediate": {
+          "title": "Oraliq Nazorat",
+          "description": "Barcha mavzulardan 30 ta savol, 35 daqiqa"
+        },
+        "ticketTraining": {
+          "title": "Biletlar bo'yicha trenirovkani boshlash",
+          "description": "Biletlar bo'yicha mashq qiling"
+        },
+        "wrongAnswers": {
+          "title": "Barcha xato qilingan savollar",
+          "description": "Tizimda eng ko'p xato qilingan savollar"
+        },
+        "myWrongAnswers": {
+          "title": "Mening xato savollarim",
+          "description": "Xato qilgan savollaringizdan 15 ta, 15 daqiqa"
+        },
+        "random": {
+          "title": "Tasodifiy Test",
+          "description": "Tasodifiy savollar bilan mashq qiling"
+        },
+        "exam": {
+          "title": "Imtihon Topshirish",
+          "description": "Rasmiy imtihon rejimida test topshiring",
+          "timeLimit": "Vaqt chegarasi"
+        }
+      },
+      "back": "Orqaga",
+      "topicsCount": "{{count}} ta mavzu",
+      "ticketsCount": "{{count}} ta bilet",
+      "descriptions": {
+        "topicTraining": "Mavzular bo'yicha mashq qiling",
+        "topicExam": "Mavzular bo'yicha imtihon",
+        "intermediate": "Barcha mavzulardan aralash test",
+        "ticketTraining": "Biletlar bo'yicha mashq qiling",
+        "wrongAnswers": "Eng ko'p xato qilingan savollar",
+        "myWrongAnswers": "Sizning xato javoblaringiz",
+        "random": "Tasodifiy savollar",
+        "exam": "Rasmiy imtihon rejimida"
+      },
+      "filters": {
+        "all": "Hammasi",
+        "by_topic": "Mavzu bo'yicha",
+        "by_ticket": "Bilet bo'yicha",
+        "by_difficulty": "Qiyinlik bo'yicha",
+        "easy": "Oson",
+        "medium": "O'rtacha",
+        "hard": "Qiyin"
+      }
+    },
+    "test": {
+      "question": "Savol",
+      "time_remaining": "Qolgan vaqt",
+      "submit": "Testni topshirish",
+      "next": "Keyingi savol",
+      "previous": "Oldingi savol",
+      "unanswered": "Javob berilmagan",
+      "review": "Ko'rib chiqish",
+      "confirmSubmit": "Testni topshirishni tasdiqlash",
+      "confirmMessage": "Testni topshirishga ishonchingiz komilmi?",
+      "timeUp": "Vaqt tugadi!",
+      "autoSubmit": "Test avtomatik topshiriladi...",
+      "noQuestionsTitle": "Savollar topilmadi",
+      "noQuestionsMessage": "Bu test turi uchun savollar mavjud emas",
+      "backToTests": "Testlar sahifasiga qaytish",
+      "answeredCount": "Javob berilgan: {{answered}} / {{total}}",
+      "unansweredCount": "{{count}} ta savolga javob berilmagan",
+      "questionTitle": "Savol {{current}} / {{total}}",
+      "finishTest": "Testni yakunlash",
+      "errorTitle": "Xatolik yuz berdi",
+      "errorMessage": "Savollarni yuklashda xatolik yuz berdi",
+      "offlineMode": "Offline rejimda ishlayapsiz",
+      "noOfflineData": "Offline ma'lumotlar topilmadi",
+      "offlineResultSaved": "Natija offline saqlandi. Internet mavjud bo'lganda yuboriladi",
+      "offlineSaveError": "Natijani saqlashda xatolik",
+      "cancelButton": "Bekor qilish",
+      "continueButton": "Davom etish",
+      "confirmSubmitTitle": "Testni yakunlash",
+      "confirmSubmitMessage": "Sizda {{count}} ta javobsiz savol mavjud. Davom etishni xohlaysizmi?",
+      "errors": {
+        "fetchQuestions": "Savollarni yuklashda xatolik",
+        "submitTest": "Testni topshirishda xatolik",
+        "imageLoadError": "Rasm yuklanmadi",
+        "networkError": "Internet aloqangizni tekshiring",
+        "authExpired": "Avtorizatsiya muddati tugagan. Qayta kiring",
+        "subscriptionRequired": "Test topshirish uchun obuna kerak",
+        "questionsNotFound": "Test uchun savollar topilmadi",
+        "apiNotFound": "Test API topilmadi. Admin bilan bog'laning",
+        "serverError": "Server xatoligi. Iltimos, keyinroq urinib ko'ring",
+        "serverDetails": "Server xatosi. Admin bilan bog'laning.",
+        "generalError": "Nimadir xato ketdi. Qayta urinib ko'ring",
+        "missingTopicId": "Mavzu tanlanmagan",
+        "missingTicketId": "Bilet tanlanmagan",
+        "invalidData": "Noto'g'ri ma'lumotlar",
+        "invalidTime": "Noto'g'ri vaqt",
+        "timeExceeded": "Vaqt chegarasi oshdi",
+        "alreadySubmitted": "Test allaqachon topshirilgan",
+        "duplicateQuestions": "Takroriy savollar",
+        "invalidQuestions": "Noto'g'ri savollar",
+        "tooManyAnswers": "Juda ko'p javoblar",
+        "insufficientQuestions": "Yetarli savollar mavjud emas",
+        "invalidOption": "Noto'g'ri variant"
+      }
+    },
+    "results": {
+      "title": "Test natijalari",
+      "passed": "Tabriklaymiz! Siz testdan o'tdingiz!",
+      "failed": "Afsuski, test yetarli ball to'plamadingiz",
+      "score": "Natija",
+      "percentage": "Foiz",
+      "correct": "To'g'ri javoblar",
+      "incorrect": "Noto'g'ri javoblar",
+      "unanswered": "Javobsiz",
+      "timeTaken": "Sarflangan vaqt",
+      "passingScore": "O'tish balli",
+      "minutesUnit": "daqiqa",
+      "passingScoreUnit": "o'tish balli",
+      "yourScore": "Sizning ballingiz",
+      "reviewAnswers": "Javoblarni ko'rib chiqish",
+      "tryAgain": "Qayta urinish",
+      "backToTests": "Testlarga qaytish",
+      "backToHome": "Bosh sahifaga qaytish",
+      "notFound": "Natija topilmadi",
+      "examResults": "Imtihon natijalari (o'tish balli: {{passingScore}}%)",
+      "testResults": "Test natijalari",
+      "testInfo": "Test ma'lumotlari",
+      "testType": "Test turi",
+      "topic": "Mavzu",
+      "ticket": "Bilet",
+      "startTime": "Boshlangan vaqt",
+      "timeFormat": "{{minutes}} daqiqa {{seconds}} soniya",
+      "explanation": "Izoh",
+      "testTypes": {
+        "exam": "Imtihon",
+        "topic": "Mavzu bo'yicha",
+        "ticket": "Bilet bo'yicha",
+        "random": "Tasodifiy",
+        "wrongAnswers": "Xato savollar",
+        "myWrongAnswers": "Mening xato savollarim",
+        "other": "Boshqa"
+      },
+      "details": {
+        "question": "Savol",
+        "yourAnswer": "Sizning javobingiz",
+        "correctAnswer": "To'g'ri javob",
+        "explanation": "Tushuntirish"
+      },
+      "yourAnswer": "Sizning javobingiz",
+      "correctAnswer": "To'g'ri javob",
+      "noAnswer": "Javob berilmagan",
+      "errors": {
+        "fetchResult": "Natijalarni yuklashda xatolik"
+      }
+    },
+    "profile": {
+      "title": "Mening profilim",
+      "personal_info": "Shaxsiy ma'lumotlar",
+      "subscription_info": "Obuna ma'lumotlari",
+      "change_password": "Parolni o'zgartirish",
+      "statistics": "Statistika",
+      "full_name": "To'liq ism",
+      "phone_number": "Telefon raqami",
+      "joined_date": "Ro'yxatdan o'tgan sana",
+      "subscription_type": "Obuna turi",
+      "subscription_status": "Obuna holati",
+      "expiry_date": "Tugash sanasi",
+      "current_password": "Joriy parol",
+      "new_password": "Yangi parol",
+      "confirm_new_password": "Yangi parolni tasdiqlang",
+      "update_password": "Parolni yangilash",
+      "total_tests": "Jami testlar",
+      "passed_tests": "O'tilgan testlar",
+      "failed_tests": "O'tilmagan testlar",
+      "average_score": "O'rtacha ball",
+      "best_score": "Eng yaxshi natija",
+      "worst_score": "Eng past natija",
+      "study_time": "O'qish vaqti",
+      "edit_profile": "Profilni tahrirlash",
+      "save_changes": "O'zgarishlarni saqlash",
+      "cancel_changes": "Bekor qilish"
+    },
+    "payments": {
+      "title": "To'lovlar",
+      "subtitle": "Obunangizni boshqaring va to'lov tarixini ko'ring",
+      "refresh": "Yangilash",
+      "subscriptionType": "Obuna turi",
+      "endDate": "Tugash sanasi",
+      "active": "Faol",
+      "inactive": "Nofaol",
+      "purchaseButton": "Sotib olish",
+      "paymentHistory": "To'lov tarixi",
+      "noPayments": "Hozircha to'lovlar mavjud emas",
+      "choosePaymentMethod": "To'lov usulini tanlang",
+      "pay": "To'lov qilish",
+      "bestChoice": "Eng tejamkor tanlov",
+      "forDays": "{{days}} kun uchun",
+      "features": {
+        "unlimitedTests": "Cheksiz test topshirish",
+        "allTopics": "Barcha mavzularga kirish",
+        "fullStatistics": "To'liq statistika va tahlil",
+        "support": "24/7 texnik yordam"
+      },
+      "subscriptionTypes": {
+        "15_days": "15 kunlik",
+        "1_month": "1 oylik",
+        "3_months": "3 oylik"
+      },
+      "paymentMethods": {
+        "click": "Click",
+        "payme": "Payme",
+        "cash": "Naqd pul"
+      },
+      "status": {
+        "completed": "To'langan",
+        "pending": "Kutilmoqda",
+        "cancelled": "Bekor qilingan"
+      }
+    },
+    "statistics": {
+      "title": "Statistika",
+      "subtitle": "O'rganish jarayoningizni kuzating",
+      "noData": "Ma'lumotlar yo'q",
+      "errors": {
+        "fetchError": "Statistikani yuklashda xatolik"
+      },
+      "week": "Hafta",
+      "month": "Oy",
+      "allTime": "Barcha vaqt",
+      "timeRange": {
+        "week": "Hafta",
+        "month": "Oy",
+        "all": "Barchasi"
+      },
+      "correct": "To'g'ri",
+      "wrong": "Xato",
+      "unanswered": "Yechilmagan",
+      "unknown": "Noma'lum",
+      "unknownQuestion": "Noma'lum savol",
+      "activityLabel": "Faollik (soat)",
+      "progressLabel": "Progress (%)",
+      "timeFormat": "{{hours}} soat {{minutes}} daqiqa",
+      "preparationLevel": "Umumiy tayyorgarlik darajasi",
+      "averageScore": "O'rtacha ball",
+      "totalTime": "Umumiy vaqt",
+      "totalTests": "Topshirilgan testlar",
+      "questionsStatistics": "Savollar statistikasi",
+      "totalQuestions": "Jami savollar",
+      "correctAnswers": "To'g'ri javoblar",
+      "wrongAnswers": "Xato javoblar",
+      "dailyActivity": "Kunlik faollik",
+      "topicProgress": "Mavzular bo'yicha natijalar",
+      "mostMistakes": "Eng ko'p xato qilingan mavzular",
+      "recentTests": "So'nggi testlar",
+      "weeklyActivity": "Haftalik faollik",
+      "monthlyActivity": "Oylik faollik",
+      "overallActivity": "Umumiy faollik",
+      "times": "{{count}} marta",
+      "errorCount": "{{count}} ta xato",
+      "date": "Sana",
+      "testType": "Test turi",
+      "result": "Natija",
+      "time": "Vaqt"
+    },
+    "notifications": {
+      "title": "Bildirishnomalar",
+      "subtitle": "Barcha bildirishnomalaringiz",
+      "filter": {
+        "all": "Hammasi",
+        "unread": "O'qilmagan ({{count}})",
+        "read": "O'qilgan"
+      },
+      "markAllAsRead": "Hammasini o'qilgan deb belgilash",
+      "empty": "Bildirishnomalar mavjud emas",
+      "mark_as_read": "O'qilgan deb belgilash",
+      "mark_all_as_read": "Hammasini o'qilgan deb belgilash",
+      "delete": "O'chirish",
+      "no_notifications": "Bildirishnomalar yo'q",
+      "subscription_expiring": "Obuna muddati tugamoqda",
+      "subscription_expired": "Obuna muddati tugadi",
+      "new_test_available": "Yangi test mavjud",
+      "test_result_ready": "Test natijasi tayyor",
+      "payment_successful": "To'lov muvaffaqiyatli",
+      "payment_failed": "To'lov muvaffaqiyatsiz",
+      "errors": {
+        "fetchError": "Bildirishnomalarni yuklashda xatolik yuz berdi",
+        "markReadError": "Xabarni o'qilgan deb belgilashda xatolik",
+        "markAllReadError": "Barcha xabarlarni o'qilgan deb belgilashda xatolik",
+        "deleteError": "Bildirishnomani o'chirishda xatolik"
+      },
+      "newNotificationReceived": "Yangi bildirishnoma qabul qilindi",
+      "default_title": "Bildirishnoma",
+      "system_update": "Tizim yangilanishi",
+      "promotion": "Aksiya va chegirmalar",
+      "profile_deletion_warning": "Profil o'chirilishi ogohlantirishi"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Boshqaruv paneli",
+      "welcome": "Xush kelibsiz, Admin!",
+      "overview": "Umumiy ko'rinish",
+      "users": {
+        "total": "Jami foydalanuvchilar",
+        "active": "Faol foydalanuvchilar",
+        "new_today": "Bugun yangi",
+        "online_now": "Hozir onlayn"
+      },
+      "revenue": {
+        "total": "Jami daromad",
+        "monthly": "Oylik daromad",
+        "today": "Bugungi daromad",
+        "growth": "O'sish"
+      },
+      "tests": {
+        "total": "Jami testlar",
+        "today": "Bugun o'tkazilgan",
+        "passed": "O'tilgan",
+        "failed": "O'tilmagan"
+      },
+      "content": {
+        "questions": "Savollar",
+        "topics": "Mavzular",
+        "tickets": "Biletlar"
+      },
+      "recent_activities": "So'nggi faoliyat",
+      "quick_stats": "Tezkor statistika",
+      "charts": {
+        "user_growth": "Foydalanuvchilar o'sishi",
+        "revenue_trend": "Daromad tendensiyasi",
+        "test_statistics": "Test statistikasi"
+      },
+      "errors": {
+        "loadError": "Ma'lumotlarni yuklashda xatolik"
+      },
+      "subtitle": "Tizim holatini kuzating va boshqaring",
+      "recentPayments": "So'nggi to'lovlar",
+      "topicsByCount": "{{count}} ta mavzu bo'yicha",
+      "readyTestTickets": "Testga tayyor biletlar",
+      "todayCount": "Bugun: {{count}} ta",
+      "live": "JONLI",
+      "noDataAvailable": "Ma'lumot mavjud emas",
+      "subscriptionTypes": {
+        "15_days": "15 kunlik",
+        "1_month": "1 oylik",
+        "3_months": "3 oylik"
+      },
+      "testTypes": "Test turlari",
+      "testTypes.topic": "Mavzu bo'yicha",
+      "testTypes.ticket": "Bilet bo'yicha",
+      "testTypes.exam": "Imtihon",
+      "testTypes.random": "Tasodifiy",
+      "tests": "ta test",
+      "stats": {
+        "totalUsers": "Jami foydalanuvchilar",
+        "activeSubscriptions": "Faol obunalar",
+        "monthlyRevenue": "Oylik daromad",
+        "onlineNow": "Hozir onlayn"
+      },
+      "labels": {
+        "today": "Bugun",
+        "percent": "foiz",
+        "payments": "To'lovlar",
+        "status": "Holat",
+        "questions": "Savollar",
+        "tickets": "Biletlar",
+        "tests": "Testlar",
+        "unknown": "Noma'lum"
+      },
+      "status": {
+        "active": "Faol",
+        "inactive": "Nofaol"
+      }
+    },
+    "users": {
+      "title": "Foydalanuvchilar",
+      "add_user": "Foydalanuvchi qo'shish",
+      "search_placeholder": "Ism yoki telefon bo'yicha qidirish",
+      "filters": {
+        "all": "Barcha holatlar",
+        "active": "Faol",
+        "inactive": "Nofaol",
+        "subscribed": "Obuna bor",
+        "expired": "Obuna tugagan"
+      },
+      "noSubscription": "Obuna yo'q",
+      "table": {
+        "name": "Ism",
+        "phone": "Telefon",
+        "status": "Holat",
+        "subscription": "Obuna",
+        "joined": "Ro'yxatdan o'tgan",
+        "actions": "Harakatlar"
+      },
+      "actions": {
+        "view": "Ko'rish",
+        "edit": "Tahrirlash",
+        "delete": "O'chirish",
+        "activate": "Faollashtirish",
+        "deactivate": "O'chirish",
+        "reset_password": "Parolni tiklash",
+        "reset_password_short": "Parol",
+        "extend_subscription": "Obunani uzaytirish"
+      },
+      "security": {
+        "title": "Xavfsizlik",
+        "passwordReset": "Parolni tiklash",
+        "passwordResetDesc": "Foydalanuvchi uchun yangi xavfsiz parol yaratiladi va unga bildirishnoma yuboriladi."
+      },
+      "status": {
+        "active": "Faol",
+        "inactive": "Faol emas",
+        "blocked": "Bloklangan"
+      },
+      "subscription": {
+        "all": "Barcha obunalar",
+        "active": "Faol obunalar",
+        "inactive": "Nofaol",
+        "expired": "Muddati tugagan",
+        "expiring": "Tugamoqda (7 kun)",
+        "expiringDays": "Tugamoqda ({{days}} kun)",
+        "activeDays": "Faol ({{days}} kun)"
+      },
+      "messages": {
+        "loadError": "Foydalanuvchilarni yuklashda xatolik",
+        "statusChanged": "Foydalanuvchi {{status}}",
+        "activated": "faollashtirildi",
+        "blocked": "bloklandi",
+        "statusError": "Statusni o'zgartirishda xatolik",
+        "deleteTitle": "Foydalanuvchini o'chirish",
+        "deleteConfirm": "Haqiqatan ham bu foydalanuvchini o'chirmoqchimisiz? Bu amalni qaytarib bo'lmaydi.",
+        "deleteSuccess": "Foydalanuvchi o'chirildi",
+        "deleteError": "Foydalanuvchini o'chirishda xatolik",
+        "totalUsers": "Jami {{total}} ta foydalanuvchi",
+        "noResults": "Hech qanday natija topilmadi", 
+        "noUsers": "Foydalanuvchilar mavjud emas",
+        "userNotFound": "Foydalanuvchi topilmadi",
+        "subscriptionUpdated": "Obuna muvaffaqiyatli yangilandi",
+        "subscriptionUpdateError": "Obunani yangilashda xatolik",
+        "noTestHistory": "Test tarixi mavjud emas",
+        "noPaymentHistory": "To'lov tarixi mavjud emas",
+        "userUpdated": "Foydalanuvchi ma'lumotlari yangilandi",
+        "updateError": "Ma'lumotlarni saqlashda xatolik",
+        "passwordReset": "Yangi parol: {{password}}",
+        "passwordResetError": "Parolni tiklashda xatolik",
+        "noSubscription": "Obuna yo'q"
+      },
+      "additionalInfo": "Qo'shimcha ma'lumotlar",
+      "fields": {
+        "registeredAt": "Ro'yxatdan o'tgan",
+        "fullName": "F.I.O",
+        "phoneNumber": "Telefon raqami",
+        "status": "Holat",
+        "role": "Rol",
+        "subscriptionType": "Obuna turi",
+        "endDate": "Tugash sanasi",
+        "subscriptionStatus": "Obuna holati"
+      },
+      "lastLogin": "Oxirgi kirish",
+      "validation": {
+        "fullNameRequired": "F.I.O kiritilishi shart",
+        "phoneRequired": "Telefon raqami kiritilishi shart",
+        "phoneFormat": "Telefon raqami formati noto'g'ri (+998XXXXXXXXX)"
+      },
+      "placeholders": {
+        "search": "Ism yoki telefon bo'yicha qidirish...",
+        "allStatuses": "Barcha holatlar",
+        "daysExample": "Masalan: 30"
+      },
+      "user_details": {
+        "title": "Foydalanuvchi tafsilotlari",
+        "personal_info": "Shaxsiy ma'lumotlar",
+        "subscription_info": "Obuna ma'lumotlari",
+        "test_history": "Test tarixi",
+        "payment_history": "To'lov tarixi",
+        "statistics": "Statistika"
+      },
+      "details": {
+        "title": "Foydalanuvchi tafsilotlari",
+        "basicInfo": "Asosiy ma'lumotlar",
+        "subscriptionInfo": "Obuna ma'lumotlari",
+        "statistics": "Statistika",
+        "testHistory": "Test tarixi",
+        "paymentHistory": "To'lov tarixi",
+        "topicProgress": "Mavzular bo'yicha progress"
+      },
+      "actions": {
+        "view": "Ko'rish",
+        "edit": "Tahrirlash",
+        "delete": "O'chirish",
+        "activate": "Faollashtirish",
+        "deactivate": "O'chirish",
+        "reset_password": "Parolni tiklash",
+        "extend_subscription": "Obunani uzaytirish",
+        "updateSubscription": "Obunani yangilash"
+      },
+      "fields": {
+        "fullName": "To'liq ismi",
+        "phoneNumber": "Telefon raqami",
+        "registeredAt": "Ro'yxatdan o'tgan",
+        "status": "Holat",
+        "subscriptionType": "Obuna turi",
+        "subscriptionStatus": "Obuna holati",
+        "startDate": "Boshlanish sanasi",
+        "endDate": "Tugash sanasi",
+        "daysLeft": "Qolgan kunlar",
+        "daysCount": "Kunlar soni",
+        "role": "Rol"
+      },
+      "editUser": "Foydalanuvchini tahrirlash",
+      "additionalInfo": "Qo'shimcha ma'lumotlar",
+      "lastLogin": "Oxirgi kirish",
+      "roles": {
+        "student": "O'quvchi",
+        "admin": "Admin"
+      },
+      "stats": {
+        "totalTests": "Jami testlar",
+        "passedTests": "O'tgan testlar", 
+        "averageScore": "O'rtacha ball",
+        "examAttempts": "Imtihonlar",
+        "attempts": "Urinishlar"
+      },
+      "table": {
+        "name": "Ism",
+        "phone": "Telefon",
+        "status": "Holat",
+        "subscription": "Obuna",
+        "joined": "Ro'yxatdan o'tgan",
+        "actions": "Harakatlar",
+        "date": "Sana",
+        "testType": "Test turi",
+        "topicTicket": "Mavzu/Bilet",
+        "result": "Natija",
+        "score": "Ball",
+        "time": "Vaqt",
+        "subscriptionType": "Obuna turi",
+        "paymentMethod": "To'lov usuli",
+        "amount": "Summa"
+      }
+    },
+    "questions": {
+      "title": "Test savollari",
+      "add_question": "Savol qo'shish",
+      "import_questions": "Savollarni import qilish",
+      "export_questions": "Savollarni eksport qilish",
+      "search_placeholder": "Qidirish...",
+      "filters": {
+        "all_topics": "Barcha mavzular",
+        "all_difficulties": "Barcha darajalar",
+        "all_levels": "Barcha darajalar",
+        "easy": "Oson",
+        "medium": "O'rtacha",
+        "hard": "Qiyin",
+        "active": "Faol",
+        "inactive": "Nofaol",
+        "clear": "Tozalash",
+        "search": "Qidiruv",
+        "topic": "Mavzu",
+        "level": "Daraja"
+      },
+      "table": {
+        "question": "Savol",
+        "topic": "Mavzu",
+        "difficulty": "Daraja",
+        "level": "Daraja",
+        "status": "Holat",
+        "created": "Yaratilgan",
+        "actions": "Harakatlar",
+        "image_available": "Rasm mavjud",
+        "edit": "Tahrirlash",
+        "delete": "O'chirish"
+      },
+      "form": {
+        "add_title": "Yangi savol qo'shish",
+        "edit_title": "Savolni tahrirlash",
+        "question_text": "Savol matni",
+        "topic": "Mavzu",
+        "select_topic": "Mavzuni tanlang",
+        "difficulty": "Qiyinlik darajasi",
+        "options": "Javob variantlari",
+        "options_count": "{{count}} ta variant",
+        "correct_answer": "To'g'ri javob",
+        "option_variant": "{{letter}} variant",
+        "option_label": "Variant",
+        "option_correct": "(To'g'ri javob)",
+        "explanation": "Izoh (ixtiyoriy)",
+        "image": "Rasm (ixtiyoriy)",
+        "uploadImage": "Rasm yuklash uchun bosing yoki tortib tashlang",
+        "current_image_note": "Hozirgi rasm saqlanadi. Yangi rasm yuklash uchun fayl tanlang.",
+        "status": "Holat",
+        "add_option": "Variant qo'shish",
+        "remove_option": "Variantni o'chirish",
+        "cancel": "Bekor qilish",
+        "save": "Qo'shish",
+        "update": "Yangilash",
+        "placeholders": {
+          "uz": "O'zbek (lotin)",
+          "uz_cyrl": "Ўзбек (кирилл)",
+          "ru": "Русский"
+        }
+      },
+      "errors": {
+        "loadError": "Savollarni yuklashda xatolik",
+        "saveError": "Savolni saqlashda xatolik",
+        "deleteError": "Savolni o'chirishda xatolik",
+        "statusError": "Statusni o'zgartirishda xatolik",
+        "validationErrors": {
+          "questionRequired": "Savol matni (o'zbek) kiritilishi shart",
+          "topicRequired": "Mavzu tanlanishi shart",
+          "minOptions": "Kamida 2 ta javob varianti bo'lishi kerak",
+          "correctAnswerRequired": "Kamida bitta to'g'ri javob belgilanishi kerak",
+          "optionsRequired": "Barcha javob variantlari (o'zbek) to'ldirilishi kerak",
+          "imageSizeError": "Rasm hajmi 5MB dan katta bo'lmasligi kerak"
+        }
+      },
+      "messages": {
+        "updated": "Savol yangilandi",
+        "added": "Savol qo'shildi",
+        "deleted": "Savol o'chirildi",
+        "statusChanged": "Status o'zgartirildi"
+      },
+      "confirm": {
+        "delete": "Savolni o'chirmoqchimisiz?",
+        "deleteTitle": "Savolni o'chirish",
+        "deleteDescription": "Bu savol va unga tegishli barcha ma'lumotlar butunlay o'chiriladi. Bu amalni qaytarib bo'lmaydi."
+      },
+      "noQuestions": "Savollar mavjud emas",
+      "statistics": {
+        "total": "Jami: {{total}} ta savol",
+        "filtered": "Filtrlangan: {{count}} ta natija"
+      },
+      "status": {
+        "active": "Faol",
+        "inactive": "Nofaol",
+        "activated": "faollashtirildi",
+        "deactivated": "o'chirildi"
+      }
+    },
+    "topics": {
+      "title": "Mavzular",
+      "add_topic": "Mavzu qo'shish",
+      "addNew": "Yangi mavzu",
+      "total": "Jami",
+      "order": "Tartib",
+      "questionCount": "Savollar soni",
+      "createdAt": "Yaratilgan",
+      "editTitle": "Mavzuni tahrirlash",
+      "createTitle": "Yangi mavzu qo'shish",
+      "name": "Mavzu nomi",
+      "description": "Tavsifi (ixtiyoriy)",
+      "noDescription": "Tavsif yo'q",
+      "orderNumber": "Tartib raqami",
+      "orderPlaceholder": "Avtomatik belgilanadi",
+      "orderHelp": "Kichik raqam - yuqorida ko'rsatiladi",
+      "isActive": "Mavzu faolmi?",
+      "statusHelp": "Nofaol - foydalanuvchilarga ko'rsatilmaydi",
+      "statusActiveHelp": "Faol - foydalanuvchilarga ko'rsatiladi",
+      "image": "Mavzu rasmi",
+      "uploadImage": "Rasm yuklash uchun bosing",
+      "uploadImageFiles": "Rasm yuklash",
+      "imageFormats": "JPG, PNG, GIF formatidagi fayllar (maks. 5MB)",
+      "dragDropFiles": "Bosing yoki tortib tashlang",
+      "uploadTitle": "Rasm yuklash",
+      "uploadDescription": "JPG, PNG, GIF formatidagi fayllar (maks. 5MB)",
+      "uploadHint": "Bosing yoki tortib tashlang",
+      "optional": "(ixtiyoriy)",
+      "status": "Holat",
+      "activeStatus": "Faol - foydalanuvchilarga ko'rsatiladi",
+      "inactiveStatus": "Nofaol - foydalanuvchilarga ko'rsatilmaydi",
+      "namePlaceholder": {
+        "uz": "Mavzu nomini kiriting...",
+        "uzCyrl": "Мавзу номини киритинг...",
+        "ru": "Введите название темы..."
+      },
+      "descriptionPlaceholder": {
+        "uz": "Mavzu haqida qisqacha ma'lumot...",
+        "uzCyrl": "Мавзу ҳақида қисқача маълумот...",
+        "ru": "Краткая информация о теме..."
+      },
+      "table": {
+        "name": "Nomi",
+        "questions_count": "Savollar soni",
+        "order": "Tartib",
+        "status": "Holat",
+        "actions": "Harakatlar"
+      },
+      "form": {
+        "name": "Mavzu nomi",
+        "description": "Tavsif",
+        "order": "Tartib raqami",
+        "status": "Status"
+      },
+      "errors": {
+        "loadFailed": "Mavzularni yuklashda xatolik",
+        "saveFailed": "Mavzuni saqlashda xatolik",
+        "deleteFailed": "Mavzuni o'chirishda xatolik",
+        "hasQuestions": "Bu mavzuda savollar mavjud. Avval savollarni o'chiring!",
+        "statusChangeFailed": "Mavzu statusini o'zgartirishda xatolik",
+        "orderChangeFailed": "Mavzu tartibini o'zgartirishda xatolik",
+        "nameRequired": "Mavzu nomi kiritilishi shart",
+        "invalidOrder": "Tartib raqami 0 dan katta bo'lishi kerak",
+        "imageSizeError": "Rasm hajmi 5MB dan katta bo'lmasligi kerak",
+        "imageTypeError": "Faqat JPG, PNG yoki WebP formatdagi rasmlar yuklanishi mumkin"
+      },
+      "messages": {
+        "createSuccess": "Mavzu muvaffaqiyatli qo'shildi",
+        "updateSuccess": "Mavzu muvaffaqiyatli yangilandi",
+        "deleteSuccess": "Mavzu o'chirildi",
+        "activated": "Mavzu faollashtirildi",
+        "deactivated": "Mavzu o'chirildi"
+      },
+      "confirm": {
+        "delete": "Mavzuni o'chirmoqchimisiz?",
+        "deleteDescription": "Bu mavzu va unga tegishli barcha savollar butunlay o'chiriladi. Bu amalni qaytarib bo'lmaydi."
+      }
+    },
+    "tickets": {
+      "title": "Biletlar",
+      "questions": "savollar",
+      "questionCount": "ta savol",
+      "add_ticket": "Bilet qo'shish",
+      "generate_tickets": "Biletlarni generatsiya qilish",
+      "noTickets": "Hech qanday bilet topilmadi",
+      "noSearchResults": "Qidiruv natijasi topilmadi",
+      "noTicketsDescription": "Yangi bilet qo'shish uchun yuqoridagi tugmalardan foydalaning.",
+      "search": {
+        "placeholder": "Bilet raqami bo'yicha qidiring..."
+      },
+      "filters": {
+        "allDifficulties": "Barcha qiyinlik darajalari",
+        "allStatuses": "Barcha holatlar",
+        "clear": "Filtrlarni tozalash"
+      },
+      "table": {
+        "number": "№",
+        "questions": "Savollar",
+        "questionsCount": "savol",
+        "difficulty": "Qiyinlik",
+        "status": "Holat",
+        "actions": "Amallar"
+      },
+      "status": {
+        "active": "Faol",
+        "inactive": "Nofaol"
+      },
+      "difficulty": {
+        "easy": "Oson",
+        "medium": "O'rta",
+        "hard": "Qiyin",
+        "mixed": "Aralash"
+      },
+      "actions": {
+        "activate": "Faol qilish",
+        "deactivate": "Nofaol qilish"
+      },
+      "modal": {
+        "searchQuestions": "Savollarni qidiring...",
+        "allTopics": "Barcha mavzular",
+        "allDifficulties": "Barcha qiyinlik darajalari",
+        "showingQuestions": "{{count}} / {{total}} savol ko'rsatilmoqda",
+        "selectAll": "Hammasini tanlash",
+        "deselectAll": "Tanlovni bekor qilish",
+        "noQuestionsFiltered": "Filtr bo'yicha savollar topilmadi",
+        "clearFilters": "Filtrlarni tozalash"
+      },
+      "form": {
+        "number": "Bilet raqami",
+        "questions": "Savollar",
+        "difficulty": "Qiyinlik darajasi",
+        "status": "Holat",
+        "editTitle": "Biletni tahrirlash",
+        "isActive": "Bilet faolmi?"
+      },
+      "generate": {
+        "title": "Biletlarni avtomatik generatsiya qilish",
+        "count": "Biletlar soni",
+        "questions_per_ticket": "Har bir biletdagi savollar soni",
+        "confirm": "Generatsiya qilish",
+        "warning": "Diqqat! Bu amal barcha mavjud biletlarni o'chirib, yangilarini yaratadi."
+      },
+      "errors": {
+        "loadError": "Biletlarni yuklashda xatolik",
+        "saveError": "Biletni saqlashda xatolik",
+        "deleteError": "Biletni o'chirishda xatolik",
+        "statusError": "Statusni o'zgartirishda xatolik",
+        "generateError": "Biletlarni generatsiya qilishda xatolik"
+      },
+      "messages": {
+        "selectQuestions": "Savollarni tanlang",
+        "updated": "Bilet yangilandi",
+        "added": "Bilet qo'shildi",
+        "deleted": "Bilet o'chirildi",
+        "statusChanged": "Status o'zgartirildi",
+        "generated": "Biletlar generatsiya qilindi"
+      },
+      "confirm": {
+        "delete": "Biletni o'chirmoqchimisiz?",
+        "deleteDescription": "Bu bilet va unga tegishli barcha ma'lumotlar butunlay o'chiriladi. Bu amalni qaytarib bo'lmaydi.",
+        "generate": "Biletlarni generatsiya qilmoqchimisiz? Bu amal barcha mavjud biletlarni o'chiradi."
+      },
+      "placeholders": {
+        "ticketNumber": "Bilet raqamini kiriting",
+        "selectDifficulty": "Qiyinlik darajasini tanlang"
+      },
+      "difficulty": {
+        "easy": "Oson",
+        "medium": "O'rtacha",
+        "hard": "Qiyin",
+        "mixed": "Aralash"
+      }
+    },
+    "payments": {
+      "title": "To'lovlar",
+      "filters": {
+        "all": "Hammasi",
+        "pending": "Kutilmoqda",
+        "completed": "To'langan",
+        "failed": "Muvaffaqiyatsiz",
+        "refunded": "Qaytarilgan"
+      },
+      "method": {
+        "all": "Barcha usullar",
+        "click": "Click",
+        "payme": "Payme",
+        "cash": "Naqd pul"
+      },
+      "table": {
+        "user": "Foydalanuvchi",
+        "amount": "Summa",
+        "type": "Turi",
+        "method": "Usul",
+        "status": "Holat",
+        "date": "Sana",
+        "actions": "Harakatlar"
+      },
+      "actions": {
+        "view": "Ko'rish",
+        "confirm": "Tasdiqlash",
+        "refund": "Qaytarish",
+        "cancel": "Bekor qilish",
+        "clear": "Tozalash",
+        "export": "Eksport"
+      },
+      "stats": {
+        "totalRevenue": "Jami daromad",
+        "totalPayments": "Jami to'lovlar",
+        "pendingPayments": "Kutilayotgan to'lovlar",
+        "averagePayment": "O'rtacha to'lov",
+        "dailyRevenue": "Kunlik daromad"
+      },
+      "details": {
+        "title": "To'lov tafsilotlari",
+        "transaction_id": "Tranzaksiya ID",
+        "payment_method": "To'lov usuli",
+        "subscription_type": "Obuna turi",
+        "user_info": "Foydalanuvchi ma'lumotlari",
+        "payment_info": "To'lov ma'lumotlari"
+      },
+      "errors": {
+        "confirmError": "To'lovni tasdiqlashda xatolik",
+        "refundAmount": "Qaytarish summasini kiriting",
+        "refundAmountExceed": "Qaytarish summasi to'lov summasidan oshmasligi kerak",
+        "refundReason": "Qaytarish sababini kiriting"
+      },
+      "messages": {
+        "confirmed": "To'lov tasdiqlandi",
+        "refunded": "To'lov qaytarildi",
+        "exportSuccess": "To'lovlar eksport qilindi",
+        "exportError": "Eksport qilishda xatolik",
+        "loadError": "To'lovlarni yuklashda xatolik",
+        "confirmPayment": "To'lovni tasdiqlashni xohlaysizmi?",
+        "paymentConfirmed": "To'lov muvaffaqiyatli tasdiqlandi",
+        "confirmError": "To'lovni tasdiqlashda xatolik",
+        "refundAmountError": "Qaytarish summasi noto'g'ri",
+        "refundAmountExceed": "Qaytarish summasi to'lov summasidan oshmasligi kerak",
+        "refundReasonError": "Qaytarish sababi kamida 10 ta belgidan iborat bo'lishi kerak",
+        "refundSuccess": "To'lov muvaffaqiyatli qaytarildi",
+        "refundError": "To'lovni qaytarishda xatolik",
+        "refundTitle": "To'lovni qaytarish",
+        "refundAmount": "Qaytarish summasi",
+        "refundReason": "Qaytarish sababi",
+        "exportSuccess": "To'lovlar muvaffaqiyatli eksport qilindi"
+      },
+      "confirm": {
+        "confirm": "To'lovni tasdiqlashni xohlaysizmi?"
+      },
+      "placeholders": {
+        "startDate": "Boshlanish sanasi",
+        "endDate": "Tugash sanasi",
+        "refundReason": "Qaytarish sababini kiriting"
+      },
+      "status": {
+        "all": "Barcha statuslar",
+        "pending": "Kutilmoqda",
+        "completed": "To'langan",
+        "failed": "Muvaffaqiyatsiz",
+        "refunded": "Qaytarilgan"
+      },
+      "method": {
+        "all": "Barcha usullar",
+        "click": "Click",
+        "payme": "Payme",
+        "cash": "Naqd pul"
+      },
+      "labels": {
+        "paymentsManagement": "To'lovlarni boshqarish",
+        "dailyRevenueChart": "Kunlik daromad grafigi",
+        "paidAt": "To'langan vaqt",
+        "maximum": "Maksimal"
+      },
+      "stats": {
+        "totalRevenue": "Umumiy daromad",
+        "totalPayments": "Jami to'lovlar",
+        "pendingPayments": "Kutilayotgan to'lovlar",
+        "averagePayment": "O'rtacha to'lov",
+        "dailyRevenue": "Kunlik daromad"
+      },
+      "actions": {
+        "view": "Ko'rish",
+        "confirm": "Tasdiqlash",
+        "refund": "Qaytarish",
+        "cancel": "Bekor qilish",
+        "clear": "Tozalash",
+        "export": "Eksport"
+      },
+      "subscriptionTypes": {
+        "15_days": "15 kunlik",
+        "1_month": "1 oylik",
+        "3_months": "3 oylik"
+      }
+    },
+    "reports": {
+      "title": "Hisobotlar",
+      "errors": {
+        "loadError": "Hisobotlarni yuklashda xatolik",
+        "exportError": "Eksport qilishda xatolik"
+      },
+      "messages": {
+        "exportSuccess": "Hisobot muvaffaqiyatli eksport qilindi"
+      },
+      "types": {
+        "overall": "Umumiy hisobot",
+        "users": "Foydalanuvchilar hisoboti",
+        "revenue": "Daromad hisoboti",
+        "tests": "Testlar hisoboti"
+      },
+      "stats": {
+        "newUsers": "Yangi foydalanuvchilar",
+        "activeSubscriptions": "Faol obunalar",
+        "conversion": "Konversiya",
+        "totalRevenue": "Umumiy daromad",
+        "paymentCount": "To'lovlar soni",
+        "averagePayment": "O'rtacha to'lov",
+        "dailyAverage": "Kunlik o'rtacha",
+        "totalTests": "Jami testlar",
+        "passedTests": "O'tilgan testlar",
+        "passRate": "O'tish darajasi",
+        "averageScore": "O'rtacha ball"
+      },
+      "labels": {
+        "newRegistrations": "Yangi ro'yxatdan o'tganlar",
+        "bySubscriptionType": "Obuna turi bo'yicha",
+        "dailyRevenue": "Kunlik daromad",
+        "testTypeDistribution": "Test turlari taqsimoti",
+        "overallTrend": "Umumiy tendensiya",
+        "systemActivity": "Tizim faoliyati",
+        "period": "Davr",
+        "refresh": "Yangilash"
+      },
+      "table": {
+        "name": "Ism",
+        "phone": "Telefon",
+        "subscription": "Obuna",
+        "date": "Sana"
+      },
+      "status": {
+        "active": "Faol",
+        "inactive": "Nofaol"
+      },
+      "subscriptionTypes": {
+        "15days": "15 kunlik",
+        "1month": "1 oylik",
+        "3months": "3 oylik"
+      },
+      "testTypes": {
+        "byTopic": "Mavzu bo'yicha",
+        "byTicket": "Bilet bo'yicha",
+        "random": "Tasodifiy",
+        "exam": "Imtihon",
+        "errorQuestions": "Xato savollar"
+      },
+      "charts": {
+        "tests": "Testlar",
+        "users": "Foydalanuvchilar"
+      },
+      "weekDays": {
+        "mon": "Dush",
+        "tue": "Sesh",
+        "wed": "Chor",
+        "thu": "Pay",
+        "fri": "Jum",
+        "sat": "Shan",
+        "sun": "Yak"
+      },
+      "filters": {
+        "date_range": "Sana oralig'i",
+        "start_date": "Boshlanish sanasi",
+        "end_date": "Tugash sanasi",
+        "report_type": "Hisobot turi"
+      },
+      "actions": {
+        "generate": "Hisobot yaratish",
+        "export_excel": "Excel eksport",
+        "export_pdf": "PDF eksport",
+        "print": "Chop etish"
+      }
+    },
+    "settings": {
+      "title": "Sozlamalar",
+      "tabs": {
+        "general": "Umumiy",
+        "subscription": "Obuna",
+        "payment": "To'lov",
+        "notification": "Bildirishnoma",
+        "system": "Tizim",
+        "subscriptionSettings": "Obuna sozlamalari",
+        "examSettings": "Imtihon sozlamalari",
+        "notifications": "Bildirishnomalar",
+        "contactInfo": "Kontakt ma'lumotlar"
+      },
+      "messages": {
+        "loadError": "Sozlamalarni yuklashda xatolik",
+        "saveSuccess": "Sozlamalar muvaffaqiyatli saqlandi",
+        "saveError": "Sozlamalarni saqlashda xatolik",
+        "notificationSuccess": "Xabar muvaffaqiyatli yuborildi",
+        "notificationError": "Xabar yuborishda xatolik"
+      },
+      "labels": {
+        "questionsCount": "Savollar soni",
+        "timeLimit": "Vaqt chegarasi (daqiqa)",
+        "subscriptionWarnings": "Obuna ogohlantirishlari",
+        "profileDeletionPeriod": "Profil o'chirish muddati (kun)",
+        "phoneNumber": "Telefon raqami",
+        "contactUrl": "Aloqa manzili",
+        "email": "Email manzil",
+        "address": "Manzil",
+        "title": "Sarlavha",
+        "message": "Xabar matni",
+        "priority": "Muhimlik darajasi"
+      },
+      "placeholders": {
+        "address": "To'liq manzilni kiriting"
+      },
+      "priority": {
+        "low": "Past",
+        "medium": "O'rtacha",
+        "high": "Yuqori"
+      },
+      "notes": {
+        "priceNote": "Narxlar so'mda ko'rsatilgan",
+        "examNote": "Imtihon sozlamalari barcha imtihon testlariga ta'sir qiladi"
+      },
+      "general": {
+        "site_name": "Sayt nomi",
+        "site_description": "Sayt tavsifi",
+        "contact_email": "Aloqa email",
+        "contact_phone": "Aloqa telefoni",
+        "address": "Manzil",
+        "timezone": "Vaqt zonasi",
+        "language": "Til"
+      },
+      "subscription": {
+        "types": "Obuna turlari",
+        "prices": "Narxlar",
+        "duration": "Muddati",
+        "features": "Xususiyatlari",
+        "trial_period": "Sinov muddati",
+        "auto_renewal": "Avtomatik yangilash"
+      },
+      "payment": {
+        "methods": "To'lov usullari",
+        "currency": "Valyuta",
+        "tax_rate": "Soliq stavkasi",
+        "payment_gateway": "To'lov tizimi",
+        "api_keys": "API kalitlari"
+      },
+      "notification": {
+        "email_notifications": "Email bildirishnomalar",
+        "sms_notifications": "SMS bildirishnomalar",
+        "push_notifications": "Push bildirishnomalar",
+        "notification_templates": "Bildirishnoma shablonlari"
+      },
+      "system": {
+        "maintenance_mode": "Texnik xizmat rejimi",
+        "backup_settings": "Zaxira sozlamalari",
+        "security_settings": "Xavfsizlik sozlamalari",
+        "performance": "Ishlash samaradorligi",
+        "logs": "Tizim jurnallari"
+      },
+      "subtitle": "Tizim sozlamalari va konfiguratsiyasi",
+      "subscriptionPricing": "Obuna narxlari",
+      "15DaysPrice": "15 kunlik obuna narxi",
+      "1MonthPrice": "1 oylik obuna narxi",
+      "3MonthsPrice": "3 oylik obuna narxi",
+      "examConfiguration": "Imtihon sozlamalari",
+      "passingPercentage": "O'tish foizi",
+      "notificationConfiguration": "Bildirishnoma sozlamalari",
+      "subscriptionWarningDescription": "Obuna tugashidan necha kun oldin ogohlantirishlar yuboriladi",
+      "profileDeletionDescription": "Obuna tugaganidan keyin necha kundan so'ng profil o'chiriladi",
+      "sendBulkNotification": "Ommaviy xabar yuborish",
+      "contactInformation": "Kontakt ma'lumotlar",
+      "contactInfoNote": "Bu ma'lumotlar foydalanuvchilarga ko'rsatiladi",
+      "socialMediaLinks": "Ijtimoiy tarmoqlar",
+      "notificationTitle": "Sarlavha",
+      "notificationMessage": "Xabar matni",
+      "priorityLevel": "Muhimlik darajasi",
+      "sendToAllActiveUsers": "Barcha faol foydalanuvchilarga yuborish"
+    },
+    "notifications": {
+      "sendBulk": "Ommaviy xabar yuborish",
+      "recipients": "Qabul qiluvchilar",
+      "allUsers": "Barcha foydalanuvchilarga",
+      "selectedUsers": "Tanlangan foydalanuvchilarga ({{count}} ta)",
+      "priority": "Muhimlik darajasi",
+      "title": "Sarlavha",
+      "message": "Xabar matni"
+    }
+  },
+  "payment": {
+    "title": "To'lov",
+    "select_plan": "Obuna rejasini tanlang",
+    "plans": {
+      "15_days": {
+        "name": "15 kunlik",
+        "price": "30,000 so'm",
+        "features": [
+          "Barcha mavzularga kirish",
+          "Cheksiz test topshirish",
+          "Natijalar tahlili",
+          "24/7 qo'llab-quvvatlash"
+        ]
+      },
+      "1_month": {
+        "name": "1 oylik",
+        "price": "50,000 so'm",
+        "features": [
+          "Barcha mavzularga kirish",
+          "Cheksiz test topshirish",
+          "Natijalar tahlili",
+          "24/7 qo'llab-quvvatlash",
+          "Maxsus tayyorgarlik materiallari"
+        ],
+        "popular": true
+      },
+      "3_months": {
+        "name": "3 oylik",
+        "price": "120,000 so'm",
+        "features": [
+          "Barcha mavzularga kirish",
+          "Cheksiz test topshirish",
+          "Natijalar tahlili",
+          "24/7 qo'llab-quvvatlash",
+          "Maxsus tayyorgarlik materiallari",
+          "Shaxsiy o'qituvchi maslahati"
+        ],
+        "discount": "20% tejash"
+      }
+    },
+    "payment_methods": {
+      "title": "To'lov usulini tanlang",
+      "click": "Click",
+      "payme": "Payme",
+      "cash": "Naqd pul"
+    },
+    "process": {
+      "processing": "To'lov qayta ishlanmoqda...",
+      "success": "To'lov muvaffaqiyatli amalga oshirildi!",
+      "failed": "To'lov muvaffaqiyatsiz. Qayta urinib ko'ring.",
+      "pending": "To'lov kutilmoqda..."
+    },
+    "invoice": {
+      "title": "Hisob-faktura",
+      "invoice_number": "Hisob-faktura raqami",
+      "date": "Sana",
+      "due_date": "To'lov muddati",
+      "bill_to": "Qabul qiluvchi",
+      "description": "Tavsif",
+      "amount": "Summa",
+      "subtotal": "Jami",
+      "tax": "Soliq",
+      "total": "Umumiy summa",
+      "payment_method": "To'lov usuli",
+      "transaction_id": "Tranzaksiya ID"
+    }
+  },
+  "placeholders": {
+    "address": "Toshkent sh., Yunusobod tumani..."
+  },
+  "errors": {
+    "404": {
+      "title": "Sahifa topilmadi",
+      "message": "Kechirasiz, siz qidirayotgan sahifa topilmadi.",
+      "button": "Bosh sahifaga qaytish"
+    },
+    "500": {
+      "title": "Server xatosi",
+      "message": "Kechirasiz, serverda xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring.",
+      "button": "Sahifani yangilash"
+    },
+    "403": {
+      "title": "Kirish taqiqlangan",
+      "message": "Kechirasiz, sizda bu sahifaga kirish huquqi yo'q.",
+      "button": "Orqaga qaytish"
+    },
+    "network": {
+      "title": "Tarmoq xatosi",
+      "message": "Internet aloqangizni tekshiring va qayta urinib ko'ring.",
+      "button": "Qayta urinish"
+    },
+    "general": {
+      "title": "Xatolik yuz berdi",
+      "message": "Kutilmagan xatolik yuz berdi. Iltimos, qayta urinib ko'ring.",
+      "button": "Qayta urinish"
+    },
+    "boundary": {
+      "title": "Xatolik yuz berdi",
+      "message": "Kutilmagan xatolik yuz berdi. Iltimos, sahifani yangilang yoki keyinroq qayta urinib ko'ring.",
+      "button": "Qayta urinish",
+      "stackTrace": "Stack trace"
+    },
+    "loadingUser": "Foydalanuvchi ma'lumotlarini yuklashda xatolik",
+    "loginFailed": "Tizimga kirishda xatolik",
+    "registrationFailed": "Ro'yxatdan o'tishda xatolik",
+    "logoutFailed": "Tizimdan chiqishda xatolik",
+    "passwordUpdateFailed": "Parolni yangilashda xatolik",
+    "tooManyAttempts": "{{message}}",
+    "deviceChanged": "Qurilma o'zgarganligi aniqlandi. Xavfsizlik maqsadida qayta kiring.",
+    "sessionExpired": "Sessiya muddati tugadi. Qayta kiring.",
+    "subscriptionRequired": "Bu funksiyadan foydalanish uchun obuna kerak",
+    "unauthorized": "Ruxsat etilmagan",
+    "dataNotFound": "Ma'lumot topilmadi",
+    "server": "Server xatosi",
+    "networkConnection": "Internet aloqasini tekshiring",
+    "somethingWentWrong": "Nimadir xato ketdi",
+    "validation": {
+      "required": "Bu maydon to'ldirilishi shart",
+      "email": "To'g'ri email manzilini kiriting",
+      "phone": "To'g'ri telefon raqamini kiriting",
+      "phoneLength": "Telefon raqami 9 ta raqamdan iborat bo'lishi kerak",
+      "min_length": "Kamida {{min}} ta belgi bo'lishi kerak",
+      "max_length": "Ko'pi bilan {{max}} ta belgi bo'lishi kerak",
+      "min_value": "Qiymat kamida {{min}} bo'lishi kerak",
+      "max_value": "Qiymat ko'pi bilan {{max}} bo'lishi kerak",
+      "pattern": "Noto'g'ri format",
+      "password_match": "Parollar mos kelmadi",
+      "password_mismatch": "Пароллар мос келмаяпти",
+      "unique": "Bu qiymat allaqachon mavjud"
+    }
+  },
+  "footer": {
+    "description": "Professional haydovchilik imtihoniga tayyorgarlik platformasi",
+    "quickLinks": "Tez havolalar",
+    "contactTitle": "Bog'lanish",
+    "socialMedia": "Ijtimoiy tarmoqlar",
+    "rights": "Barcha huquqlar himoyalangan",
+    "address": "Qoraqalpog'iston Respublikasi, Beruniy tumani",
+    "phone": "+998 93 365 50 60",
+    "email": "info@behzodavtoustoz.uz",
+    "about": {
+      "title": "Biz haqimizda",
+      "description": "Behzod Avtoustoz - haydovchilik guvohnomasi imtihoniga tayyorlanish uchun zamonaviy onlayn platforma.",
+      "mission": "Bizning maqsadimiz - har bir o'quvchiga sifatli ta'lim berish va imtihonga muvaffaqiyatli tayyorlash."
+    },
+    "links": {
+      "title": "Foydali havolalar",
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "contact": "Aloqa",
+      "privacy": "Maxfiylik siyosati",
+      "terms": "Foydalanish shartlari",
+      "faq": "Ko'p beriladigan savollar"
+    },
+    "contact": {
+      "title": "Aloqa",
+      "phone": "Telefon",
+      "email": "Email",
+      "address": "Manzil",
+      "working_hours": "Ish vaqti",
+      "monday_friday": "Dushanba - Juma",
+      "saturday": "Shanba",
+      "sunday": "Yakshanba"
+    },
+    "social": {
+      "title": "Ijtimoiy tarmoqlar",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "youtube": "YouTube"
+    },
+    "copyright": "© {{year}} Behzod Avtoustoz. Barcha huquqlar himoyalangan.",
+    "developed_by": "Tomonidan ishlab chiqilgan"
+  },
+  "toast": {
+    "success": {
+      "login": "Tizimga muvaffaqiyatli kirdingiz",
+      "register": "Ro'yxatdan muvaffaqiyatli o'tdingiz",
+      "logout": "Tizimdan chiqdingiz",
+      "passwordUpdated": "Parol muvaffaqiyatli yangilandi"
+    }
+  },
+  "subscription": {
+    "types": {
+      "15_days": "15 kunlik",
+      "1_month": "1 oylik",
+      "3_months": "3 oylik",
+      "15_days_full": "15 kunlik obuna",
+      "1_month_full": "1 oylik obuna",
+      "3_months_full": "3 oylik obuna"
+    }
+  },
+  "payment": {
+    "status": {
+      "completed": "To'langan",
+      "pending": "Kutilmoqda",
+      "cancelled": "Bekor qilingan"
+    },
+    "methods": {
+      "cash": "Naqd pul",
+      "card": "Plastik karta",
+      "online": "Onlayn to'lov",
+      "payme": "Payme",
+      "click": "Click"
+    }
+  },
+  "test": {
+    "types": {
+      "topic": "Mavzu bo'yicha",
+      "ticket": "Bilet bo'yicha",
+      "random": "Tasodifiy",
+      "exam": "Imtihon"
+    }
+  }
+}

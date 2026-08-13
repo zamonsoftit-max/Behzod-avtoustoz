@@ -1,0 +1,44 @@
+# Monorepo root .gitignore (frontend/ va backend/ uchun umumiy)
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment (maxfiy)
+.env
+**/.env
+.env.local
+**/.env.local
+.env.*.local
+**/.env.*.local
+
+# Build / dist
+build/
+dist/
+**/build/
+**/dist/
+
+# Uploads (yuklangan fayllar)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
+*.log
+**/*.log
+logs/
+
+# Archives
+*.tar.gz
+*.zip
+
+# Editor / OS / tools
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Misc
+.eslintcache
+coverage/

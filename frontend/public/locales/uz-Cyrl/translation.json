@@ -1,0 +1,1842 @@
+{
+  "common": {
+    "appName": "Behzod Avtoustoz",
+    "theme": "Мавзу",
+    "welcome": "Хуш келибсиз",
+    "loading": "Юкланмоқда...",
+    "save": "Сақлаш",
+    "cancel": "Бекор қилиш",
+    "delete": "Ўчириш",
+    "edit": "Таҳрирлаш",
+    "search": "Қидириш",
+    "filter": "Фильтр",
+    "sort": "Саралаш",
+    "yes": "Ҳа",
+    "no": "Йўқ",
+    "confirm": "Тасдиқлаш",
+    "back": "Орқага",
+    "next": "Кейинги",
+    "previous": "Олдинги",
+    "close": "Ёпиш",
+    "submit": "Юбориш",
+    "create": "Яратиш",
+    "update": "Янгилаш",
+    "view": "Кўриш",
+    "download": "Юклаб олиш",
+    "upload": "Юклаш",
+    "select": "Танлаш",
+    "all": "Ҳаммаси",
+    "none": "Ҳеч бири",
+    "or": "ёки",
+    "and": "ва",
+    "of": "дан",
+    "to": "га",
+    "from": "дан",
+    "with": "билан",
+    "without": "сиз",
+    "per": "ҳар",
+    "page": "саҳифа",
+    "pages": "саҳифалар",
+    "item": "элемент",
+    "items": "элементлар",
+    "result": "натижа",
+    "results": "натижалар",
+    "showing": "Кўрсатилмоқда",
+    "total": "Жами",
+    "selected": "та танланган",
+    "selectedLowercase": "танланган",
+    "clear": "Тозалаш",
+    "reset": "Қайта ўрнатиш",
+    "apply": "Қўллаш",
+    "confirmDelete": "Ўчиришни тасдиқланг",
+    "confirmDeleteMessage": "Бу амални қайтариб бўлмайди. Давом етишни хоҳлайсизми?",
+    "deleting": "Ўчирилмоқда...",
+    "remove": "Ўчириш",
+    "add": "Қўшиш",
+    "copy": "Нусхалаш",
+    "copied": "Нусхаланди",
+    "share": "Улашиш",
+    "print": "Чоп этиш",
+    "export": "Экспорт",
+    "import": "Импорт",
+    "refresh": "Янгилаш",
+    "retry": "Қайта уриниш",
+    "warning": "Огоҳлантириш",
+    "info": "Маълумот",
+    "success": "Муваффақият",
+    "error": "Хатолик",
+    "errors": {
+      "network": "Интернет уланиши йўқ. Илтимос, интернетингизни текширинг"
+    },
+    "confirmMessage": "Бу амални бажармоқчимисиз?",
+    "language": "Тил",
+    "send": "Юбориш",
+    "sending": "Юборилмоқда...",
+    "priority": {
+      "low": "Паст",
+      "medium": "Ўртача",
+      "high": "Юқори",
+      "urgent": "Жуда муҳим"
+    },
+    "phoneNumber": "Телефон рақами",
+    "password": "Парол",
+    "fullName": "Тўлиқ исм",
+    "admin": "Админ",
+    "logout": "Чиқиш",
+    "uz": "Ўзбек (лотин)",
+    "uzCyrl": "Ўзбек (кирилл)",
+    "ru": "Русча",
+    "currency": "сўм",
+    "deleted": "Ўчирилган",
+    "no_notifications": "Билдиришномалар йўқ",
+    "notifications": "Билдиришномалар",
+    "view_all": "Ҳаммасини кўриш",
+    "ticket": "Билет",
+    "days": "кун",
+    "notAvailable": "Мавжуд эмас"
+  },
+  "landing": {
+    "hero": {
+      "title": "BEHZOD AVTOUSTOZ",
+      "subtitle": "Профессионал ҳайдовчилик имтиҳонига тайёргарлик",
+      "cta": "ТИЗИМГА КИРИШ",
+      "safeReliable": "100% хавфсиз ва ишончли",
+      "register": "Рўйхатдан ўтиш",
+      "login": "Кириш",
+      "students": "{{count}} ўқувчи"
+    },
+    "features": {
+      "title": "Хизматларимиз",
+      "subtitle": "Бизнинг платформамизда сиз учун керак бўлган барча имкониятлар мавжуд",
+      "tests": {
+        "title": "1000+ тест саволлари",
+        "description": "Барча мавзулар бўйича"
+      },
+      "tickets": {
+        "title": "100+ билет",
+        "description": "Ҳар бирида 10 та савол"
+      },
+      "online": {
+        "title": "24/7 онлайн",
+        "description": "Исталган вақтда ўқиш имконияти"
+      },
+      "auto": {
+        "title": "Автоматик текшириш",
+        "description": "Натижалар дарҳол"
+      }
+    },
+    "statistics": {
+      "title": "Натижалар",
+      "subtitle": "Бизнинг ютуқларимиз рақамларда",
+      "students": "Рўйхатдан ўтган ўқувчилар",
+      "passed": "Имтиҳондан ўтганлар",
+      "questions": "Тест саволлари сони",
+      "active": "Фаол ўқувчилар сони"
+    },
+    "functions": {
+      "subtitle": "Бизнинг платформамиз орқали ҳайдовчилик имтиҳонига тайёргарлик кўринг",
+      "practice": {
+        "title": "Тест Машқлари",
+        "description": "1000+ тест саволларидан иборат тўплам билан билимингизни мустаҳкамланг"
+      },
+      "simulation": {
+        "title": "Имтиҳон Симуляцияси",
+        "description": "Ҳақиқий имтиҳон шароитида ўз билимингизни синаб кўринг"
+      },
+      "analysis": {
+        "title": "Натижалар Таҳлили",
+        "description": "Батафсил статистика ва таҳлил билан ўз билимингизни баҳоланг"
+      }
+    },
+    "tryTest": {
+      "subtitle": "Рўйхатдан ўтишдан олдин платформамизни синаб кўринг",
+      "demo": {
+        "title": "Бепул демо тест",
+        "description": "10 та саволдан иборат демо тест орқали платформамизнинг қулайликларини ҳис этинг",
+        "button": "Демо тестни бошлаш"
+      }
+    },
+    "cta": {
+      "title": "Ҳайдовчилик имтиҳонига тайёр бўлинг!",
+      "subtitle": "Минглаб ўқувчилар бизнинг платформамиз орқали муваффақиятли имтиҳон топширган. Сиз ҳам уларнинг сафига қўшилинг!",
+      "startNow": "Ҳозир бошланг",
+      "haveAccount": "Аккаунтингиз борми? Кириш",
+      "safe": "100% Хавфсиз",
+      "verified": "Тасдиқланган",
+      "users": "5K+ Фойдаланувчи"
+    },
+    "stats": {
+      "success": "Муваффақият",
+      "online": "Онлайн"
+    }
+  },
+  "navigation": {
+    "home": "Бош саҳифа",
+    "dashboard": "Бошқарув панели",
+    "features": "Имкониятлар",
+    "functions": "Хизматлар",
+    "statistics": "Натижалар",
+    "tryTest": "Тестни синаб кўринг",
+    "contact": "Алоқа",
+    "profile": "Профиль",
+    "tests": "Тестлар",
+    "results": "Натижалар",
+    "statistics": "Натижалар таҳлили",
+    "timeRange": {
+      "week": "Ҳафта",
+      "month": "Ой",
+      "all": "Барчаси"
+    },
+    "notifications": "Билдиришномалар",
+    "settings": "Созламалар",
+    "logout": "Чиқиш",
+    "login": "Кириш",
+    "register": "Рўйхатдан ўтиш",
+    "about": "Биз ҳақимизда",
+    "contact": "Алоқа",
+    "help": "Ёрдам",
+    "privacy": "Махфийлик сиёсати",
+    "terms": "Фойдаланиш шартлари",
+    "payments": "Тўловлар"
+  },
+  "tests": {
+    "random_test": "Тасодифий Тест",
+    "exam": "Имтиҳон Топшириш"
+  },
+  "demoTest": {
+    "title": "Демо Тест",
+    "questionFormat": "Савол {{current}} / {{total}}",
+    "ticketNumber": "Билет №{{number}}",
+    "testResults": "Тест натижалари",
+    "demoTestResult": "Демо тест натижалари",
+    "overallResult": "Умумий натижа",
+    "correctAnswers": "Тўғри жавоблар",
+    "wrongAnswers": "Хато жавоблар",
+    "answerAnalysis": "Жавоблар таҳлили",
+    "yourAnswer": "Сизнинг жавобингиз",
+    "correctAnswer": "Тўғри жавоб",
+    "noAnswerGiven": "Жавоб берилмаган",
+    "homePageButton": "Бош саҳифа",
+    "registerButton": "Рўйхатдан ўтиш",
+    "previousButton": "Олдинги",
+    "nextButton": "Кейинги",
+    "finishTestButton": "Тестни якунлаш",
+    "answersGivenFormat": "{{answered}} / {{total}} жавоб берилди",
+    "testInfo": "Тест маълумотлари",
+    "testType": "Тест тури",
+    "demo": "Демо тест",
+    "totalQuestions": "Жами саволлар",
+    "timeTaken": "Сарфланган вақт",
+    "explanation": "Тушунтириш"
+  },
+  "auth": {
+    "loginTitle": "Тизимга кириш",
+    "welcomeBack": "Хуш келибсиз! Давом этиш учун тизимга киринг",
+    "phoneNumber": "Телефон рақами",
+    "phoneNumberRequired": "Телефон рақами киритилиши шарт",
+    "phoneNumberLength": "Телефон рақами 9 та рақамдан иборат бўлиши керак",
+    "password": "Парол",
+    "passwordRequired": "Парол киритилиши шарт",
+    "passwordTooShort": "Парол камида 6 та белгидан иборат бўлиши керак",
+    "confirmPassword": "Паролни тасдиқланг",
+    "forgotPassword": "Паролни унутдингизми?",
+    "resetPassword": "Паролни тиклаш",
+    "newPassword": "Янги парол",
+    "passwordMismatch": "Пароллар мос келмаяпти",
+    "loginButton": "Кириш",
+    "registerButton": "Рўйхатдан ўтиш",
+    "dontHaveAccount": "Ҳисобингиз йўқми?",
+    "alreadyHaveAccount": "Ҳисобингиз борми?",
+    "registerTitle": "Рўйхатдан ўтиш",
+    "createAccount": "Янги ҳисоб яратинг",
+    "fullName": "Тўлиқ исм",
+    "login": {
+      "title": "Тизимга кириш",
+      "subtitle": "Давом этиш учун тизимга киринг",
+      "phone_placeholder": "+998 90 123 45 67",
+      "password_placeholder": "Паролингизни киритинг",
+      "remember_me": "Мени эслаб қол",
+      "forgot_password": "Паролни унутдингизми?",
+      "login_button": "Кириш",
+      "no_account": "Ҳисобингиз йўқми?",
+      "register_link": "Рўйхатдан ўтинг"
+    },
+    "register": {
+      "title": "Рўйхатдан ўтиш",
+      "subtitle": "Янги ҳисоб яратинг",
+      "full_name_placeholder": "Исм Фамилия",
+      "phone_placeholder": "+998 90 123 45 67",
+      "password_placeholder": "Парол",
+      "confirm_password_placeholder": "Паролни тасдиқланг",
+      "register_button": "Рўйхатдан ўтиш",
+      "have_account": "Ҳисобингиз борми?",
+      "login_link": "Тизимга киринг",
+      "terms_agree": "Рўйхатдан ўтиш орқали сиз",
+      "terms_link": "фойдаланиш шартлари",
+      "and": "ва",
+      "privacy_link": "махфийлик сиёсати",
+      "agree_suffix": "га розилик билдирасиз",
+      "fullname_required": "Исм ва фамилия мажбурий",
+      "fullname_min_length": "Исм ва фамилия камида 3 та белгидан иборат бўлиши керак",
+      "fullname_pattern": "Фақат ҳарфлар киритиш мумкин",
+      "phone_required": "Телефон рақами мажбурий",
+      "phone_pattern": "Телефон рақами нотўғри форматда",
+      "password_required": "Пароль мажбурий",
+      "password_min_length": "Пароль камида 8 та белгидан иборат бўлиши керак",
+      "password_pattern": "Парол камида битта катта ҳарф, битта кичик ҳарф ва битта рақам ўз ичига олиши керак",
+      "confirm_password_required": "Паролни тасдиқлаш мажбурий",
+      "passwords_not_match": "Пароллар мос келмади"
+    },
+    "logout": {
+      "confirm_title": "Чиқишни тасдиқлаш",
+      "confirm_message": "Тизимдан чиқмоқчимисиз?",
+      "confirm_button": "Ҳа, чиқиш",
+      "cancel_button": "Бекор қилиш"
+    },
+    "sendCode": "Код юбориш",
+    "enterPhone": "Телефон рақамингизни киритинг, СМС орқали код юборамиз",
+    "verificationCode": "Тасдиқлаш коди",
+    "enterCode": "СМС орқали юборилган кодни киритинг",
+    "resendCode": "Кодни қайта юбориш",
+    "codeExpired": "Код муддати тугаган",
+    "invalidCode": "Код нотўғри",
+    "codeSent": "Код юборилди",
+    "verifyCode": "Кодни тасдиқлаш",
+    "enterCodeAndPassword": "СМС кодни ва янги паролни киритинг",
+    "updatePassword": "Паролни янгилаш",
+    "sendToAnotherNumber": "Бошқа рақамга юбориш",
+    "phoneNumberHelp": "Телефон рақамингизни киритинг, СМС орқали код юборамиз",
+    "fullNameLabel": "Тўлиқ исм",
+    "fullNamePlaceholder": "Исм Фамилия",
+    "codeInvalidLength": "Код 6 та рақамдан иборат бўлиши керак",
+    "password_reset_success": "Парол муваффақиятли янгиланди",
+    "passwordResetSuccess": "Парол муваффақиятли янгиланди",
+    "rememberPassword": "Паролни эсладингизми?",
+    "enterNewPassword": "Янги паролни киритинг",
+    "codeRequired": "СМС кодни киритинг",
+    "codeVerified": "Код тасдиқланди",
+    "devMode": {
+      "title": "Ишлаб чиқиш режими - СМС Код",
+      "copyCode": "Кодни нусхалаш",
+      "codeCopied": "Код нусхаланди!",
+      "invalidToken": "Нотўғри токен. Юқорида кўрсатилган токендан фойдаланинг.",
+      "smsCode": "СМС Код"
+    },
+    "maxAttemptsReached": "Максимал уринишлар сонига етди. 24 соат кутинг",
+    "smsBlocked": "СМС юбориш блокланган",
+    "attemptsRemaining": "Қолган уринишлар: {{attempts}}"
+  },
+  "student": {
+    "payments": {
+      "title": "Тўловлар",
+      "subtitle": "Обунангизни бошқаринг ва тўлов тарихини кўринг",
+      "refresh": "Янгилаш",
+      "subscriptionType": "Обуна тури",
+      "endDate": "Тугаш санаси",
+      "active": "Фаол",
+      "inactive": "Нофаол",
+      "purchaseButton": "Сотиб олиш",
+      "paymentHistory": "Тўлов тарихи",
+      "noPayments": "Ҳозирча тўловлар мавжуд эмас",
+      "choosePaymentMethod": "Тўлов усулини танланг",
+      "pay": "Тўлов қилиш",
+      "bestChoice": "Энг тежамкор танлов",
+      "forDays": "{{days}} кун давомида",
+      "features": {
+        "unlimitedTests": "Чексиз тестлар",
+        "allTopics": "Барча мавзулар",
+        "fullStatistics": "Тўлиқ статистика",
+        "support": "24/7 қўллаб-қувватлаш"
+      },
+      "status": {
+        "pending": "Кутилмоқда",
+        "processing": "Жараёнда",
+        "completed": "Тўланган",
+        "failed": "Муваффақиятсиз",
+        "cancelled": "Бекор қилинган",
+        "refunded": "Қайтарилган"
+      },
+      "errors": {
+        "loadSubscriptions": "Обуна турларини юклашда хатолик",
+        "loadPayments": "Тўлов тарихини юклашда хатолик",
+        "selectSubscriptionAndMethod": "Илтимос обуна тури ва тўлов усулини танланг",
+        "cashPaymentRequest": "Нақд тўлов учун сўров юборилди. Админ тасдиқлашини кутинг.",
+        "testPaymentComplete": "Бу тест тўлов. Тўловни муваффақиятли якунлашни хоҳлайсизми?",
+        "testPaymentSuccess": "Тест тўлов муваффақиятли якунланди!",
+        "testPaymentError": "Тест тўловни якунлашда хатолик",
+        "paymentSuccess": "Тўлов муваффақиятли амалга оширилди!",
+        "paymentFailed": "Тўлов муваффақиятсиз тугади",
+        "createPaymentError": "Тўлов яратишда хатолик юз берди"
+      },
+      "paymentMethods": {
+        "click": "Click",
+        "payme": "Payme",
+        "uzcard": "Uzcard",
+        "cash": "Нақд пул"
+      }
+    },
+    "dashboard": {
+      "welcome": "Хуш келибсиз, {{name}}!",
+      "subscription_status": "Обуна ҳолати",
+      "tests_today": "Бугунги тестлар",
+      "average_score": "Ўртача балл",
+      "best_score": "Энг яхши натижа",
+      "subscriptionExpired": "Обуна муддати тугади",
+      "subscriptionDaysLeft": "Обуна тугашига: {{days}} кун қолди",
+      "averageScore": "Ўртача балл",
+      "weeklyActivity": "Ҳафталик фаоллик",
+      "testResults": "Тест натижалари",
+      "totalQuestions": "Жами саволлар",
+      "correctAnswers": "Тўғри жавоблар",
+      "wrongAnswers": "Хато жавоблар",
+      "testTypes": "Тест турлари",
+      "quick_actions": "Тез ҳаракатлар",
+      "start_test": "Тест бошлаш",
+      "view_results": "Натижаларни кўриш",
+      "study_materials": "Ўқув материаллари",
+      "recent_tests": "Сўнгги тестлар",
+      "no_recent_tests": "Сўнгги тестлар йўқ",
+      "view_all": "Ҳаммасини кўриш",
+      "progress": "Ўсиш",
+      "topics_mastered": "Ўзлаштирилган мавзулар",
+      "improvement_needed": "Яхшилаш керак",
+      "stats": {
+        "dailyActivity": "Кунлик фаоллик",
+        "preparationLevel": "Тайёргарлик даражаси",
+        "totalTests": "Жами тестлар",
+        "averageScore": "Ўртача балл",
+        "weeklyProgress": "Ҳафталик прогресс"
+      },
+      "title": "Бошқарув панели",
+      "subscriptionExpiredMessage": "Тестлардан фойдаланиш учун обунани янгиланг",
+      "subscriptionExpiringMessage": "Обунангизни янгилашни унутманг",
+      "subscription": {
+        "title": "Обуна ҳолати",
+        "expires": "Тугаш санаси",
+        "warning": "Агар обуна тугаганидан кейин 30 кун ичида тўламасангиз, профилингиз ўчирилади",
+        "daysLeft": "{{days}} кун қолди",
+        "active": "Фаол",
+        "expires_in": "{{days}} кун қолди",
+        "expired": "Муддати тугаган",
+        "renew": "Янгилаш"
+      },
+      "testTypes": {
+        "title": "Тест турлари",
+        "topicTraining": "Мавзу бўйича тренировкани бошлаш",
+        "topicExam": "Мавзулар бўйича имтиҳон топшириш",
+        "intermediate": "Оралиқ Назорат",
+        "ticketTraining": "Билетлар бўйича тренировкани бошлаш",
+        "wrongAnswers": "Барча хато қилинган саволлар",
+        "myWrongAnswers": "Менинг хато саволларим",
+        "randomTest": "Тасодифий Тест",
+        "exam": "Имтиҳон Топшириш"
+      },
+      "stats": {
+        "dailyActivity": "Кунлик фаолият",
+        "weeklyProgress": "Ҳафталик ўсиш",
+        "preparationLevel": "Тайёргарлик даражаси",
+        "totalTests": "Жами тестлар",
+        "averageScore": "Ўртача балл"
+      },
+      "weekDays": ["Душанба", "Сешанба", "Чоршанба", "Пайшанба", "Жума", "Шанба", "Якшанба"],
+      "hoursLabel": "Соатлар",
+      "errors": {
+        "fetchStats": "Натижаларни юклаб бўлмади"
+      }
+    },
+    "tests": {
+      "title": "Тестлар",
+      "select_type": "Тест турини танланг",
+      "select_topic": "Мавзуни танланг",
+      "select_ticket": "Билетни танланг",
+      "selectTypeDescription": "Тест турини танланг ва билимингизни текширинг",
+      "startTest": "Тестни бошлаш",
+      "examTime": "40 дақиқа",
+      "back": "Орқага",
+      "topicsCount": "{{count}} та мавзу",
+      "ticketsCount": "{{count}} та билет",
+      "types": {
+        "topicTraining": {
+          "title": "Мавзу бўйича",
+          "description": "Танланган мавзу бўйича чексиз машқ қилинг"
+        },
+        "topicExam": {
+          "title": "Мавзулар бўйича имтиҳон",
+          "description": "Мавзу бўйича билимингизни синаб кўринг"
+        },
+        "intermediate": {
+          "title": "Оралиқ Назорат",
+          "description": "Барча мавзулардан 20 та савол"
+        },
+        "ticketTraining": {
+          "title": "Билетлар бўйича тренировкани бошлаш",
+          "description": "Билетлар бўйича машқ қилинг"
+        },
+        "wrongAnswers": {
+          "title": "Барча хато қилинган саволлар",
+          "description": "Тизимда энг кўп хато қилинган саволлар"
+        },
+        "myWrongAnswers": {
+          "title": "Менинг хато саволларим",
+          "description": "Сиз хато қилган саволларни қайта ишланг"
+        },
+        "random": {
+          "title": "Тасодифий",
+          "description": "Тасодифий саволлар билан машқ қилинг"
+        },
+        "exam": {
+          "title": "Имтиҳон Топшириш",
+          "description": "Расмий имтиҳон режимида тест топширинг",
+          "timeLimit": "Вақт чегараси"
+        }
+      },
+      "descriptions": {
+        "topicTraining": "Мавзулар бўйича машқ қилинг",
+        "topicExam": "Мавзулар бўйича имтиҳон",
+        "intermediate": "Оралиқ назорат тести",
+        "ticketTraining": "Билетлар бўйича машқ қилинг",
+        "wrongAnswers": "Энг кўп хато қилинган саволлар",
+        "myWrongAnswers": "Сизнинг нотўғри жавобларингиз",
+        "random": "Тасодифий саволлар",
+        "exam": "Расмий имтиҳон режимида"
+      },
+      "questions": "та савол",
+      "minutesUnit": "дақиқа",
+      "passingScoreUnit": "ўтиш балли",
+      "start_test": "Тестни бошлаш",
+      "no_questions": "Бу тур учун саволлар мавжуд эмас",
+      "loading": "Саволлар юкланмоқда...",
+      "filters": {
+        "all": "Ҳаммаси",
+        "by_topic": "Мавзу бўйича",
+        "by_ticket": "Билет бўйича",
+        "by_difficulty": "Қийинлик бўйича",
+        "easy": "Осон",
+        "medium": "Ўртача",
+        "hard": "Қийин"
+      }
+    },
+    "test": {
+      "question": "Савол",
+      "time_remaining": "Қолган вақт",
+      "submit": "Тестни топшириш",
+      "next": "Кейинги савол",
+      "previous": "Олдинги савол",
+      "unanswered": "Жавоб берилмаган",
+      "review": "Кўриб чиқиш",
+      "confirmSubmit": "Тестни топширишни тасдиқлаш",
+      "confirmMessage": "Тестни топширишга ишончингиз комилми?",
+      "noQuestionsTitle": "Саволлар топилмади",
+      "noQuestionsMessage": "Бу тест тури учун мавжуд саволлар йўқ",
+      "backToTests": "Тестларга қайтиш",
+      "answeredCount": "Жавоб берилган: {{answered}} / {{total}}",
+      "unansweredCount": "{{count}} та саволга жавоб берилмаган",
+      "errors": {
+        "fetchQuestions": "Саволларни юклашда хатолик",
+        "submitTest": "Тестни топширишда хатолик",
+        "imageLoadError": "Расм юкланмади"
+      },
+      "timeUp": "Вақт тугади!",
+      "autoSubmit": "Тест автоматик топширилади..."
+    },
+    "results": {
+      "title": "Тест натижалари",
+      "passed": "Табриклаймиз! Сиз тестдан ўтдингиз!",
+      "failed": "Афсуски, тест етарли балл тўпламадингиз",
+      "score": "Натижа",
+      "percentage": "Фоиз",
+      "correct": "Тўғри жавоблар",
+      "incorrect": "Нотўғри жавоблар",
+      "unanswered": "Жавобсиз",
+      "timeTaken": "Сарфланган вақт",
+      "passingScore": "Ўтиш балли",
+      "minutesUnit": "дақиқа",
+      "passingScoreUnit": "ўтиш балли",
+      "yourScore": "Сизнинг баллингиз",
+      "reviewAnswers": "Жавобларни кўриб чиқиш",
+      "tryAgain": "Қайта уриниш",
+      "backToTests": "Тестларга қайтиш",
+      "details": {
+        "question": "Савол",
+        "yourAnswer": "Сизнинг жавобингиз",
+        "correctAnswer": "Тўғри жавоб",
+        "explanation": "Тушунтириш"
+      },
+      "backToHome": "Бош саҳифага",
+      "notFound": "Натижа топилмади",
+      "examResults": "Имтиҳон натижалари (ўтиш балли: {{passingScore}}%)",
+      "testResults": "Тест натижалари",
+      "testInfo": "Тест маълумотлари",
+      "testType": "Тест тури",
+      "topic": "Мавзу",
+      "ticket": "Билет",
+      "startTime": "Бошланиш вақти",
+      "timeFormat": "{{minutes}} дақиқа {{seconds}} сония",
+      "explanation": "Тушунтириш",
+      "testTypes": {
+        "exam": "Имтиҳон",
+        "topic": "Мавзу бўйича",
+        "ticket": "Билет бўйича",
+        "random": "Тасодифий",
+        "wrongAnswers": "Хато саволлар",
+        "myWrongAnswers": "Менинг хатоларим",
+        "other": "Бошқа"
+      },
+      "errors": {
+        "fetchResult": "Натижаларни юклашда хатолик"
+      }
+    },
+    "statistics": {
+      "title": "Статистика",
+      "subtitle": "Ӣрганиш жараёнингизни кузатинг",
+      "noData": "Маълумотлар йўқ",
+      "timePeriod": "Вақт даври",
+      "today": "Бугун",
+      "thisWeek": "Бу ҳафта",
+      "thisMonth": "Бу ой",
+      "allTime": "Барча вақт",
+      "week": "Ҳафта",
+      "month": "Ой",
+      "timeRange": {
+        "week": "Ҳафта",
+        "month": "Ой",
+        "all": "Барчаси"
+      },
+      "correct": "Тўғри",
+      "wrong": "Хато",
+      "unanswered": "Ечилмаган",
+      "unknown": "Номаълум",
+      "unknownQuestion": "Номаълум савол",
+      "activityLabel": "Фаолик (соат)",
+      "progressLabel": "Прогресс (%)",
+      "timeFormat": "{{hours}} соат {{minutes}} дақиқа",
+      "preparationLevel": "Умумий тайёргарлик даражаси",
+      "averageScore": "Ўртача балл",
+      "totalTime": "Умумий вақт",
+      "totalTests": "Топширилган тестлар",
+      "questionsStatistics": "Саволлар статистикаси",
+      "totalQuestions": "Жами саволлар",
+      "correctAnswers": "Тўғри жавоблар",
+      "wrongAnswers": "Хато жавоблар",
+      "dailyActivity": "Кунлик фаолият",
+      "topicProgress": "Мавзулар бўйича прогресс",
+      "mostMistakes": "Энг кўп хато қилинган мавзулар",
+      "recentTests": "Сўнгги тестлар",
+      "weeklyActivity": "Ҳафталик фаоллик",
+      "monthlyActivity": "Ойлик фаоллик",
+      "overallActivity": "Умумий фаоллик",
+      "times": "{{count}} марта",
+      "errorCount": "{{count}} та хато",
+      "times": "{{count}} марта",
+      "date": "Сана",
+      "testType": "Тест тури",
+      "result": "Натижа",
+      "time": "Вақт",
+      "errors": {
+        "fetchError": "Натижаларни юклашда хатолик"
+      },
+      "overview": {
+        "title": "Умумий кўриниш",
+        "totalTests": "Жами тестлар",
+        "completedTests": "Тугалланган тестлар",
+        "averageScore": "Ўртача балл",
+        "totalTime": "Умумий вақт",
+        "bestStreak": "Энг яхши серия"
+      },
+      "performance": {
+        "title": "Самарадорлик",
+        "byTopic": "Мавзулар бўйича",
+        "byTestType": "Тест турлари бўйича",
+        "progressChart": "Ўсиш графиги",
+        "scoreDistribution": "Баллар тақсимоти"
+      },
+      "topics": {
+        "title": "Мавзулар бўйича статистика",
+        "topic": "Мавзу",
+        "tests": "Тестлар",
+        "correct": "Тўғри",
+        "incorrect": "Нотўғри",
+        "percentage": "Фоиз",
+        "mastery": "Ўзлаштириш"
+      },
+      "time": {
+        "title": "Вақт статистикаси",
+        "studyTime": "Ўқиш вақти",
+        "averageTestTime": "Ўртача тест вақти",
+        "fastestTest": "Энг тез тест",
+        "slowestTest": "Энг секин тест",
+        "timeByDay": "Кунлар бўйича вақт",
+        "peakHours": "Энг фаол соатлар"
+      },
+      "achievements": {
+        "title": "Ютуқлар",
+        "firstTest": "Биринчи тест",
+        "perfectScore": "Мукаммал натижа",
+        "consistentLearner": "Доимий ўқувчи",
+        "testMaster": "Тест устаси",
+        "topicExpert": "Мавзу эксперти"
+      },
+      "weeklyGoals": {
+        "title": "Ҳафталик мақсадлар",
+        "testsCompleted": "Тугалланган тестлар",
+        "targetTests": "Мақсадли тестлар",
+        "hoursStudied": "Ўқилган соатлар",
+        "targetHours": "Мақсадли соатлар",
+        "currentStreak": "Жорий серия"
+      },
+      "noData": "Кўрсатиш учун маълумот йўқ",
+      "export": {
+        "title": "Натижаларни экспорт қилиш",
+        "pdf": "PDF юклаб олиш",
+        "excel": "Excel юклаб олиш"
+      }
+    },
+    "profile": {
+      "title": "Профиль",
+      "subtitle": "Шахсий маълумотларингизни бошқаринг",
+      "personal_info": "Шахсий маълумотлар",
+      "subscription_info": "Обуна маълумотлари",
+      "change_password": "Паролни ўзгартириш",
+      "statistics": "Натижалар таҳлили",
+      "full_name": "Тўлиқ исм",
+      "phone_number": "Телефон рақами",
+      "joined_date": "Рўйхатдан ўтган",
+      "subscription_type": "Обуна тури",
+      "subscription_status": "Обуна ҳолати",
+      "expiry_date": "Тугаш санаси",
+      "current_password": "Жорий пароль",
+      "new_password": "Янги пароль",
+      "confirm_new_password": "Янги паролни тасдиқлаш",
+      "update_password": "Паролни янгилаш",
+      "total_tests": "Жами тестлар",
+      "passed_tests": "Ўтилган тестлар",
+      "failed_tests": "Ўтилмаган тестлар",
+      "average_score": "Ўртача балл",
+      "best_score": "Энг яхши натижа",
+      "worst_score": "Энг паст натижа",
+      "study_time": "Ўқиш вақти",
+      "edit_profile": "Профилни таҳрирлаш",
+      "save_changes": "Ўзгаришларни сақлаш",
+      "cancel_changes": "Бекор қилиш",
+      "security": "Хавфсизлик",
+      "language_settings": "Тил созламалари",
+      "theme_settings": "Мавзу созламалари",
+      "light_theme": "Ёруғ мавзу",
+      "dark_theme": "Тунги мавзу",
+      "danger_zone": "Хавфли зона",
+      "delete_account": "Профилни ўчириш",
+      "delete_account_warning": "Профилингизни ўчириб ташлаш барча маълумотларингизни бутунлай йўқ қилади ва бу амални қайтариб бўлмайди.",
+      "delete_account_confirm": "Бу амални ортга қайтариб бўлмайди! Барча маълумотларингиз, тест натижалари ва обунангиз бутунлай ўчириб ташланади.",
+      "confirm_delete_password": "Тасдиқлаш учун паролингизни киритинг",
+      "yes_delete": "Ҳа, ўчириш",
+      "save": "Сақлаш",
+      "cancel": "Бекор қилиш",
+      "errors": {
+        "name_required": "Исм киритиш мажбурий",
+        "password_mismatch": "Пароллар мос келмаяпти",
+        "password_too_short": "Парол камида 6 та белгидан иборат бўлиши керак",
+        "image_too_large": "Расм ҳажми 5MB дан ошмаслиги керак"
+      },
+      "success": {
+        "profile_updated": "Профиль муваффақиятли янгиланди",
+        "image_uploaded": "Профиль расми муваффақиятли юкланди",
+        "password_updated": "Парол муваффақиятли янгиланди"
+      }
+    },
+    "statistics": {
+      "title": "Статистика",
+      "subtitle": "Ӣрганиш жараёнингизни кузатинг",
+      "noData": "Маълумотлар йўқ",
+      "preparationLevel": "Тайёргарлик даражаси",
+      "averageScore": "Ӣртача балл",
+      "totalTime": "Умумий вақт",
+      "totalTests": "Ечилган тестлар",
+      "weeklyActivity": "Ҳафталик фаоллик",
+      "monthlyActivity": "Ойлик фаоллик",
+      "overallActivity": "Умумий фаоллик",
+      "questionsStatistics": "Саволлар статистикаси",
+      "totalQuestions": "Жами саволлар",
+      "correctAnswers": "Тўғри жавоблар",
+      "wrongAnswers": "Хато жавоблар",
+      "topicProgress": "Мавзулар бўйича прогресс",
+      "mostMistakes": "Кўп хато қилинган саволлар",
+      "recentTests": "Сўнгги тестлар",
+      "timeRange": {
+        "week": "Ҳафта",
+        "month": "Ой",
+        "all": "Барчаси"
+      },
+      "correct": "Тўғри",
+      "wrong": "Хато",
+      "unknown": "Номаълум",
+      "unknownQuestion": "Номаълум савол",
+      "activityLabel": "Фаоллик (соат)",
+      "progressLabel": "Прогресс (%)",
+      "timeFormat": "{{hours}} соат {{minutes}} дақиқа",
+      "times": "{{count}} марта"
+    },
+    "notifications": {
+      "title": "Билдиришномалар",
+      "subtitle": "Барча билдиришномаларингиз",
+      "filter": {
+        "all": "Ҳаммаси",
+        "unread": "Ўқилмаган ({{count}})",
+        "read": "Ўқилган"
+      },
+      "markAllAsRead": "Ҳаммасини ўқилган деб белгилаш",
+      "empty": "Билдиришномалар мавжуд эмас",
+      "profile_deletion_warning": "Профилни ўчириш ҳақида огоҳлантириш",
+      "all": "Ҳаммаси",
+      "unread": "Ўқилмаган",
+      "mark_as_read": "Ўқилган деб белгилаш",
+      "mark_all_as_read": "Ҳаммасини ўқилган деб белгилаш",
+      "delete": "Ўчириш",
+      "no_notifications": "Билдиришномалар йўқ",
+      "subscription_expiring": "Обуна муддати тугамоқда",
+      "subscription_expired": "Обуна муддати тугади",
+      "new_test_available": "Янги тест мавжуд",
+      "test_result_ready": "Тест натижаси тайёр",
+      "payment_successful": "Тўлов муваффақиятли",
+      "payment_failed": "Тўлов муваффақиятсиз",
+      "system_update": "Тизим янгиланиши",
+      "errors": {
+        "fetchError": "Билдиришномаларни юклашда хатолик юз берди",
+        "markReadError": "Хабарни ўқилган деб белгилашда хатолик",
+        "markAllReadError": "Барча хабарларни ўқилган деб белгилашда хатолик",
+        "deleteError": "Билдиришномани ўчиришда хатолик"
+      },
+      "newNotificationReceived": "Янги билдиришнома қабул қилинди",
+      "default_title": "Билдиришнома",
+      "payment_successful": "Тўлов муваффақиятли",
+      "payment_failed": "Тўлов муваффақиятсиз",
+      "system_update": "Тизим янгиланиши",
+      "promotion": "Акция ва чегирмалар"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Бошқарув панели",
+      "welcome": "Хуш келибсиз, Админ!",
+      "overview": "Умумий кўриниш",
+      "users": {
+        "total": "Жами фойдаланувчилар",
+        "active": "Фаол фойдаланувчилар",
+        "new_today": "Бугун янги",
+        "online_now": "Ҳозир онлайн"
+      },
+      "revenue": {
+        "total": "Жами даромад",
+        "monthly": "Ойлик даромад",
+        "today": "Бугунги даромад",
+        "growth": "Ўсиш"
+      },
+      "tests": {
+        "total": "Жами тестлар",
+        "today": "Бугун ўтказилган",
+        "passed": "Ўтилган",
+        "failed": "Ўтилмаган"
+      },
+      "content": {
+        "questions": "Саволлар",
+        "topics": "Мавзулар",
+        "tickets": "Билетлар"
+      },
+      "recent_activities": "Сўнгги фаолият",
+      "quick_stats": "Тезкор статистика",
+      "charts": {
+        "user_growth": "Фойдаланувчилар ўсиши",
+        "revenue_trend": "Даромад тенденцияси",
+        "test_statistics": "Тест статистикаси"
+      },
+      "errors": {
+        "loadError": "Маълумотларни юклашда хатолик"
+      },
+      "subtitle": "Тизим ҳолатини кузатинг ва бошқаринг",
+      "recentPayments": "Сўнгги тўловлар",
+      "topicsByCount": "{{count}} та мавзу бўйича",
+      "readyTestTickets": "Тестга тайёр билетлар",
+      "todayCount": "Бугун: {{count}} та",
+      "live": "ЖОНЛИ",
+      "noDataAvailable": "Маълумот мавжуд эмас",
+      "subscriptionTypes": {
+        "15_days": "15 кунлик",
+        "1_month": "1 ойлик",
+        "3_months": "3 ойлик"
+      },
+      "stats": {
+        "totalUsers": "Жами фойдаланувчилар",
+        "activeSubscriptions": "Фаол обуналар",
+        "monthlyRevenue": "Ойлик даромад",
+        "onlineNow": "Ҳозир онлайн"
+      },
+      "labels": {
+        "today": "Бугун",
+        "percent": "фоиз",
+        "payments": "Тўловлар",
+        "status": "Ҳолат",
+        "questions": "Саволлар",
+        "tickets": "Билетлар",
+        "tests": "Тестлар",
+        "unknown": "Номаълум"
+      },
+      "status": {
+        "active": "Фаол",
+        "inactive": "Нофаол"
+      }
+    },
+    "users": {
+      "title": "Фойдаланувчилар",
+      "add_user": "Фойдаланувчи қўшиш",
+      "search_placeholder": "Исм ёки телефон бўйича қидириш",
+      "filters": {
+        "all": "Ҳаммаси",
+        "active": "Фаол",
+        "inactive": "Нофаол",
+        "subscribed": "Обуна бор",
+        "expired": "Обуна тугаган"
+      },
+      "table": {
+        "name": "Исм",
+        "phone": "Телефон",
+        "status": "Ҳолат",
+        "subscription": "Обуна",
+        "joined": "Рўйхатдан ўтган",
+        "actions": "Ҳаракатлар"
+      },
+      "actions": {
+        "view": "Кўриш",
+        "edit": "Таҳрирлаш",
+        "delete": "Ўчириш",
+        "activate": "Фаоллаштириш",
+        "deactivate": "Ўчириш",
+        "reset_password": "Паролни тиклаш",
+        "reset_password_short": "Парол",
+        "extend_subscription": "Обунани узайтириш",
+        "updateSubscription": "Обунани янгилаш"
+      },
+      "security": {
+        "title": "Хавфсизлик",
+        "passwordReset": "Паролни тиклаш",
+        "passwordResetDesc": "Фойдаланувчи учун янги хавфсиз парол яратилади ва унга билдиришнома юборилади."
+      },
+      "status": {
+        "active": "Фаол",
+        "inactive": "Фаол эмас",
+        "blocked": "Блокланган"
+      },
+      "subscription": {
+        "all": "Барча обуналар",
+        "active": "Фаол обуналар",
+        "expired": "Муддати тугаган",
+        "expiring": "Тугамоқда (7 кун)",
+        "expiringDays": "Тугамоқда ({{days}} кун)",
+        "activeDays": "Фаол ({{days}} кун)"
+      },
+      "messages": {
+        "loadError": "Фойдаланувчиларни юклашда хатолик",
+        "statusChanged": "Фойдаланувчи {{status}}",
+        "activated": "фаоллаштирилди",
+        "blocked": "блокланди",
+        "statusError": "Статусни ўзгартиришда хатолик",
+        "deleteTitle": "Фойдаланувчини ўчириш",
+        "deleteConfirm": "Ҳақиқатан ҳам бу фойдаланувчини ўчирмоқчимисиз? Бу амални қайтариб бўлмайди.",
+        "deleteSuccess": "Фойдаланувчи ўчирилди",
+        "deleteError": "Фойдаланувчини ўчиришда хатолик",
+        "totalUsers": "Жами: {{total}} та фойдаланувчи",
+        "noResults": "Ҳеч қандай натижа топилмади",
+        "noUsers": "Фойдаланувчилар мавжуд эмас",
+        "noSubscription": "Обуна йўқ",
+        "subscriptionUpdated": "Обуна муваффақиятли янгиланди",
+        "subscriptionUpdateError": "Обунани янгилашда хатолик",
+        "userNotFound": "Фойдаланувчи топилмади",
+        "noTestHistory": "Тест тарихи мавжуд эмас",
+        "noPaymentHistory": "Тўлов тарихи мавжуд эмас",
+        "passwordReset": "Янги парол: {{password}}",
+        "passwordResetError": "Паролни тиклашда хатолик"
+      },
+      "additionalInfo": "Қўшимча маълумотлар",
+      "lastLogin": "Охирги кириш",
+      "placeholders": {
+        "search": "Исм ёки телефон рақам бўйича қидириш...",
+        "allStatuses": "Барча ҳолатлар"
+      },
+      "details": {
+        "title": "Фойдаланувчи тафсилотлари",
+        "basicInfo": "Асосий маълумотлар",
+        "subscriptionInfo": "Обуна маълумотлари",
+        "statistics": "Статистика",
+        "testHistory": "Тест тарихи",
+        "paymentHistory": "Тўлов тарихи",
+        "topicProgress": "Мавзулар бўйича прогресс"
+      },
+      "fields": {
+        "fullName": "Тўлиқ исми",
+        "phoneNumber": "Телефон рақами",
+        "registeredAt": "Рўйхатдан ўтган",
+        "status": "Ҳолат",
+        "subscriptionType": "Обуна тури",
+        "subscriptionStatus": "Обуна ҳолати",
+        "startDate": "Бошланиш санаси",
+        "endDate": "Тугаш санаси",
+        "daysLeft": "Қолган кунлар",
+        "daysCount": "Кунлар сони"
+      },
+      "stats": {
+        "totalTests": "Жами тестлар",
+        "passedTests": "Ўтган тестлар",
+        "averageScore": "Ўртача балл",
+        "examAttempts": "Имтиҳонлар",
+        "attempts": "Уринишлар"
+      },
+      "table": {
+        "name": "Исм",
+        "phone": "Телефон",
+        "status": "Ҳолат",
+        "subscription": "Обуна",
+        "joined": "Рўйхатдан ўтган",
+        "actions": "Ҳаракатлар",
+        "date": "Сана",
+        "testType": "Тест тури",
+        "topicTicket": "Мавзу/Билет",
+        "result": "Натижа",
+        "score": "Балл",
+        "time": "Вақт",
+        "subscriptionType": "Обуна тури",
+        "paymentMethod": "Тўлов усули",
+        "amount": "Сумма"
+      },
+      "placeholders": {
+        "daysExample": "Масалан: 30"
+      },
+      "user_details": {
+        "title": "Фойдаланувчи тафсилотлари",
+        "personal_info": "Шахсий маълумотлар",
+        "subscription_info": "Обуна маълумотлари",
+        "test_history": "Тест тарихи",
+        "payment_history": "Тўлов тарихи",
+        "statistics": "Натижалар таҳлили"
+      }
+    },
+    "questions": {
+      "title": "Тест саволлари",
+      "add_question": "Савол қўшиш",
+      "import_questions": "Саволларни импорт қилиш",
+      "export_questions": "Саволларни экспорт қилиш",
+      "search_placeholder": "Қидириш...",
+      "filters": {
+        "all_topics": "Барча мавзулар",
+        "all_difficulties": "Барча даражалар",
+        "all_levels": "Барча даражалар",
+        "easy": "Осон",
+        "medium": "Ўртача",
+        "hard": "Қийин",
+        "active": "Фаол",
+        "inactive": "Нофаол",
+        "clear": "Тозалаш",
+        "search": "Қидирув",
+        "topic": "Мавзу",
+        "level": "Даража"
+      },
+      "table": {
+        "question": "Савол",
+        "topic": "Мавзу",
+        "difficulty": "Даража",
+        "level": "Даража",
+        "status": "Ҳолат",
+        "created": "Яратилган",
+        "actions": "Ҳаракатлар",
+        "image_available": "Расм мавжуд",
+        "edit": "Таҳрирлаш",
+        "delete": "Ўчириш"
+      },
+      "form": {
+        "add_title": "Янги савол қўшиш",
+        "edit_title": "Саволни таҳрирлаш",
+        "question_text": "Савол матни",
+        "topic": "Мавзу",
+        "select_topic": "Мавзуни танланг",
+        "difficulty": "Қийинлик даражаси",
+        "options": "Жавоб вариантлари",
+        "options_count": "{{count}} та вариант",
+        "correct_answer": "Тўғри жавоб",
+        "option_variant": "{{letter}} вариант",
+        "option_label": "Вариант",
+        "option_correct": "(Тўғри жавоб)",
+        "explanation": "Изоҳ (ихтиёрий)",
+        "image": "Расм (ихтиёрий)",
+        "uploadImage": "Расм юклаш учун босинг ёки тортиб ташланг",
+        "current_image_note": "Ҳозирги расм сақланади. Янги расм юклаш учун файл танланг.",
+        "status": "Ҳолат",
+        "add_option": "Вариант қўшиш",
+        "remove_option": "Вариантни ўчириш",
+        "cancel": "Бекор қилиш",
+        "save": "Қўшиш",
+        "update": "Янгилаш",
+        "placeholders": {
+          "uz": "O'zbek (lotin)",
+          "uz_cyrl": "Ўзбек (кирилл)",
+          "ru": "Русский"
+        }
+      },
+      "errors": {
+        "loadError": "Саволларни юклашда хатолик",
+        "saveError": "Саволни сақлашда хатолик",
+        "deleteError": "Саволни ўчиришда хатолик",
+        "statusError": "Статусни ўзгартиришда хатолик",
+        "validationErrors": {
+          "questionRequired": "Савол матни (ўзбек) киритилиши шарт",
+          "topicRequired": "Мавзу танланиши шарт",
+          "minOptions": "Камида 2 та жавоб варианти бўлиши керак",
+          "correctAnswerRequired": "Камида битта тўғри жавоб белгиланиши керак",
+          "optionsRequired": "Барча жавоб вариантлари (ўзбек) тўлдирилиши керак",
+          "imageSizeError": "Расм ҳажми 5МБ дан катта бўлмаслиги керак"
+        }
+      },
+      "messages": {
+        "updated": "Савол янгиланди",
+        "added": "Савол қўшилди",
+        "deleted": "Савол ўчирилди",
+        "statusChanged": "Статус ўзгартирилди"
+      },
+      "confirm": {
+        "delete": "Саволни ўчирмоқчимисиз?",
+        "deleteTitle": "Саволни ўчириш",
+        "deleteDescription": "Бу савол ва унга тегишли барча маълумотлар бутунлай ўчирилади. Бу амални қайтариб бўлмайди."
+      },
+      "noQuestions": "Саволлар мавжуд эмас",
+      "statistics": {
+        "total": "Жами: {{total}} та савол",
+        "filtered": "Фильтрланган: {{count}} та натижа"
+      },
+      "status": {
+        "active": "Фаол",
+        "inactive": "Нофаол",
+        "activated": "фаоллаштирилди",
+        "deactivated": "ўчирилди"
+      }
+    },
+    "topics": {
+      "title": "Мавзулар",
+      "add_topic": "Мавзу қўшиш",
+      "addNew": "Янги мавзу",
+      "total": "Жами",
+      "order": "Тартиб",
+      "questionCount": "Саволлар сони",
+      "createdAt": "Яратилган",
+      "editTitle": "Мавзуни таҳрирлаш",
+      "createTitle": "Янги мавзу қўшиш",
+      "name": "Мавзу номи",
+      "description": "Тавсифи (ихтиёрий)",
+      "noDescription": "Тавсиф йўқ",
+      "orderNumber": "Тартиб рақами",
+      "orderPlaceholder": "Автоматик белгиланади",
+      "orderHelp": "Кичик рақам - юқорида кўрсатилади",
+      "isActive": "Мавзу фаолми?",
+      "statusHelp": "Нофаол - фойдаланувчиларга кўрсатилмайди",
+      "statusActiveHelp": "Фаол - фойдаланувчиларга кўрсатилади",
+      "image": "Мавзу расми",
+      "uploadImage": "Расм юклаш учун босинг",
+      "uploadImageFiles": "Расм юклаш",
+      "imageFormats": "JPG, PNG, GIF форматидаги файллар (макс. 5MB)",
+      "dragDropFiles": "Босинг ёки тортиб ташланг",
+      "uploadTitle": "Расм юклаш",
+      "uploadDescription": "JPG, PNG, GIF форматидаги файллар (макс. 5МБ)",
+      "uploadHint": "Босинг ёки тортиб ташланг",
+      "optional": "(иҳтиёрий)",
+      "status": "Ҳолат",
+      "activeStatus": "Фаол - фойдаланувчиларга кўрсатилади",
+      "inactiveStatus": "Нофаол - фойдаланувчиларга кўрсатилмайди",
+      "namePlaceholder": {
+        "uz": "O'zbek (lotin)",
+        "uzCyrl": "Ўзбек (кирилл)",
+        "ru": "Русский"
+      },
+      "descriptionPlaceholder": {
+        "uz": "Тавсиф (ихтиёрий)",
+        "uzCyrl": "Тавсиф (ихтиёрий)",
+        "ru": "Тавсиф (ихтиёрий)"
+      },
+      "table": {
+        "name": "Номи",
+        "questions_count": "Саволлар сони",
+        "order": "Тартиб",
+        "status": "Ҳолат",
+        "actions": "Ҳаракатлар"
+      },
+      "form": {
+        "name": "Мавзу номи",
+        "description": "Тавсиф",
+        "order": "Тартиб рақами",
+        "status": "Статус"
+      },
+      "errors": {
+        "loadFailed": "Мавзуларни юклашда хатолик",
+        "saveFailed": "Мавзуни сақлашда хатолик",
+        "deleteFailed": "Мавзуни ўчиришда хатолик",
+        "hasQuestions": "Бу мавзуда саволлар мавжуд. Аввал саволларни ўчиринг!",
+        "statusChangeFailed": "Мавзу статусини ўзгартиришда хатолик",
+        "orderChangeFailed": "Мавзу тартибини ўзгартиришда хатолик",
+        "nameRequired": "Мавзу номи киритилиши шарт",
+        "invalidOrder": "Тартиб рақами 0 дан катта бўлиши керак",
+        "imageSizeError": "Расм ҳажми 5МБ дан катта бўлмаслиги керак",
+        "imageTypeError": "Фақат JPG, PNG ёки WebP форматдаги расмлар юкланиши мумкин"
+      },
+      "messages": {
+        "createSuccess": "Мавзу муваффақиятли қўшилди",
+        "updateSuccess": "Мавзу муваффақиятли янгиланди",
+        "deleteSuccess": "Мавзу ўчирилди",
+        "activated": "Мавзу фаоллаштирилди",
+        "deactivated": "Мавзу ўчирилди"
+      },
+      "confirm": {
+        "delete": "Мавзуни ўчирмоқчимисиз?",
+        "deleteDescription": "Бу мавзу ва унга тегишли барча саволлар бутунлай ўчирилади. Бу амални қайтариб бўлмайди."
+      }
+    },
+    "tickets": {
+      "title": "Билетлар",
+      "questions": "саволлар",
+      "questionCount": "та савол",
+      "add_ticket": "Билет қўшиш",
+      "generate_tickets": "Билетларни генерация қилиш",
+      "noTickets": "Ҳеч қандай билет топилмади",
+      "noSearchResults": "Қидирув натижаси топилмади",
+      "noTicketsDescription": "Янги билет қўшиш учун юқоридаги тугмалардан фойдаланинг.",
+      "search": {
+        "placeholder": "Билет рақами бўйича қидиринг..."
+      },
+      "filters": {
+        "allDifficulties": "Барча қийинлик даражалари",
+        "allStatuses": "Барча ҳолатлар",
+        "clear": "Филтрларни тозалаш"
+      },
+      "table": {
+        "number": "№",
+        "questions": "Саволлар",
+        "questionsCount": "савол",
+        "difficulty": "Қийинлик",
+        "status": "Ҳолат",
+        "actions": "Амаллар"
+      },
+      "status": {
+        "active": "Фаол",
+        "inactive": "Нофаол"
+      },
+      "difficulty": {
+        "easy": "Осон",
+        "medium": "Ўрта",
+        "hard": "Қийин",
+        "mixed": "Аралаш"
+      },
+      "actions": {
+        "activate": "Фаол қилиш",
+        "deactivate": "Нофаол қилиш"
+      },
+      "modal": {
+        "searchQuestions": "Саволларни қидиринг...",
+        "allTopics": "Барча мавзулар",
+        "allDifficulties": "Барча қийинлик даражалари",
+        "showingQuestions": "{{count}} / {{total}} савол кўрсатилмоқда",
+        "selectAll": "Ҳаммасини танлаш",
+        "deselectAll": "Танловни бекор қилиш",
+        "noQuestionsFiltered": "Филтр бўйича саволлар топилмади",
+        "clearFilters": "Филтрларни тозалаш"
+      },
+      "form": {
+        "number": "Билет рақами",
+        "questions": "Саволлар",
+        "difficulty": "Қийинлик даражаси",
+        "status": "Ҳолат",
+        "editTitle": "Билетни таҳрирлаш",
+        "isActive": "Билет фаолми?"
+      },
+      "generate": {
+        "title": "Билетларни автоматик генерация қилиш",
+        "count": "Билетлар сони",
+        "questions_per_ticket": "Ҳар бир билетдаги саволлар сони",
+        "confirm": "Генерация қилиш",
+        "warning": "Диққат! Бу амал барча мавжуд билетларни ўчириб, янгиларини яратади."
+      },
+      "errors": {
+        "loadError": "Билетларни юклашда хатолик",
+        "saveError": "Билетни сақлашда хатолик",
+        "deleteError": "Билетни ўчиришда хатолик",
+        "statusError": "Статусни ўзгартиришда хатолик",
+        "generateError": "Билетларни генерация қилишда хатолик"
+      },
+      "messages": {
+        "selectQuestions": "Саволларни танланг",
+        "updated": "Билет янгиланди",
+        "added": "Билет қўшилди",
+        "deleted": "Билет ўчирилди",
+        "statusChanged": "Статус ўзгартирилди",
+        "generated": "Билетлар генерация қилинди"
+      },
+      "confirm": {
+        "delete": "Билетни ўчирмоқчимисиз?",
+        "deleteDescription": "Бу билет ва унга тегишли барча маълумотлар бутунлай ўчирилади. Бу амални қайтариб бўлмайди.",
+        "generate": "Билетларни генерация қилмоқчимисиз? Бу амал барча мавжуд билетларни ўчиради."
+      },
+      "placeholders": {
+        "ticketNumber": "Билет рақамини киритинг",
+        "selectDifficulty": "Қийинлик даражасини танланг"
+      },
+      "difficulty": {
+        "easy": "Осон",
+        "medium": "Ўртача",
+        "hard": "Қийин",
+        "mixed": "Аралаш"
+      }
+    },
+    "payments": {
+      "title": "Тўловлар",
+      "filters": {
+        "all": "Ҳаммаси",
+        "pending": "Кутилмоқда",
+        "completed": "Тўланган",
+        "failed": "Муваффақиятсиз",
+        "refunded": "Қайтарилган"
+      },
+      "table": {
+        "user": "Фойдаланувчи",
+        "amount": "Сумма",
+        "type": "Тури",
+        "method": "Усул",
+        "status": "Ҳолат",
+        "date": "Сана",
+        "actions": "Ҳаракатлар"
+      },
+      "actions": {
+        "view": "Кўриш",
+        "confirm": "Тасдиқлаш",
+        "refund": "Қайтариш",
+        "cancel": "Бекор қилиш"
+      },
+      "details": {
+        "title": "Тўлов тафсилотлари",
+        "transaction_id": "Транзакция ID",
+        "payment_method": "Тўлов усули",
+        "subscription_type": "Обуна тури",
+        "user_info": "Фойдаланувчи маълумотлари",
+        "payment_info": "Тўлов маълумотлари"
+      },
+      "errors": {
+        "confirmError": "Тўловни тасдиқлашда хатолик",
+        "refundAmount": "Қайтариш суммасини киритинг",
+        "refundAmountExceed": "Қайтариш суммаси тўлов суммасидан ошмаслиги керак",
+        "refundReason": "Қайтариш сабабини киритинг"
+      },
+      "messages": {
+        "confirmed": "Тўлов тасдиқланди",
+        "refunded": "Тўлов қайтарилди",
+        "exportSuccess": "Тўловлар экспорт қилинди",
+        "exportError": "Экспорт қилишда хатолик"
+      },
+      "confirm": {
+        "confirm": "Тўловни тасдиқлашни хоҳлайсизми?"
+      },
+      "placeholders": {
+        "startDate": "Бошланиш санаси",
+        "endDate": "Тугаш санаси",
+        "refundReason": "Қайтариш сабабини киритинг"
+      },
+      "status": {
+        "all": "Барча статуслар",
+        "pending": "Кутилмоқда",
+        "completed": "Тўланган",
+        "failed": "Муваффақиятсиз",
+        "refunded": "Қайтарилган"
+      },
+      "method": {
+        "all": "Барча усуллар",
+        "click": "Click",
+        "payme": "Payme",
+        "cash": "Нақд пул",
+        "uzcard": "Uzcard"
+      },
+      "messages": {
+        "loadError": "Тўловларни юклашда хатолик",
+        "confirmPayment": "Тўловни тасдиқлашни хоҳлайсизми?",
+        "paymentConfirmed": "Тўлов муваффақиятли тасдиқланди",
+        "confirmError": "Тўловни тасдиқлашда хатолик",
+        "refundAmountError": "Қайтариш суммаси нотўғри",
+        "refundAmountExceed": "Қайтариш суммаси тўлов суммасидан ошмаслиги керак",
+        "refundReasonError": "Қайтариш сабаби камида 10 та белгидан иборат бўлиши керак",
+        "refundSuccess": "Тўлов муваффақиятли қайтарилди",
+        "refundError": "Тўловни қайтаришда хатолик",
+        "refundTitle": "Тўловни қайтариш",
+        "refundAmount": "Қайтариш суммаси",
+        "refundReason": "Қайтариш сабаби",
+        "exportError": "Экспорт қилишда хатолик",
+        "exportSuccess": "Тўловлар муваффақиятли экспорт қилинди"
+      },
+      "labels": {
+        "paymentsManagement": "Тўловларни бошқариш",
+        "paidAt": "Тўланган вақт",
+        "maximum": "Максимал",
+        "dailyRevenueChart": "Кунлик даромад графиги"
+      },
+      "stats": {
+        "totalRevenue": "Умумий даромад",
+        "totalPayments": "Жами тўловлар",
+        "pendingPayments": "Кутилаётган тўловлар",
+        "averagePayment": "Ўртача тўлов",
+        "dailyRevenue": "Кунлик даромад"
+      },
+      "actions": {
+        "clear": "Тозалаш"
+      },
+      "subscriptionTypes": {
+        "15_days": "15 кунлик",
+        "1_month": "1 ойлик",
+        "3_months": "3 ойлик"
+      }
+    },
+    "reports": {
+      "title": "Ҳисоботлар",
+      "errors": {
+        "loadError": "Ҳисоботларни юклашда хатолик",
+        "exportError": "Экспорт қилишда хатолик"
+      },
+      "messages": {
+        "exportSuccess": "Ҳисобот муваффақиятли экспорт қилинди"
+      },
+      "types": {
+        "overall": "Умумий ҳисобот",
+        "users": "Фойдаланувчилар ҳисоботи",
+        "revenue": "Даромад ҳисоботи",
+        "tests": "Тестлар ҳисоботи"
+      },
+      "stats": {
+        "newUsers": "Янги фойдаланувчилар",
+        "activeSubscriptions": "Фаол обуналар",
+        "conversion": "Конверсия",
+        "totalRevenue": "Умумий даромад",
+        "paymentCount": "Тўловлар сони",
+        "averagePayment": "Ўртача тўлов",
+        "dailyAverage": "Кунлик ўртача",
+        "totalTests": "Жами тестлар",
+        "passedTests": "Ўтилган тестлар",
+        "passRate": "Ўтиш даражаси",
+        "averageScore": "Ўртача балл"
+      },
+      "labels": {
+        "newRegistrations": "Янги рўйхатдан ўтганлар",
+        "bySubscriptionType": "Обуна тури бўйича",
+        "dailyRevenue": "Кунлик даромад",
+        "testTypeDistribution": "Тест турлари тақсимоти",
+        "overallTrend": "Умумий тенденция",
+        "systemActivity": "Тизим фаолияти",
+        "period": "Давр",
+        "refresh": "Янгилаш"
+      },
+      "table": {
+        "name": "Исм",
+        "phone": "Телефон",
+        "subscription": "Обуна",
+        "date": "Сана"
+      },
+      "status": {
+        "active": "Фаол",
+        "inactive": "Нофаол"
+      },
+      "subscriptionTypes": {
+        "15days": "15 кунлик",
+        "1month": "1 ойлик",
+        "3months": "3 ойлик"
+      },
+      "testTypes": {
+        "byTopic": "Мавзу бўйича",
+        "byTicket": "Билет бўйича",
+        "random": "Тасодифий",
+        "exam": "Имтиҳон",
+        "errorQuestions": "Хато саволлар"
+      },
+      "weekDays": {
+        "mon": "Душ",
+        "tue": "Сеш",
+        "wed": "Чор",
+        "thu": "Пай",
+        "fri": "Жум",
+        "sat": "Шан",
+        "sun": "Як"
+      },
+      "charts": {
+        "users": "Фойдаланувчилар",
+        "tests": "Тестлар",
+        "title": "График кўриниш",
+        "line_chart": "Чизиқли график",
+        "bar_chart": "Устунли график",
+        "pie_chart": "Доиравий график"
+      },
+      "filters": {
+        "date_range": "Сана оралиғи",
+        "start_date": "Бошланиш санаси",
+        "end_date": "Тугаш санаси",
+        "report_type": "Ҳисобот тури"
+      },
+      "actions": {
+        "generate": "Ҳисобот яратиш",
+        "export_excel": "Excel экспорт",
+        "export_pdf": "PDF экспорт",
+        "print": "Чоп этиш"
+      }
+    },
+    "settings": {
+      "title": "Созламалар",
+      "subtitle": "Тизим созламаларини бошқариш",
+      "subscriptionPricing": "Обуна нархлари",
+      "15DaysPrice": "15 кунлик нарх",
+      "1MonthPrice": "1 ойлик нарх",
+      "3MonthsPrice": "3 ойлик нарх",
+      "examConfiguration": "Имтиҳон созламалари",
+      "passingPercentage": "Ўтиш фоизи",
+      "notificationConfiguration": "Билдиришнома созламалари",
+      "subscriptionWarningDescription": "Обуна тугашига 7 кун қолганда огоҳлантириш юбориш",
+      "profileDeletionDescription": "Обуна тугагандан 30 кун ўтгач профилларни ўчириш",
+      "sendBulkNotification": "Оммавий билдиришнома юбориш",
+      "contactInformation": "Алоқа маълумотлари",
+      "contactInfoNote": "Бу маълумотлар сайтда кўрсатилади",
+      "socialMediaLinks": "Ижтимоий тармоқлар",
+      "notificationTitle": "Билдиришнома сарлавҳаси",
+      "notificationMessage": "Билдиришнома матни",
+      "priorityLevel": "Муҳимлик даражаси",
+      "sendToAllActiveUsers": "Барча фаол фойдаланувчиларга юбориш",
+      "tabs": {
+        "general": "Умумий",
+        "subscription": "Обуна",
+        "payment": "Тўлов",
+        "notification": "Билдиришнома",
+        "system": "Тизим",
+        "subscriptionSettings": "Обуна созламалари",
+        "examSettings": "Имтиҳон созламалари",
+        "notifications": "Билдиришномалар",
+        "contactInfo": "Контакт маълумотлар"
+      },
+      "messages": {
+        "loadError": "Созламаларни юклашда хатолик",
+        "saveSuccess": "Созламалар муваффақиятли сақланди",
+        "saveError": "Созламаларни сақлашда хатолик",
+        "notificationSuccess": "Хабар муваффақиятли юборилди",
+        "notificationError": "Хабар юборишда хатолик"
+      },
+      "labels": {
+        "questionsCount": "Саволлар сони",
+        "timeLimit": "Вақт чегараси (дақиқа)",
+        "subscriptionWarnings": "Обуна огоҳлантиришлари",
+        "profileDeletionPeriod": "Профил ўчириш муддати (кун)",
+        "phoneNumber": "Телефон рақами",
+        "contactUrl": "Алоқа манзили",
+        "email": "Email манзил",
+        "address": "Манзил",
+        "title": "Сарлавҳа",
+        "message": "Хабар матни",
+        "priority": "Муҳимлик даражаси"
+      },
+      "placeholders": {
+        "address": "Тўлиқ манзилни киритинг"
+      },
+      "priority": {
+        "low": "Паст",
+        "medium": "Ўртача",
+        "high": "Юқори"
+      },
+      "notes": {
+        "priceNote": "Нархлар сўмда кўрсатилган",
+        "examNote": "Имтиҳон созламалари барча имтиҳон тестларига таъсир қилади"
+      },
+      "general": {
+        "site_name": "Сайт номи",
+        "site_description": "Сайт тавсифи",
+        "contact_email": "Алоқа email",
+        "contact_phone": "Алоқа телефони",
+        "address": "Манзил",
+        "timezone": "Вақт зонаси",
+        "language": "Тил"
+      },
+      "subscription": {
+        "types": {
+        "15_days_full": "15 кунлик (тўлиқ фойдаланиш)",
+        "1_month_full": "1 ойлик (тўлиқ фойдаланиш)",
+        "3_months_full": "3 ойлик (тўлиқ фойдаланиш)"
+      },
+      "types": "Обуна турлари",
+        "prices": "Нархлар",
+        "duration": "Муддати",
+        "features": "Хусусиятлари",
+        "trial_period": "Синов муддати",
+        "auto_renewal": "Автоматик янгилаш"
+      },
+      "payment": {
+        "methods": "Тўлов усуллари",
+        "currency": "Валюта",
+        "tax_rate": "Солиқ ставкаси",
+        "payment_gateway": "Тўлов тизими",
+        "api_keys": "API калитлари"
+      },
+      "notification": {
+        "email_notifications": "Email билдиришномалар",
+        "sms_notifications": "SMS билдиришномалар",
+        "push_notifications": "Push билдиришномалар",
+        "notification_templates": "Билдиришнома шаблонлари"
+      },
+      "system": {
+        "maintenance_mode": "Техник хизмат режими",
+        "backup_settings": "Захира созламалари",
+        "security_settings": "Хавфсизлик созламалари",
+        "performance": "Ишлаш самарадорлиги",
+        "logs": "Тизим журналлари"
+      }
+    },
+    "notifications": {
+      "sendBulk": "Оммавий хабар юбориш",
+      "recipients": "Қабул қилувчилар",
+      "allUsers": "Барча фойдаланувчиларга",
+      "selectedUsers": "Танланган фойдаланувчиларга ({{count}} та)",
+      "priority": "Муҳимлик даражаси",
+      "title": "Сарлавҳа",
+      "message": "Хабар матни"
+    }
+  },
+  "payment": {
+    "title": "Тўлов",
+    "select_plan": "Обуна режасини танланг",
+    "plans": {
+      "15_days": {
+        "name": "15 кунлик",
+        "price": "30,000 сўм",
+        "features": [
+          "Барча мавзуларга кириш",
+          "Чексиз тест топшириш",
+          "Натижалар таҳлили",
+          "24/7 қўллаб-қувватлаш"
+        ]
+      },
+      "1_month": {
+        "name": "1 ойлик",
+        "price": "50,000 сўм",
+        "features": [
+          "Барча мавзуларга кириш",
+          "Чексиз тест топшириш",
+          "Натижалар таҳлили",
+          "24/7 қўллаб-қувватлаш",
+          "Махсус тайёргарлик материаллари"
+        ],
+        "popular": true
+      },
+      "3_months": {
+        "name": "3 ойлик",
+        "price": "120,000 сўм",
+        "features": [
+          "Барча мавзуларга кириш",
+          "Чексиз тест топшириш",
+          "Натижалар таҳлили",
+          "24/7 қўллаб-қувватлаш",
+          "Махсус тайёргарлик материаллари",
+          "Шахсий ўқитувчи маслаҳати"
+        ],
+        "discount": "20% тежаш"
+      }
+    },
+    "methods": {
+      "cash": "Нақд пул"
+    },
+    "status": {
+      "pending": "Кутилмоқда",
+      "completed": "Тўланган",
+      "cancelled": "Бекор қилинган"
+    },
+    "payment_methods": {
+      "title": "Тўлов усулини танланг",
+      "click": "Click",
+      "payme": "Payme",
+      "cash": "Нақд пул"
+    },
+    "process": {
+      "processing": "Тўлов қайта ишланмоқда...",
+      "success": "Тўлов муваффақиятли амалга оширилди!",
+      "failed": "Тўлов муваффақиятсиз. Қайта уриниб кўринг.",
+      "pending": "Тўлов кутилмоқда..."
+    },
+    "invoice": {
+      "title": "Ҳисоб-фактура",
+      "invoice_number": "Ҳисоб-фактура рақами",
+      "date": "Сана",
+      "due_date": "Тўлов муддати",
+      "bill_to": "Қабул қилувчи",
+      "description": "Тавсиф",
+      "amount": "Сумма",
+      "subtotal": "Жами",
+      "tax": "Солиқ",
+      "total": "Умумий сумма",
+      "payment_method": "Тўлов усули",
+      "transaction_id": "Транзакция ID"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "Саҳифа топилмади",
+      "message": "Кечирасиз, сиз қидираётган саҳифа топилмади.",
+      "button": "Бош саҳифага қайтиш"
+    },
+    "500": {
+      "title": "Сервер хатоси",
+      "message": "Кечирасиз, серверда хатолик юз берди. Илтимос, кейинроқ уриниб кўринг.",
+      "button": "Саҳифани янгилаш"
+    },
+    "403": {
+      "title": "Кириш тақиқланган",
+      "message": "Кечирасиз, сизда бу саҳифага кириш ҳуқуқи йўқ.",
+      "button": "Орқага қайтиш"
+    },
+    "network": {
+      "title": "Тармоқ хатоси",
+      "message": "Интернет алоқангизни текширинг ва қайта уриниб кўринг.",
+      "button": "Қайта уриниш"
+    },
+    "general": {
+      "title": "Хатолик юз берди",
+      "message": "Кутилмаган хатолик юз берди. Илтимос, қайта уриниб кўринг.",
+      "button": "Қайта уриниш"
+    },
+    "boundary": {
+      "title": "Хатолик юз берди",
+      "message": "Кутилмаган хатолик юз берди. Илтимос, саҳифани янгиланг ёки кейинроқ қайта уриниб кўринг.",
+      "button": "Қайта уриниш",
+      "stackTrace": "Stack trace"
+    },
+    "loadingUser": "Фойдаланувчи маълумотларини юклашда хатолик",
+    "loginFailed": "Тизимга киришда хатолик",
+    "registrationFailed": "Рўйхатдан ўтишда хатолик",
+    "logoutFailed": "Тизимдан чиқишда хатолик",
+    "passwordUpdateFailed": "Паролни янгилашда хатолик",
+    "tooManyAttempts": "{{message}}",
+    "deviceChanged": "Қурилма ўзгарганлиги аниқланди. Хавфсизлик мақсадида қайта киринг.",
+    "sessionExpired": "Сессия муддати тугади. Қайта киринг.",
+    "subscriptionRequired": "Бу функциядан фойдаланиш учун обуна керак",
+    "unauthorized": "Рухсат этилмаган",
+    "dataNotFound": "Маълумот топилмади",
+    "server": "Сервер хатоси",
+    "networkConnection": "Интернет алоқангизни текширинг",
+    "somethingWentWrong": "Нимадир хато кетди",
+    "validation": {
+      "required": "Бу майдон тўлдирилиши шарт",
+      "email": "Тўғри email манзилини киритинг",
+      "phone": "Тўғри телефон рақамини киритинг",
+      "phoneLength": "Телефон рақами 9 та рақамдан иборат бўлиши керак",
+      "min_length": "Камида {{min}} та белги бўлиши керак",
+      "max_length": "Кўпи билан {{max}} та белги бўлиши керак",
+      "min_value": "Қиймат камида {{min}} бўлиши керак",
+      "max_value": "Қиймат кўпи билан {{max}} бўлиши керак",
+      "pattern": "Нотўғри формат",
+      "password_match": "Пароллар мос келмади",
+      "password_mismatch": "Пароллар мос келмади",
+      "unique": "Бу қиймат аллақачон мавжуд"
+    }
+  },
+  "footer": {
+    "description": "Профессионал ҳайдовчилик имтиҳонига тайёргарлик платформаси",
+    "quickLinks": "Тез ҳаволалар",
+    "contactTitle": "Боғланиш",
+    "socialMedia": "Ижтимоий тармоқлар",
+    "rights": "Барча ҳуқуқлар ҳимояланган",
+    "address": "Қорақалпоғистон Республикаси, Беруний тумани",
+    "phone": "+998 93 365 50 60",
+    "email": "info@behzodavtoustoz.uz",
+    "about": {
+      "title": "Биз ҳақимизда",
+      "description": "Беҳзод Автоустоз - ҳайдовчилик гувоҳномаси имтиҳонига тайёрланиш учун замонавий онлайн платформа.",
+      "mission": "Бизнинг мақсадимиз - ҳар бир ўқувчига сифатли таълим бериш ва имтиҳонга муваффақиятли тайёрлаш."
+    },
+    "links": {
+      "title": "Фойдали ҳаволалар",
+      "home": "Бош саҳифа",
+      "about": "Биз ҳақимизда",
+      "contact": "Алоқа",
+      "privacy": "Махфийлик сиёсати",
+      "terms": "Фойдаланиш шартлари",
+      "faq": "Кўп бериладиган саволлар"
+    },
+    "contact": {
+      "title": "Алоқа",
+      "phone": "Телефон",
+      "email": "Email",
+      "address": "Манзил",
+      "working_hours": "Иш вақти",
+      "monday_friday": "Душанба - Жума",
+      "saturday": "Шанба",
+      "sunday": "Якшанба"
+    },
+    "social": {
+      "title": "Ижтимоий тармоқлар",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "youtube": "YouTube"
+    },
+    "copyright": "© {{year}} Беҳзод Автоустоз. Барча ҳуқуқлар ҳимояланган.",
+    "developed_by": "Томонидан ишлаб чиқилган"
+  },
+  "toast": {
+    "success": {
+      "login": "Тизимга муваффақиятли кирдингиз",
+      "register": "Рўйхатдан муваффақиятли ўтдингиз",
+      "logout": "Тизимдан чиқдингиз",
+      "passwordUpdated": "Пароль муваффақиятли янгиланди"
+    }
+  },
+  "placeholders": {
+    "address": "Тўлиқ манзилни киритинг"
+  },
+  "notifications": {
+    "title": "Билдиришномалар",
+    "subtitle": "Барча билдиришномаларингиз шу ерда",
+    "empty": "Ҳозирча билдиришномалар йўқ",
+    "newNotificationReceived": "Янги билдиришнома келди",
+    "markAllAsRead": "Ҳаммасини ўқилган деб белгилаш",
+    "filter": {
+      "all": "Барчаси",
+      "unread": "Ўқилмаган ({{count}})",
+      "read": "Ўқилган"
+    },
+    "errors": {
+      "fetchError": "Билдиришномаларни юклашда хатолик",
+      "markReadError": "Ўқилган деб белгилашда хатолик",
+      "markAllReadError": "Ҳаммасини ўқилган деб белгилашда хатолик",
+      "deleteError": "Билдиришномани ўчиришда хатолик"
+    },
+    "default_title": "Билдиришнома"
+  },
+  "test": {
+    "types": {
+      "topic": "Мавзу бўйича",
+      "ticket": "Билет бўйича",
+      "random": "Тасодифий",
+      "exam": "Имтиҳон"
+    }
+  },
+  "subscription": {
+    "types": {
+      "15_days": "15 кунлик",
+      "1_month": "1 ойлик",
+      "3_months": "3 ойлик",
+      "15_days_full": "15 кунлик обуна",
+      "1_month_full": "1 ойлик обуна",
+      "3_months_full": "3 ойлик обуна"
+    }
+  },
+  "payment": {
+    "methods": {
+      "cash": "Нақд пул",
+      "card": "Банк картаси",
+      "online": "Онлайн тўлов",
+      "payme": "Payme",
+      "click": "Click"
+    },
+    "status": {
+      "completed": "Тўланган",
+      "pending": "Кутилмоқда",
+      "cancelled": "Бекор қилинган"
+    }
+  }
+}

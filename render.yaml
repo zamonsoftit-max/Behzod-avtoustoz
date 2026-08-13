@@ -1,0 +1,60 @@
+# Render.com Blueprint — backend'ni avtomatik deploy qiladi.
+# Render dashboard -> New -> Blueprint -> shu repo'ni tanlang.
+services:
+  - type: web
+    name: behzod-avtoustoz-api
+    runtime: node
+    rootDir: backend
+    plan: free
+    region: frankfurt          # O'zbekistonga eng yaqin bepul region
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Atlas ulanish satrini Render dashboard'da kiriting (sync:false = qo'lda)
+      - key: MONGODB_URI
+        sync: false
+      # Vercel frontend manzili, masalan: https://behzod-avtoustoz.vercel.app
+      - key: CLIENT_URL
+        sync: false
+      # JWT kalitlari avtomatik generatsiya qilinadi
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      # Cross-domain (Vercel↔Render) cookie cheklovlariga qarshi uzunroq access token
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: JWT_REFRESH_EXPIRES_IN
+        value: 30d
+      # Cookie domeni bo'sh (frontend va backend turli domenlarda)
+      - key: COOKIE_DOMAIN
+        value: ""
+      - key: UPLOAD_DIR
+        value: uploads
+      - key: MAX_FILE_SIZE_MB
+        value: "5"
+      - key: SMS_PROVIDER
+        value: eskiz
+      # --- Ixtiyoriy: kalitlar bo'lmasa dev/manual rejimda ishlaydi ---
+      - key: ESKIZ_EMAIL
+        sync: false
+      - key: ESKIZ_PASSWORD
+        sync: false
+      - key: ESKIZ_FROM
+        sync: false
+      - key: CLICK_SERVICE_ID
+        sync: false
+      - key: CLICK_SECRET_KEY
+        sync: false
+      - key: CLICK_MERCHANT_ID
+        sync: false
+      - key: PAYME_MERCHANT_ID
+        sync: false
+      - key: PAYME_SECRET_KEY
+        sync: false
+      - key: PAYME_CHECKOUT_URL
+        value: https://checkout.paycom.uz

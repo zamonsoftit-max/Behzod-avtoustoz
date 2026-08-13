@@ -1,0 +1,7 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F3F4F6"/>
+  <path d="M170 90C170 84.4772 174.477 80 180 80H220C225.523 80 230 84.4772 230 90V130C230 135.523 225.523 140 220 140H180C174.477 140 170 135.523 170 130V90Z" fill="#E5E7EB"/>
+  <path d="M185 150H215L230 180H170L185 150Z" fill="#E5E7EB"/>
+  <circle cx="200" cy="110" r="15" fill="#9CA3AF"/>
+  <text x="200" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6B7280">Rasm yuklanmadi</text>
+</svg>

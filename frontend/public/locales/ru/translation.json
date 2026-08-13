@@ -1,0 +1,1928 @@
+{
+  "common": {
+    "appName": "Behzod Avtoustoz",
+    "theme": "Тема",
+    "welcome": "Добро пожаловать",
+    "loading": "Загрузка...",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "sort": "Сортировка",
+    "yes": "Да",
+    "no": "Нет",
+    "confirm": "Подтвердить",
+    "back": "Назад",
+    "next": "Далее",
+    "previous": "Предыдущий",
+    "close": "Закрыть",
+    "submit": "Отправить",
+    "create": "Создать",
+    "update": "Обновить",
+    "view": "Просмотр",
+    "download": "Скачать",
+    "upload": "Загрузить",
+    "select": "Выбрать",
+    "all": "Все",
+    "none": "Ничего",
+    "or": "или",
+    "and": "и",
+    "of": "из",
+    "to": "к",
+    "from": "от",
+    "with": "с",
+    "without": "без",
+    "per": "за",
+    "page": "страница",
+    "pages": "страницы",
+    "item": "элемент",
+    "items": "элементы",
+    "result": "результат",
+    "results": "результаты",
+    "showing": "Показано",
+    "total": "Всего",
+    "selected": "выбрано",
+    "selectedLowercase": "выбрано",
+    "clear": "Очистить",
+    "reset": "Сбросить",
+    "apply": "Применить",
+    "confirmDelete": "Подтвердить удаление",
+    "confirmDeleteMessage": "Это действие нельзя отменить. Продолжить?",
+    "deleting": "Удаление...",
+    "remove": "Удалить",
+    "add": "Добавить",
+    "copy": "Копировать",
+    "copied": "Скопировано",
+    "share": "Поделиться",
+    "print": "Печать",
+    "export": "Экспорт",
+    "import": "Импорт",
+    "refresh": "Обновить",
+    "retry": "Повторить",
+    "warning": "Предупреждение",
+    "info": "Информация",
+    "success": "Успех",
+    "error": "Ошибка",
+    "errors": {
+      "network": "Нет подключения к интернету. Пожалуйста, проверьте ваше соединение",
+      "dataNotFound": "Данные не найдены",
+      "subscriptionRequired": "Требуется подписка",
+      "unauthorized": "Нет доступа",
+      "networkConnection": "Нет подключения к интернету",
+      "somethingWentWrong": "Произошла ошибка",
+      "server": "Ошибка сервера",
+      "sessionExpired": "Сессия истекла",
+      "deviceChanged": "Устройство изменено",
+      "tooManyAttempts": "Слишком много попыток"
+    },
+    "confirmMessage": "Вы уверены, что хотите выполнить это действие?",
+    "language": "Язык",
+    "send": "Отправить",
+    "sending": "Отправка...",
+    "priority": {
+      "low": "Низкий",
+      "medium": "Средний",
+      "high": "Высокий",
+      "urgent": "Срочный"
+    },
+    "phoneNumber": "Номер телефона",
+    "password": "Пароль",
+    "fullName": "Полное имя",
+    "admin": "Админ",
+    "logout": "Выход",
+    "uz": "Узбекский (латиница)",
+    "uzCyrl": "Узбекский (кириллица)",
+    "ru": "Русский",
+    "currency": "сум",
+    "no_notifications": "Нет уведомлений",
+    "notifications": "Уведомления",
+    "view_all": "Показать все",
+    "deleted": "Удален",
+    "ticket": "Билет",
+    "days": "дней",
+    "notAvailable": "Недоступно",
+    "months": {
+      "january": "Январь",
+      "february": "Февраль", 
+      "march": "Март",
+      "april": "Апрель",
+      "may": "Май",
+      "june": "Июнь",
+      "july": "Июль",
+      "august": "Август",
+      "september": "Сентябрь",
+      "october": "Октябрь",
+      "november": "Ноябрь",
+      "december": "Декабрь"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "BEHZOD AVTOUSTOZ",
+      "subtitle": "Профессиональная подготовка к экзамену на водительские права",
+      "cta": "ВОЙТИ В СИСТЕМУ",
+      "safeReliable": "100% безопасно и надежно",
+      "register": "Регистрация",
+      "login": "Вход",
+      "students": "{{count}} учеников"
+    },
+    "features": {
+      "title": "Наши услуги",
+      "subtitle": "На нашей платформе есть все необходимые возможности для вас",
+      "tests": {
+        "title": "1000+ тестовых вопросов",
+        "description": "По всем темам"
+      },
+      "tickets": {
+        "title": "100+ билетов",
+        "description": "По 10 вопросов в каждом"
+      },
+      "online": {
+        "title": "24/7 онлайн",
+        "description": "Возможность учиться в любое время"
+      },
+      "auto": {
+        "title": "Автоматическая проверка",
+        "description": "Результаты мгновенно"
+      }
+    },
+    "statistics": {
+      "title": "Результаты",
+      "subtitle": "Наши достижения в цифрах",
+      "students": "Зарегистрированных учеников",
+      "passed": "Сдавших экзамен",
+      "questions": "Количество тестовых вопросов",
+      "active": "Активных учеников"
+    },
+    "functions": {
+      "subtitle": "Подготовьтесь к экзамену по вождению с нашей платформой",
+      "practice": {
+        "title": "Тестовые упражнения",
+        "description": "Укрепите свои знания с помощью более 1000 тестовых вопросов"
+      },
+      "simulation": {
+        "title": "Симуляция экзамена",
+        "description": "Проверьте свои знания в условиях реального экзамена"
+      },
+      "analysis": {
+        "title": "Анализ результатов",
+        "description": "Оцените свои знания с помощью детальной статистики и анализа"
+      }
+    },
+    "tryTest": {
+      "subtitle": "Попробуйте нашу платформу перед регистрацией",
+      "demo": {
+        "title": "Бесплатный демо-тест",
+        "description": "Почувствуйте удобство нашей платформы с демо-тестом из 10 вопросов",
+        "button": "Начать демо-тест"
+      }
+    },
+    "cta": {
+      "title": "Подготовьтесь к экзамену по вождению!",
+      "subtitle": "Тысячи учеников успешно сдали экзамен с помощью нашей платформы. Присоединяйтесь к ним!",
+      "startNow": "Начать сейчас",
+      "haveAccount": "Есть аккаунт? Войти",
+      "safe": "100% Безопасно",
+      "verified": "Проверено",
+      "users": "5K+ Пользователей"
+    },
+    "stats": {
+      "success": "Успех",
+      "online": "Онлайн"
+    }
+  },
+  "navigation": {
+    "home": "Главная",
+    "dashboard": "Панель управления",
+    "features": "Возможности",
+    "functions": "Услуги",
+    "statistics": "Результаты",
+    "tryTest": "Попробовать тест",
+    "contact": "Контакты",
+    "profile": "Профиль",
+    "tests": "Тесты",
+    "results": "Результаты",
+    "statistics": "Статистика",
+    "timeRange": {
+      "week": "Неделя",
+      "month": "Месяц",
+      "all": "Все"
+    },
+    "notifications": "Уведомления",
+    "settings": "Настройки",
+    "logout": "Выход",
+    "login": "Вход",
+    "register": "Регистрация",
+    "about": "О нас",
+    "contact": "Контакты",
+    "help": "Помощь",
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия использования",
+    "payments": "Платежи"
+  },
+  "tests": {
+    "random_test": "Случайный тест",
+    "exam": "Сдать экзамен"
+  },
+  "demoTest": {
+    "title": "Демо Тест",
+    "questionFormat": "Вопрос {{current}} из {{total}}",
+    "ticketNumber": "Билет №{{number}}",
+    "testResults": "Результаты теста",
+    "demoTestResult": "Результаты демо теста",
+    "overallResult": "Общий результат",
+    "correctAnswers": "Правильные ответы",
+    "wrongAnswers": "Неправильные ответы",
+    "answerAnalysis": "Анализ ответов",
+    "yourAnswer": "Ваш ответ",
+    "correctAnswer": "Правильный ответ",
+    "noAnswerGiven": "Ответ не дан",
+    "homePageButton": "Главная страница",
+    "registerButton": "Регистрация",
+    "previousButton": "Предыдущий",
+    "nextButton": "Следующий",
+    "finishTestButton": "Завершить тест",
+    "answersGivenFormat": "Дано ответов: {{answered}} из {{total}}",
+    "testInfo": "Информация о тесте",
+    "testType": "Тип теста",
+    "demo": "Демо тест",
+    "totalQuestions": "Всего вопросов",
+    "timeTaken": "Затраченное время",
+    "explanation": "Пояснение"
+  },
+  "auth": {
+    "loginTitle": "Вход в систему",
+    "welcomeBack": "Добро пожаловать! Войдите для продолжения",
+    "phoneNumber": "Номер телефона",
+    "phoneNumberRequired": "Номер телефона обязателен",
+    "phoneNumberLength": "Номер телефона должен состоять из 9 цифр",
+    "password": "Пароль",
+    "passwordRequired": "Пароль обязателен",
+    "passwordTooShort": "Пароль должен содержать минимум 6 символов",
+    "confirmPassword": "Подтвердите пароль",
+    "forgotPassword": "Забыли пароль?",
+    "resetPassword": "Восстановить пароль",
+    "newPassword": "Новый пароль",
+    "passwordMismatch": "Пароли не совпадают",
+    "loginButton": "Войти",
+    "registerButton": "Регистрация",
+    "dontHaveAccount": "Нет аккаунта?",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "registerTitle": "Регистрация",
+    "createAccount": "Создайте новый аккаунт",
+    "fullName": "Полное имя",
+    "login": {
+      "title": "Вход в систему",
+      "subtitle": "Войдите, чтобы продолжить",
+      "phone_placeholder": "+998 90 123 45 67",
+      "password_placeholder": "Введите пароль",
+      "remember_me": "Запомнить меня",
+      "forgot_password": "Забыли пароль?",
+      "login_button": "Войти",
+      "no_account": "Нет аккаунта?",
+      "register_link": "Зарегистрируйтесь"
+    },
+    "register": {
+      "title": "Регистрация",
+      "subtitle": "Создайте новый аккаунт",
+      "full_name_placeholder": "Имя Фамилия",
+      "phone_placeholder": "+998 90 123 45 67",
+      "password_placeholder": "Пароль",
+      "confirm_password_placeholder": "Подтвердите пароль",
+      "register_button": "Зарегистрироваться",
+      "have_account": "Уже есть аккаунт?",
+      "login_link": "Войдите",
+      "terms_agree": "Регистрируясь, вы соглашаетесь с",
+      "terms_link": "условиями использования",
+      "and": "и",
+      "privacy_link": "политикой конфиденциальности",
+      "agree_suffix": "",
+      "fullname_required": "Имя и фамилия обязательны",
+      "fullname_min_length": "Имя и фамилия должны содержать минимум 3 символа",
+      "fullname_pattern": "Можно вводить только буквы",
+      "phone_required": "Номер телефона обязателен",
+      "phone_pattern": "Номер телефона в неправильном формате",
+      "password_required": "Пароль обязателен",
+      "password_min_length": "Пароль должен содержать минимум 8 символов",
+      "password_pattern": "Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру",
+      "confirm_password_required": "Подтверждение пароля обязательно",
+      "passwords_not_match": "Пароли не совпадают"
+    },
+    "logout": {
+      "confirm_title": "Подтвердить выход",
+      "confirm_message": "Вы действительно хотите выйти?",
+      "confirm_button": "Да, выйти",
+      "cancel_button": "Отмена"
+    },
+    "sendCode": "Отправить код",
+    "enterPhone": "Введите ваш номер телефона, мы отправим код по SMS",
+    "verificationCode": "Код подтверждения",
+    "enterCode": "Введите код, отправленный по SMS",
+    "resendCode": "Отправить код повторно",
+    "codeExpired": "Срок действия кода истек",
+    "invalidCode": "Неверный код",
+    "codeSent": "Код отправлен",
+    "verifyCode": "Подтвердить код",
+    "enterCodeAndPassword": "Введите SMS код и новый пароль",
+    "updatePassword": "Обновить пароль",
+    "sendToAnotherNumber": "Отправить на другой номер",
+    "phoneNumberHelp": "Введите ваш номер телефона, мы отправим код по SMS",
+    "fullNameLabel": "Полное имя",
+    "fullNamePlaceholder": "Имя Фамилия",
+    "codeInvalidLength": "Код должен состоять из 6 цифр",
+    "password_reset_success": "Пароль успешно обновлен",
+    "passwordResetSuccess": "Пароль успешно обновлен",
+    "rememberPassword": "Вспомнили пароль?",
+    "enterNewPassword": "Введите новый пароль",
+    "codeRequired": "Введите SMS код",
+    "codeVerified": "Код подтвержден",
+    "devMode": {
+      "title": "Режим разработки - SMS Код",
+      "copyCode": "Копировать код",
+      "codeCopied": "Код скопирован!",
+      "invalidToken": "Неверный токен. Используйте токен, показанный выше.",
+      "smsCode": "SMS Код"
+    },
+    "maxAttemptsReached": "Достигнуто максимальное количество попыток. Подождите 24 часа",
+    "smsBlocked": "Отправка SMS заблокирована",
+    "attemptsRemaining": "Осталось попыток: {{attempts}}"
+  },
+  "profile": {
+    "title": "Мой профиль",
+    "subtitle": "Личные данные и настройки",
+    "personal_info": "Личная информация",
+    "joined_date": "Дата регистрации",
+    "security": "Безопасность",
+    "change_password": "Изменить пароль",
+    "language_settings": "Настройки языка",
+    "theme_settings": "Настройки темы",
+    "light_theme": "Светлая тема",
+    "dark_theme": "Тёмная тема",
+    "danger_zone": "Опасная зона",
+    "delete_account_warning": "Если вы удалите свой аккаунт, все ваши данные будут удалены безвозвратно.",
+    "delete_account": "Удалить аккаунт",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "current_password": "Текущий пароль",
+    "new_password": "Новый пароль",
+    "confirm_new_password": "Подтвердите новый пароль",
+    "errors": {
+      "name_required": "Имя обязательно для заполнения",
+      "image_too_large": "Размер изображения слишком большой (до 5МБ)",
+      "password_mismatch": "Пароли не совпадают",
+      "password_too_short": "Пароль должен содержать минимум 6 символов"
+    },
+    "success": {
+      "profile_updated": "Профиль успешно обновлён",
+      "image_uploaded": "Изображение успешно загружено",
+      "password_updated": "Пароль успешно обновлён"
+    },
+    "delete_account_confirm": "Вы действительно хотите удалить свой аккаунт? Это действие нельзя отменить.",
+    "confirm_delete_password": "Введите ваш пароль",
+    "yes_delete": "Да, удалить"
+  },
+  "student": {
+    "dashboard": {
+      "welcome": "Добро пожаловать, {{name}}!",
+      "subscription_status": "Статус подписки",
+      "tests_today": "Тесты сегодня",
+      "average_score": "Средний балл",
+      "best_score": "Лучший результат",
+      "subscriptionExpired": "Подписка истекла",
+      "subscriptionDaysLeft": "До окончания подписки: {{days}} дней",
+      "averageScore": "Средний балл",
+      "weeklyActivity": "Недельная активность",
+      "testResults": "Результаты тестов",
+      "totalQuestions": "Всего вопросов",
+      "correctAnswers": "Правильные ответы",
+      "wrongAnswers": "Неправильные ответы",
+      "testTypes": "Типы тестов",
+      "quick_actions": "Быстрые действия",
+      "start_test": "Начать тест",
+      "view_results": "Просмотр результатов",
+      "study_materials": "Учебные материалы",
+      "recent_tests": "Последние тесты",
+      "no_recent_tests": "Нет последних тестов",
+      "view_all": "Показать все",
+      "progress": "Прогресс",
+      "topics_mastered": "Освоенные темы",
+      "improvement_needed": "Требует улучшения",
+      "title": "Панель управления",
+      "subscriptionExpiredMessage": "Оформите подписку для использования тестов",
+      "subscriptionExpiringMessage": "Не забудьте продлить подписку",
+      "stats": {
+        "dailyActivity": "Дневная активность",
+        "preparationLevel": "Уровень подготовки",
+        "totalTests": "Всего тестов",
+        "averageScore": "Средний балл",
+        "weeklyProgress": "Недельный прогресс"
+      },
+      "subscription": {
+        "title": "Статус подписки",
+        "active": "Активна",
+        "expires": "Дата окончания",
+        "expires_in": "Осталось {{days}} дней",
+        "expired": "Истекла",
+        "renew": "Продлить",
+        "warning": "Если вы не оплатите в течение 30 дней после окончания подписки, ваш профиль будет удален",
+        "daysLeft": "Осталось {{days}} дней"
+      },
+      "testTypes": {
+        "title": "Типы тестов",
+        "topicTraining": "Начать тренировку по темам",
+        "topicExam": "Сдать экзамен по темам",
+        "intermediate": "Промежуточный контроль",
+        "ticketTraining": "Начать тренировку по билетам",
+        "wrongAnswers": "Все неправильные вопросы",
+        "myWrongAnswers": "Мои неправильные вопросы",
+        "randomTest": "Случайный тест",
+        "exam": "Сдать экзамен"
+      },
+      "weekDays": ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"],
+      "hoursLabel": "Часы",
+      "errors": {
+        "fetchStats": "Не удалось загрузить статистику"
+      }
+    },
+    "tests": {
+      "title": "Тесты",
+      "select_type": "Выберите тип теста",
+      "select_topic": "Выберите тему",
+      "select_ticket": "Выберите билет",
+      "selectTypeDescription": "Выберите тип теста и проверьте свои знания",
+      "subscriptionRequired": "Требуется подписка",
+      "subscribeFirst": "Для использования тестов сначала оформите подписку",
+      "startTest": "Начать тест",
+      "examTime": "40 минут",
+      "types": {
+        "topicTraining": {
+          "title": "Тренировка по темам",
+          "description": "Практикуйтесь по выбранной теме без ограничений"
+        },
+        "topicExam": {
+          "title": "Экзамен по темам",
+          "description": "Проверьте свои знания по теме"
+        },
+        "intermediate": {
+          "title": "Промежуточный контроль",
+          "description": "Смешанный тест из всех тем"
+        },
+        "ticketTraining": {
+          "title": "Тренировка по билетам",
+          "description": "Практикуйтесь по билетам"
+        },
+        "wrongAnswers": {
+          "title": "Все неправильные вопросы",
+          "description": "Самые часто ошибочные вопросы в системе"
+        },
+        "myWrongAnswers": {
+          "title": "Мои неправильные вопросы",
+          "description": "Работайте над своими ошибками"
+        },
+        "random": {
+          "title": "Случайный тест",
+          "description": "Практикуйтесь со случайными вопросами"
+        },
+        "exam": {
+          "title": "Сдать экзамен",
+          "description": "Официальный экзамен в реальном режиме",
+          "time": "Ограничение по времени",
+          "timeLimit": "Ограничение по времени"
+        }
+      },
+      "back": "Назад",
+      "topicsCount": "{{count}} тем",
+      "ticketsCount": "{{count}} билетов",
+      "descriptions": {
+        "topicTraining": "Практикуйтесь по темам",
+        "topicExam": "Экзамен по темам",
+        "intermediate": "Промежуточный контрольный тест",
+        "ticketTraining": "Практикуйтесь по билетам",
+        "wrongAnswers": "Наиболее частые ошибки",
+        "myWrongAnswers": "Ваши неправильные ответы",
+        "random": "Случайные вопросы",
+        "exam": "Официальный экзамен"
+      },
+      "questions": "вопросов",
+      "minutesUnit": "минут",
+      "passingScoreUnit": "проходной балл",
+      "start_test": "Начать тест",
+      "no_questions": "Для этого типа нет вопросов",
+      "loading": "Загрузка вопросов...",
+      "filters": {
+        "all": "Все",
+        "by_topic": "По темам",
+        "by_ticket": "По билетам",
+        "by_difficulty": "По сложности",
+        "easy": "Легкий",
+        "medium": "Средний",
+        "hard": "Сложный"
+      }
+    },
+    "test": {
+      "question": "Вопрос",
+      "time_remaining": "Осталось времени",
+      "submit": "Сдать тест",
+      "next": "Следующий вопрос",
+      "previous": "Предыдущий вопрос",
+      "unanswered": "Без ответа",
+      "review": "Просмотр",
+      "confirmSubmit": "Подтвердить сдачу теста",
+      "confirmMessage": "Вы уверены, что хотите сдать тест?",
+      "noQuestionsTitle": "Вопросы не найдены",
+      "noQuestionsMessage": "Для этого типа теста нет доступных вопросов",
+      "backToTests": "Вернуться к тестам",
+      "answeredCount": "Отвечено: {{answered}} / {{total}}",
+      "unansweredCount": "{{count}} вопросов без ответа",
+      "errors": {
+        "fetchQuestions": "Ошибка при загрузке вопросов",
+        "submitTest": "Ошибка при сдаче теста",
+        "imageLoadError": "Изображение не загрузилось",
+        "insufficientQuestions": "Недостаточно вопросов"
+      },
+      "timeUp": "Время истекло!",
+      "autoSubmit": "Тест будет автоматически сдан...",
+      "finishTest": "Завершить тест",
+      "confirmSubmitTitle": "Завершить тест",
+      "confirmSubmitMessage": "У вас есть {{count}} вопросов без ответа. Хотите продолжить?",
+      "cancelButton": "Отмена",
+      "continueButton": "Продолжить"
+    },
+    "results": {
+      "title": "Результаты теста",
+      "passed": "Поздравляем! Вы сдали тест!",
+      "failed": "К сожалению, вы не набрали достаточно баллов",
+      "score": "Результат",
+      "percentage": "Процент",
+      "correct": "Правильные ответы",
+      "incorrect": "Неправильные ответы",
+      "unanswered": "Без ответа",
+      "timeTaken": "Затраченное время",
+      "passingScore": "Проходной балл",
+      "yourScore": "Ваш балл",
+      "reviewAnswers": "Просмотр ответов",
+      "tryAgain": "Попробовать снова",
+      "backToTests": "Вернуться к тестам",
+      "details": {
+        "question": "Вопрос",
+        "yourAnswer": "Ваш ответ",
+        "correctAnswer": "Правильный ответ",
+        "explanation": "Объяснение"
+      },
+      "backToHome": "На главную",
+      "notFound": "Результат не найден",
+      "examResults": "Результаты экзамена (проходной балл: {{passingScore}}%)",
+      "testResults": "Результаты теста",
+      "testInfo": "Информация о тесте",
+      "testType": "Тип теста",
+      "topic": "Тема",
+      "ticket": "Билет",
+      "startTime": "Время начала",
+      "timeFormat": "{{minutes}} минут {{seconds}} секунд",
+      "explanation": "Объяснение",
+      "testTypes": {
+        "exam": "Экзамен",
+        "topic": "По теме",
+        "ticket": "По билету",
+        "random": "Случайный",
+        "wrongAnswers": "Ошибочные вопросы",
+        "myWrongAnswers": "Мои ошибки",
+        "other": "Другое"
+      },
+      "yourAnswer": "Ваш ответ",
+      "correctAnswer": "Правильный ответ",
+      "noAnswer": "Ответ не дан",
+      "errors": {
+        "fetchResult": "Ошибка при загрузке результатов"
+      }
+    },
+    "statistics": {
+      "title": "Статистика",
+      "subtitle": "Отслеживайте свой прогресс обучения",
+      "noData": "Нет данных",
+      "preparationLevel": "Уровень подготовки",
+      "averageScore": "Средний балл",
+      "totalTime": "Общее время",
+      "totalTests": "Решено тестов",
+      "weeklyActivity": "Недельная активность",
+      "monthlyActivity": "Месячная активность",
+      "overallActivity": "Общая активность",
+      "questionsStatistics": "Статистика вопросов",
+      "totalQuestions": "Всего вопросов",
+      "correctAnswers": "Правильные ответы",
+      "wrongAnswers": "Неправильные ответы",
+      "topicProgress": "Прогресс по темам",
+      "mostMistakes": "Часто ошибаются",
+      "recentTests": "Последние тесты",
+      "times": "{{count}} раз(а)",
+      "timePeriod": "Период времени",
+      "today": "Сегодня",
+      "thisWeek": "Эта неделя",
+      "thisMonth": "Этот месяц",
+      "allTime": "Все время",
+      "timeRange": {
+        "week": "Неделя",
+        "month": "Месяц",
+        "all": "Все"
+      },
+      "overview": {
+        "title": "Общий обзор",
+        "totalTests": "Всего тестов",
+        "completedTests": "Завершенные тесты",
+        "averageScore": "Средний балл",
+        "totalTime": "Общее время",
+        "bestStreak": "Лучшая серия"
+      },
+      "performance": {
+        "title": "Производительность",
+        "byTopic": "По темам",
+        "byTestType": "По типам тестов",
+        "progressChart": "График прогресса",
+        "scoreDistribution": "Распределение баллов"
+      },
+      "topics": {
+        "title": "Статистика по темам",
+        "topic": "Тема",
+        "tests": "Тесты",
+        "correct": "Правильные",
+        "incorrect": "Неправильные",
+        "percentage": "Процент",
+        "mastery": "Освоение"
+      },
+      "time": {
+        "title": "Временная статистика",
+        "studyTime": "Время обучения",
+        "averageTestTime": "Среднее время теста",
+        "fastestTest": "Самый быстрый тест",
+        "slowestTest": "Самый медленный тест",
+        "timeByDay": "Время по дням",
+        "peakHours": "Пиковые часы"
+      },
+      "achievements": {
+        "title": "Достижения",
+        "firstTest": "Первый тест",
+        "perfectScore": "Идеальный результат",
+        "consistentLearner": "Постоянный ученик",
+        "testMaster": "Мастер тестов",
+        "topicExpert": "Эксперт по темам"
+      },
+      "weeklyGoals": {
+        "title": "Недельные цели",
+        "testsCompleted": "Тестов завершено",
+        "targetTests": "Целевые тесты",
+        "hoursStudied": "Часов изучено",
+        "targetHours": "Целевые часы",
+        "currentStreak": "Текущая серия"
+      },
+      "noData": "Нет данных для отображения",
+      "export": {
+        "title": "Экспорт статистики",
+        "pdf": "Скачать PDF",
+        "excel": "Скачать Excel"
+      },
+      "week": "Неделя",
+      "month": "Месяц",
+      "correct": "Правильно",
+      "wrong": "Неправильно",
+      "unanswered": "Без ответа",
+      "unknown": "Неизвестно",
+      "unknownQuestion": "Неизвестный вопрос",
+      "activityLabel": "Активность (часы)",
+      "progressLabel": "Прогресс (%)",
+      "timeFormat": "{{hours}} часов {{minutes}} минут",
+      "preparationLevel": "Общий уровень подготовки",
+      "averageScore": "Средний балл",
+      "totalTime": "Общее время",
+      "totalTests": "Сдано тестов",
+      "questionsStatistics": "Результаты по вопросам",
+      "totalQuestions": "Всего вопросов",
+      "correctAnswers": "Правильные ответы",
+      "wrongAnswers": "Неправильные ответы",
+      "dailyActivity": "Дневная активность",
+      "topicProgress": "Прогресс по темам",
+      "mostMistakes": "Наибольшее количество ошибок по темам",
+      "recentTests": "Последние тесты",
+      "errorCount": "{{count}} ошибок",
+      "times": "{{count}} раз",
+      "date": "Дата",
+      "testType": "Тип теста",
+      "result": "Результат",
+      "time": "Время",
+      "errors": {
+        "fetchError": "Ошибка при загрузке статистики"
+      }
+    },
+    "notifications": {
+      "title": "Уведомления",
+      "subtitle": "Все ваши уведомления",
+      "filter": {
+        "all": "Все",
+        "unread": "Непрочитанные ({{count}})",
+        "read": "Прочитанные"
+      },
+      "markAllAsRead": "Отметить все как прочитанные",
+      "empty": "Уведомлений нет",
+      "profile_deletion_warning": "Предупреждение об удалении профиля",
+      "mark_as_read": "Отметить как прочитанное",
+      "mark_all_as_read": "Отметить все как прочитанные",
+      "delete": "Удалить",
+      "no_notifications": "Нет уведомлений",
+      "subscription_expiring": "Подписка истекает",
+      "subscription_expired": "Подписка истекла",
+      "new_test_available": "Новый тест доступен",
+      "test_result_ready": "Результат теста готов",
+      "payment_successful": "Платеж успешен",
+      "payment_failed": "Платеж не удался",
+      "system_update": "Обновление системы",
+      "promotion": "Акции и скидки",
+      "profile_deletion_warning": "Предупреждение об удалении профиля"
+    },
+    "payments": {
+      "title": "Платежи",
+      "subtitle": "Управляйте подпиской и просматривайте историю платежей",
+      "refresh": "Обновить",
+      "subscriptionType": "Тип подписки",
+      "endDate": "Дата окончания",
+      "active": "Активна",
+      "inactive": "Неактивна",
+      "purchaseButton": "Купить",
+      "paymentHistory": "История платежей",
+      "noPayments": "Платежей пока нет",
+      "choosePaymentMethod": "Выберите способ оплаты",
+      "pay": "Оплатить",
+      "bestChoice": "Самый выгодный выбор",
+      "forDays": "на {{days}} дней",
+      "features": {
+        "unlimitedTests": "Неограниченное прохождение тестов",
+        "allTopics": "Доступ ко всем темам",
+        "fullStatistics": "Полная статистика и анализ",
+        "support": "Техподдержка 24/7"
+      },
+      "subscriptionTypes": {
+        "15_days": "15 дней",
+        "1_month": "1 месяц",
+        "3_months": "3 месяца"
+      },
+      "paymentMethods": {
+        "click": "Click",
+        "payme": "Payme",
+        "cash": "Наличные"
+      },
+      "status": {
+        "completed": "Оплачено",
+        "pending": "Ожидается",
+        "cancelled": "Отменено"
+      }
+    },
+    "profile": {
+      "title": "Мой профиль",
+      "personal_info": "Личная информация",
+      "subscription_info": "Информация о подписке",
+      "change_password": "Изменить пароль",
+      "statistics": "Статистика",
+      "full_name": "Полное имя",
+      "phone_number": "Номер телефона",
+      "joined_date": "Дата регистрации",
+      "subscription_type": "Тип подписки",
+      "subscription_status": "Статус подписки",
+      "expiry_date": "Дата истечения",
+      "current_password": "Текущий пароль",
+      "new_password": "Новый пароль",
+      "confirm_new_password": "Подтвердите новый пароль",
+      "update_password": "Обновить пароль",
+      "total_tests": "Всего тестов",
+      "passed_tests": "Сданные тесты",
+      "failed_tests": "Несданные тесты",
+      "average_score": "Средний балл",
+      "best_score": "Лучший результат",
+      "worst_score": "Худший результат",
+      "study_time": "Время обучения",
+      "edit_profile": "Редактировать профиль",
+      "save_changes": "Сохранить изменения",
+      "cancel_changes": "Отмена"
+    },
+    "statistics": {
+      "title": "Статистика",
+      "subtitle": "Отслеживайте свой прогресс обучения",
+      "noData": "Нет данных",
+      "preparationLevel": "Уровень подготовки",
+      "averageScore": "Средний балл",
+      "totalTime": "Общее время",
+      "totalTests": "Решено тестов",
+      "weeklyActivity": "Недельная активность",
+      "monthlyActivity": "Месячная активность",
+      "overallActivity": "Общая активность",
+      "questionsStatistics": "Статистика вопросов",
+      "totalQuestions": "Всего вопросов",
+      "correctAnswers": "Правильные ответы",
+      "wrongAnswers": "Неправильные ответы",
+      "topicProgress": "Прогресс по темам",
+      "mostMistakes": "Часто ошибаются",
+      "recentTests": "Последние тесты",
+      "timeRange": {
+        "week": "Неделя",
+        "month": "Месяц",
+        "all": "Все"
+      },
+      "correct": "Правильные",
+      "wrong": "Неправильные",
+      "unknown": "Неизвестно",
+      "unknownQuestion": "Неизвестный вопрос",
+      "activityLabel": "Активность (часы)",
+      "progressLabel": "Прогресс (%)",
+      "timeFormat": "{{hours}} часов {{minutes}} минут",
+      "times": "{{count}} раз(а)"
+    },
+    "notifications": {
+      "title": "Уведомления",
+      "subtitle": "Все ваши уведомления",
+      "filter": {
+        "all": "Все",
+        "unread": "Непрочитанные ({{count}})",
+        "read": "Прочитанные"
+      },
+      "markAllAsRead": "Отметить все как прочитанные",
+      "empty": "Уведомлений нет",
+      "mark_as_read": "Отметить как прочитанное",
+      "mark_all_as_read": "Отметить все как прочитанные",
+      "delete": "Удалить",
+      "no_notifications": "Нет уведомлений",
+      "subscription_expiring": "Подписка истекает",
+      "subscription_expired": "Подписка истекла",
+      "new_test_available": "Новый тест доступен",
+      "test_result_ready": "Результат теста готов",
+      "payment_successful": "Платеж успешен",
+      "payment_failed": "Платеж не удался",
+      "system_update": "Обновление системы",
+      "errors": {
+        "fetchError": "Ошибка при загрузке уведомлений",
+        "markReadError": "Ошибка при отметке как прочитанное",
+        "markAllReadError": "Ошибка при отметке всех как прочитанные",
+        "deleteError": "Ошибка при удалении уведомления"
+      },
+      "newNotificationReceived": "Получено новое уведомление",
+      "default_title": "Уведомление",
+      "promotion": "Акции и скидки"
+    },
+    "payments": {
+      "title": "Платежи",
+      "subtitle": "Управляйте подпиской и просматривайте историю платежей",
+      "refresh": "Обновить",
+      "subscriptionType": "Тип подписки",
+      "endDate": "Дата окончания",
+      "active": "Активна",
+      "inactive": "Неактивна",
+      "purchaseButton": "Приобрести",
+      "paymentHistory": "История платежей",
+      "noPayments": "Платежи пока отсутствуют",
+      "choosePaymentMethod": "Выберите способ оплаты",
+      "pay": "Оплатить",
+      "bestChoice": "Лучший выбор",
+      "forDays": "на {{days}} дней",
+      "features": {
+        "unlimitedTests": "Неограниченные тесты",
+        "allTopics": "Все темы",
+        "fullStatistics": "Полная статистика",
+        "support": "Поддержка 24/7"
+      },
+      "status": {
+        "pending": "Ожидание",
+        "processing": "В процессе",
+        "completed": "Оплачено",
+        "failed": "Неудачно",
+        "cancelled": "Отменено",
+        "refunded": "Возвращено"
+      },
+      "errors": {
+        "loadSubscriptions": "Ошибка при загрузке типов подписки",
+        "loadPayments": "Ошибка при загрузке истории платежей",
+        "selectSubscriptionAndMethod": "Пожалуйста, выберите тип подписки и способ оплаты",
+        "cashPaymentRequest": "Запрос на оплату наличными отправлен. Ожидайте подтверждения администратора.",
+        "testPaymentComplete": "Это тестовый платеж. Хотите завершить платеж успешно?",
+        "testPaymentSuccess": "Тестовый платеж успешно завершен!",
+        "testPaymentError": "Ошибка при завершении тестового платежа",
+        "paymentSuccess": "Платеж успешно выполнен!",
+        "paymentFailed": "Платеж не удался",
+        "createPaymentError": "Произошла ошибка при создании платежа"
+      },
+      "paymentMethods": {
+        "click": "Click",
+        "payme": "Payme",
+        "cash": "Наличные"
+      }
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Панель управления",
+      "welcome": "Добро пожаловать, Админ!",
+      "overview": "Общий обзор",
+      "users": {
+        "total": "Всего пользователей",
+        "active": "Активные пользователи",
+        "new_today": "Новые сегодня",
+        "online_now": "Сейчас онлайн"
+      },
+      "revenue": {
+        "total": "Общий доход",
+        "monthly": "Месячный доход",
+        "today": "Доход за сегодня",
+        "growth": "Рост"
+      },
+      "tests": {
+        "total": "Всего тестов",
+        "today": "Пройдено сегодня",
+        "passed": "Сдано",
+        "failed": "Не сдано"
+      },
+      "content": {
+        "questions": "Вопросы",
+        "topics": "Темы",
+        "tickets": "Билеты"
+      },
+      "recent_activities": "Последняя активность",
+      "quick_stats": "Быстрая статистика",
+      "charts": {
+        "user_growth": "Рост пользователей",
+        "revenue_trend": "Тенденция дохода",
+        "test_statistics": "Результаты тестов"
+      },
+      "errors": {
+        "loadError": "Ошибка загрузки данных"
+      },
+      "subtitle": "Отслеживайте и управляйте системой",
+      "recentPayments": "Последние платежи",
+      "topicsByCount": "По {{count}} темам",
+      "readyTestTickets": "Готовые билеты для тестов",
+      "todayCount": "Сегодня: {{count}}",
+      "live": "В РЕАЛЬНОМ ВРЕМЕНИ",
+      "noDataAvailable": "Данные недоступны",
+      "subscriptionTypes": {
+        "15_days": "15 дней",
+        "1_month": "1 месяц",
+        "3_months": "3 месяца"
+      },
+      "stats": {
+        "totalUsers": "Всего пользователей",
+        "activeSubscriptions": "Активные подписки",
+        "monthlyRevenue": "Месячный доход",
+        "onlineNow": "Сейчас онлайн"
+      },
+      "labels": {
+        "today": "Сегодня",
+        "percent": "процент",
+        "payments": "Платежи",
+        "status": "Состояние",
+        "questions": "Вопросы",
+        "tickets": "Билеты",
+        "tests": "Тесты",
+        "unknown": "Неизвестно"
+      },
+      "status": {
+        "active": "Активный",
+        "inactive": "Неактивный"
+      }
+    },
+    "users": {
+      "title": "Пользователи",
+      "add_user": "Добавить пользователя",
+      "search_placeholder": "Поиск по имени или телефону",
+      "filters": {
+        "all": "Все статусы",
+        "active": "Активные",
+        "inactive": "Неактивные",
+        "subscribed": "С подпиской",
+        "expired": "Подписка истекла"
+      },
+      "table": {
+        "name": "Имя",
+        "phone": "Телефон",
+        "status": "Состояние",
+        "subscription": "Подписка",
+        "joined": "Зарегистрирован",
+        "actions": "Действия"
+      },
+      "actions": {
+        "view": "Просмотр",
+        "edit": "Редактировать",
+        "delete": "Удалить",
+        "activate": "Активировать",
+        "deactivate": "Деактивировать",
+        "reset_password": "Сбросить пароль",
+        "reset_password_short": "Пароль",
+        "extend_subscription": "Продлить подписку",
+        "updateSubscription": "Обновить подписку"
+      },
+      "security": {
+        "title": "Безопасность",
+        "passwordReset": "Сброс пароля",
+        "passwordResetDesc": "Для пользователя будет создан новый безопасный пароль и отправлено уведомление."
+      },
+      "status": {
+        "active": "Активный",
+        "inactive": "Неактивный",
+        "blocked": "Заблокирован"
+      },
+      "subscription": {
+        "all": "Все подписки",
+        "active": "Активные подписки",
+        "inactive": "Неактивная",
+        "expired": "Истекшие",
+        "expiring": "Истекают (7 дней)",
+        "expiringDays": "Истекает ({{days}} дней)",
+        "activeDays": "Активная ({{days}} дней)"
+      },
+      "messages": {
+        "loadError": "Ошибка загрузки пользователей",
+        "statusChanged": "Пользователь {{status}}",
+        "activated": "активирован",
+        "blocked": "заблокирован",
+        "statusError": "Ошибка изменения статуса",
+        "deleteTitle": "Удалить пользователя",
+        "deleteConfirm": "Вы действительно хотите удалить этого пользователя? Это действие нельзя отменить.",
+        "deleteSuccess": "Пользователь удален",
+        "deleteError": "Ошибка удаления пользователя",
+        "totalUsers": "Всего {{total}} пользователей",
+        "noResults": "Результаты не найдены",
+        "noUsers": "Пользователи отсутствуют",
+        "noSubscription": "Нет подписки",
+        "userNotFound": "Пользователь не найден",
+        "subscriptionUpdated": "Подписка успешно обновлена",
+        "subscriptionUpdateError": "Ошибка обновления подписки",
+        "noTestHistory": "История тестов отсутствует",
+        "noPaymentHistory": "История платежей отсутствует",
+        "userUpdated": "Пользователь успешно обновлен",
+        "updateError": "Ошибка при обновлении пользователя",
+        "passwordReset": "Новый пароль: {{password}}",
+        "passwordResetError": "Ошибка при сбросе пароля"
+      },
+      "validation": {
+        "fullNameRequired": "Имя обязательно для заполнения",
+        "phoneRequired": "Телефон обязателен для заполнения",
+        "phoneFormat": "Неверный формат телефона (+998XXXXXXXXX)"
+      },
+      "placeholders": {
+        "search": "Поиск по имени или телефону",
+        "allStatuses": "Все статусы",
+        "daysExample": "Например: 30"
+      },
+      "details": {
+        "title": "Детали пользователя",
+        "basicInfo": "Основная информация",
+        "subscriptionInfo": "Информация о подписке",
+        "statistics": "Статистика",
+        "testHistory": "История тестов",
+        "paymentHistory": "История платежей",
+        "topicProgress": "Прогресс по темам"
+      },
+      "fields": {
+        "fullName": "Полное имя",
+        "phoneNumber": "Номер телефона",
+        "registeredAt": "Зарегистрирован",
+        "status": "Состояние",
+        "subscriptionType": "Тип подписки",
+        "subscriptionStatus": "Статус подписки",
+        "startDate": "Дата начала",
+        "endDate": "Дата окончания",
+        "daysLeft": "Осталось дней",
+        "daysCount": "Количество дней",
+        "role": "Роль"
+      },
+      "stats": {
+        "totalTests": "Всего тестов",
+        "passedTests": "Пройдено тестов",
+        "averageScore": "Средний балл",
+        "examAttempts": "Экзамены",
+        "attempts": "Попытки"
+      },
+      "table": {
+        "name": "Имя",
+        "phone": "Телефон",
+        "status": "Состояние",
+        "subscription": "Подписка",
+        "joined": "Зарегистрирован",
+        "actions": "Действия",
+        "date": "Дата",
+        "testType": "Тип теста",
+        "topicTicket": "Тема/Билет",
+        "result": "Результат",
+        "score": "Балл",
+        "time": "Время",
+        "subscriptionType": "Тип подписки",
+        "paymentMethod": "Способ оплаты",
+        "amount": "Сумма"
+      },
+      "placeholders": {
+        "daysExample": "Например: 30"
+      },
+      "user_details": {
+        "title": "Детали пользователя",
+        "personal_info": "Личная информация",
+        "subscription_info": "Информация о подписке",
+        "test_history": "История тестов",
+        "payment_history": "История платежей",
+        "statistics": "Статистика"
+      },
+      "editUser": "Редактировать пользователя",
+      "additionalInfo": "Дополнительная информация",
+      "lastLogin": "Последний вход",
+      "roles": {
+        "student": "Студент",
+        "admin": "Администратор"
+      }
+    },
+    "questions": {
+      "title": "Тестовые вопросы",
+      "add_question": "Добавить вопрос",
+      "import_questions": "Импорт вопросов",
+      "export_questions": "Экспорт вопросов",
+      "search_placeholder": "Поиск...",
+      "filters": {
+        "all_topics": "Все темы",
+        "all_difficulties": "Все уровни",
+        "all_levels": "Все уровни",
+        "easy": "Легкий",
+        "medium": "Средний",
+        "hard": "Сложный",
+        "active": "Активные",
+        "inactive": "Неактивные",
+        "clear": "Очистить",
+        "search": "Поиск",
+        "topic": "Тема",
+        "level": "Уровень"
+      },
+      "table": {
+        "question": "Вопрос",
+        "topic": "Тема",
+        "difficulty": "Уровень",
+        "level": "Уровень",
+        "status": "Состояние",
+        "created": "Создан",
+        "actions": "Действия",
+        "image_available": "Изображение доступно",
+        "edit": "Редактировать",
+        "delete": "Удалить"
+      },
+      "form": {
+        "add_title": "Добавить новый вопрос",
+        "edit_title": "Редактировать вопрос",
+        "question_text": "Текст вопроса",
+        "topic": "Тема",
+        "select_topic": "Выберите тему",
+        "difficulty": "Уровень сложности",
+        "options": "Варианты ответов",
+        "options_count": "{{count}} вариантов",
+        "correct_answer": "Правильный ответ",
+        "option_variant": "Вариант {{letter}}",
+        "option_label": "Вариант",
+        "option_correct": "(Правильный ответ)",
+        "explanation": "Пояснение (необязательно)",
+        "image": "Изображение (необязательно)",
+        "uploadImage": "Нажмите для загрузки или перетащите изображение",
+        "current_image_note": "Текущее изображение будет сохранено. Выберите файл для загрузки нового изображения.",
+        "status": "Состояние",
+        "add_option": "Добавить вариант",
+        "remove_option": "Удалить вариант",
+        "cancel": "Отмена",
+        "save": "Добавить",
+        "update": "Обновить",
+        "placeholders": {
+          "uz": "O'zbek (lotin)",
+          "uz_cyrl": "Ўзбек (кирилл)",
+          "ru": "Русский"
+        }
+      },
+      "errors": {
+        "loadError": "Ошибка загрузки вопросов",
+        "saveError": "Ошибка сохранения вопроса",
+        "deleteError": "Ошибка удаления вопроса",
+        "statusError": "Ошибка изменения статуса",
+        "validationErrors": {
+          "questionRequired": "Текст вопроса (узбекский) обязателен",
+          "topicRequired": "Тема должна быть выбрана",
+          "minOptions": "Должно быть не менее 2 вариантов ответа",
+          "correctAnswerRequired": "Должен быть выбран хотя бы один правильный ответ",
+          "optionsRequired": "Все варианты ответов (узбекский) должны быть заполнены",
+          "imageSizeError": "Размер изображения не должен превышать 5МБ"
+        }
+      },
+      "messages": {
+        "updated": "Вопрос обновлен",
+        "added": "Вопрос добавлен",
+        "deleted": "Вопрос удален",
+        "statusChanged": "Статус изменен"
+      },
+      "confirm": {
+        "delete": "Вы хотите удалить вопрос?",
+        "deleteTitle": "Удалить вопрос",
+        "deleteDescription": "Этот вопрос и все связанные с ним данные будут удалены навсегда. Это действие нельзя отменить."
+      },
+      "noQuestions": "Вопросы отсутствуют",
+      "statistics": {
+        "total": "Всего: {{total}} вопросов",
+        "filtered": "Отфильтровано: {{count}} результатов"
+      },
+      "status": {
+        "active": "Активный",
+        "inactive": "Неактивный",
+        "activated": "активирован",
+        "deactivated": "деактивирован"
+      }
+    },
+    "topics": {
+      "title": "Темы",
+      "add_topic": "Добавить тему",
+      "addNew": "Новая тема",
+      "total": "Всего",
+      "order": "Порядок",
+      "questionCount": "Вопросов",
+      "createdAt": "Создано",
+      "editTitle": "Редактировать тему",
+      "createTitle": "Добавить новую тему",
+      "name": "Название темы",
+      "description": "Описание (необязательно)",
+      "noDescription": "Описание отсутствует",
+      "orderNumber": "Порядковый номер",
+      "orderPlaceholder": "Устанавливается автоматически",
+      "orderHelp": "Меньший номер - отображается выше",
+      "isActive": "Тема активна?",
+      "statusHelp": "Неактивно - не показывается пользователям",
+      "statusActiveHelp": "Активно - показывается пользователям",
+      "image": "Изображение темы",
+      "uploadImage": "Нажмите для загрузки изображения",
+      "uploadImageFiles": "Загрузить изображение",
+      "imageFormats": "Файлы JPG, PNG, GIF (макс. 5MB)",
+      "dragDropFiles": "Нажмите или перетащите",
+      "uploadTitle": "Загрузить изображение",
+      "uploadDescription": "Файлы JPG, PNG, GIF (макс. 5МБ)",
+      "uploadHint": "Нажмите или перетащите",
+      "optional": "(необязательно)",
+      "status": "Статус",
+      "activeStatus": "Активная - отображается пользователям",
+      "inactiveStatus": "Неактивная - не отображается пользователям",
+      "namePlaceholder": {
+        "uz": "O'zbek (lotin)",
+        "uzCyrl": "Ўзбек (кирилл)",
+        "ru": "Русский"
+      },
+      "descriptionPlaceholder": {
+        "uz": "Описание (необязательно)",
+        "uzCyrl": "Описание (необязательно)",
+        "ru": "Описание (необязательно)"
+      },
+      "table": {
+        "name": "Название",
+        "questions_count": "Количество вопросов",
+        "order": "Порядок",
+        "status": "Состояние",
+        "actions": "Действия"
+      },
+      "form": {
+        "name": "Название темы",
+        "description": "Описание",
+        "order": "Порядковый номер",
+        "status": "Статус"
+      },
+      "errors": {
+        "loadFailed": "Ошибка при загрузке тем",
+        "saveFailed": "Ошибка при сохранении темы",
+        "deleteFailed": "Ошибка при удалении темы",
+        "hasQuestions": "В этой теме есть вопросы. Сначала удалите вопросы!",
+        "statusChangeFailed": "Ошибка при изменении статуса темы",
+        "orderChangeFailed": "Ошибка при изменении порядка темы",
+        "nameRequired": "Название темы обязательно",
+        "invalidOrder": "Порядковый номер должен быть больше 0",
+        "imageSizeError": "Размер изображения не должен превышать 5МБ",
+        "imageTypeError": "Можно загружать только изображения в формате JPG, PNG или WebP"
+      },
+      "messages": {
+        "createSuccess": "Тема успешно добавлена",
+        "updateSuccess": "Тема успешно обновлена",
+        "deleteSuccess": "Тема удалена",
+        "activated": "Тема активирована",
+        "deactivated": "Тема деактивирована"
+      },
+      "confirm": {
+        "delete": "Вы хотите удалить тему?",
+        "deleteDescription": "Эта тема и все связанные с ней вопросы будут полностью удалены. Это действие нельзя отменить."
+      }
+    },
+    "tickets": {
+      "title": "Билеты",
+      "questions": "вопросов",
+      "questionCount": "вопросов",
+      "add_ticket": "Добавить билет",
+      "generate_tickets": "Генерировать билеты",
+      "noTickets": "Билеты не найдены",
+      "noSearchResults": "Результаты поиска не найдены",
+      "noTicketsDescription": "Используйте кнопки выше для добавления нового билета.",
+      "search": {
+        "placeholder": "Поиск по номеру билета..."
+      },
+      "filters": {
+        "allDifficulties": "Все уровни сложности",
+        "allStatuses": "Все статусы",
+        "clear": "Очистить фильтры"
+      },
+      "table": {
+        "number": "№",
+        "questions": "Вопросы",
+        "questionsCount": "вопросов",
+        "difficulty": "Сложность",
+        "status": "Статус",
+        "actions": "Действия"
+      },
+      "status": {
+        "active": "Активен",
+        "inactive": "Неактивен"
+      },
+      "difficulty": {
+        "easy": "Легко",
+        "medium": "Средний",
+        "hard": "Сложный",
+        "mixed": "Смешанный"
+      },
+      "actions": {
+        "activate": "Активировать",
+        "deactivate": "Деактивировать"
+      },
+      "modal": {
+        "searchQuestions": "Поиск вопросов...",
+        "allTopics": "Все темы",
+        "allDifficulties": "Все уровни сложности",
+        "showingQuestions": "Показано {{count}} / {{total}} вопросов",
+        "selectAll": "Выбрать все",
+        "deselectAll": "Отменить выбор",
+        "noQuestionsFiltered": "По фильтру вопросы не найдены",
+        "clearFilters": "Очистить фильтры"
+      },
+      "form": {
+        "number": "Номер билета",
+        "questions": "Вопросы",
+        "difficulty": "Уровень сложности",
+        "status": "Состояние",
+        "editTitle": "Редактировать билет",
+        "isActive": "Билет активен?"
+      },
+      "generate": {
+        "title": "Автоматическая генерация билетов",
+        "count": "Количество билетов",
+        "questions_per_ticket": "Вопросов в каждом билете",
+        "confirm": "Генерировать",
+        "warning": "Внимание! Это действие удалит все существующие билеты и создаст новые."
+      },
+      "errors": {
+        "loadError": "Ошибка загрузки билетов",
+        "saveError": "Ошибка сохранения билета",
+        "deleteError": "Ошибка удаления билета",
+        "statusError": "Ошибка изменения статуса",
+        "generateError": "Ошибка генерации билетов"
+      },
+      "messages": {
+        "selectQuestions": "Выберите вопросы",
+        "updated": "Билет обновлен",
+        "added": "Билет добавлен",
+        "deleted": "Билет удален",
+        "statusChanged": "Статус изменен",
+        "generated": "Билеты сгенерированы"
+      },
+      "confirm": {
+        "delete": "Вы хотите удалить билет?",
+        "deleteDescription": "Этот билет и все связанные с ним данные будут полностью удалены. Это действие нельзя отменить.",
+        "generate": "Вы хотите сгенерировать билеты? Это действие удалит все существующие билеты."
+      },
+      "placeholders": {
+        "ticketNumber": "Введите номер билета",
+        "selectDifficulty": "Выберите уровень сложности"
+      },
+      "difficulty": {
+        "easy": "Легкий",
+        "medium": "Средний",
+        "hard": "Сложный",
+        "mixed": "Смешанный"
+      }
+    },
+    "payments": {
+      "title": "Платежи",
+      "filters": {
+        "all": "Все",
+        "pending": "Ожидание",
+        "completed": "Оплачено",
+        "failed": "Неудачно",
+        "refunded": "Возвращено"
+      },
+      "table": {
+        "user": "Пользователь",
+        "amount": "Сумма",
+        "type": "Тип",
+        "method": "Способ",
+        "status": "Состояние",
+        "date": "Дата",
+        "actions": "Действия"
+      },
+      "actions": {
+        "view": "Просмотр",
+        "confirm": "Подтвердить",
+        "refund": "Вернуть",
+        "cancel": "Отменить"
+      },
+      "details": {
+        "title": "Детали платежа",
+        "transaction_id": "ID транзакции",
+        "payment_method": "Способ оплаты",
+        "subscription_type": "Тип подписки",
+        "user_info": "Информация о пользователе",
+        "payment_info": "Информация о платеже"
+      },
+      "errors": {
+        "confirmError": "Ошибка подтверждения платежа",
+        "refundAmount": "Введите сумму возврата",
+        "refundAmountExceed": "Сумма возврата не должна превышать сумму платежа",
+        "refundReason": "Введите причину возврата"
+      },
+      "messages": {
+        "confirmed": "Платеж подтвержден",
+        "refunded": "Платеж возвращен",
+        "exportSuccess": "Платежи экспортированы",
+        "exportError": "Ошибка экспорта",
+        "loadError": "Ошибка загрузки платежей",
+        "confirmPayment": "Вы хотите подтвердить платеж?",
+        "paymentConfirmed": "Платеж успешно подтвержден",
+        "confirmError": "Ошибка подтверждения платежа",
+        "refundAmountError": "Неверная сумма возврата",
+        "refundAmountExceed": "Сумма возврата не должна превышать сумму платежа",
+        "refundReasonError": "Причина возврата должна содержать минимум 10 символов",
+        "refundSuccess": "Платеж успешно возвращен",
+        "refundError": "Ошибка при возврате платежа",
+        "refundTitle": "Возврат платежа",
+        "refundAmount": "Сумма возврата",
+        "refundReason": "Причина возврата",
+        "exportSuccess": "Платежи успешно экспортированы"
+      },
+      "confirm": {
+        "confirm": "Вы хотите подтвердить платеж?"
+      },
+      "placeholders": {
+        "startDate": "Дата начала",
+        "endDate": "Дата окончания",
+        "refundReason": "Введите причину возврата"
+      },
+      "status": {
+        "all": "Все статусы",
+        "pending": "Ожидание",
+        "completed": "Оплачено",
+        "failed": "Неудачно",
+        "refunded": "Возвращено"
+      },
+      "method": {
+        "all": "Все способы",
+        "click": "Click",
+        "payme": "Payme",
+        "cash": "Наличные"
+      },
+      "labels": {
+        "paymentsManagement": "Управление платежами",
+        "dailyRevenueChart": "График дневного дохода",
+        "paidAt": "Время оплаты",
+        "maximum": "Максимум"
+      },
+      "stats": {
+        "totalRevenue": "Общий доход",
+        "totalPayments": "Всего платежей",
+        "pendingPayments": "Ожидающие платежи",
+        "averagePayment": "Средний платеж",
+        "dailyRevenue": "Дневной доход"
+      },
+      "actions": {
+        "view": "Просмотр",
+        "confirm": "Подтвердить",
+        "refund": "Возврат",
+        "cancel": "Отмена",
+        "clear": "Очистить",
+        "export": "Экспорт"
+      },
+      "subscriptionTypes": {
+        "15_days": "15 дней",
+        "1_month": "1 месяц",
+        "3_months": "3 месяца"
+      }
+    },
+    "reports": {
+      "title": "Отчеты",
+      "errors": {
+        "loadError": "Ошибка загрузки отчетов",
+        "exportError": "Ошибка экспорта"
+      },
+      "messages": {
+        "exportSuccess": "Отчет успешно экспортирован"
+      },
+      "types": {
+        "overall": "Общий отчет",
+        "users": "Отчет по пользователям",
+        "revenue": "Отчет по доходам",
+        "tests": "Отчет по тестам"
+      },
+      "stats": {
+        "newUsers": "Новые пользователи",
+        "activeSubscriptions": "Активные подписки",
+        "conversion": "Конверсия",
+        "totalRevenue": "Общий доход",
+        "paymentCount": "Количество платежей",
+        "averagePayment": "Средний платеж",
+        "dailyAverage": "Среднесуточный",
+        "totalTests": "Всего тестов",
+        "passedTests": "Пройдено тестов",
+        "passRate": "Процент прохождения",
+        "averageScore": "Средний балл"
+      },
+      "labels": {
+        "newRegistrations": "Новые регистрации",
+        "bySubscriptionType": "По типу подписки",
+        "dailyRevenue": "Ежедневный доход",
+        "testTypeDistribution": "Распределение типов тестов",
+        "overallTrend": "Общая тенденция",
+        "systemActivity": "Активность системы",
+        "period": "Период",
+        "refresh": "Обновить"
+      },
+      "table": {
+        "name": "Имя",
+        "phone": "Телефон",
+        "subscription": "Подписка",
+        "date": "Дата"
+      },
+      "status": {
+        "active": "Активный",
+        "inactive": "Неактивный"
+      },
+      "subscriptionTypes": {
+        "15days": "15 дней",
+        "1month": "1 месяц",
+        "3months": "3 месяца"
+      },
+      "testTypes": {
+        "byTopic": "По теме",
+        "byTicket": "По билету",
+        "random": "Случайный",
+        "exam": "Экзамен",
+        "errorQuestions": "Ошибочные вопросы"
+      },
+      "weekDays": {
+        "mon": "Пн",
+        "tue": "Вт",
+        "wed": "Ср",
+        "thu": "Чт",
+        "fri": "Пт",
+        "sat": "Сб",
+        "sun": "Вс"
+      },
+      "charts": {
+        "users": "Пользователи",
+        "tests": "Тесты",
+        "title": "Графическое представление",
+        "line_chart": "Линейный график",
+        "bar_chart": "Столбчатая диаграмма",
+        "pie_chart": "Круговая диаграмма"
+      },
+      "filters": {
+        "date_range": "Период",
+        "start_date": "Дата начала",
+        "end_date": "Дата окончания",
+        "report_type": "Тип отчета"
+      },
+      "actions": {
+        "generate": "Создать отчет",
+        "export_excel": "Экспорт в Excel",
+        "export_pdf": "Экспорт в PDF",
+        "print": "Печать"
+      }
+    },
+    "settings": {
+      "title": "Настройки",
+      "subtitle": "Управление настройками системы",
+      "subscriptionPricing": "Цены на подписку",
+      "15DaysPrice": "Цена за 15 дней",
+      "1MonthPrice": "Цена за 1 месяц",
+      "3MonthsPrice": "Цена за 3 месяца",
+      "examConfiguration": "Настройки экзамена",
+      "passingPercentage": "Проходной процент",
+      "notificationConfiguration": "Настройки уведомлений",
+      "subscriptionWarningDescription": "Отправлять предупреждения за 7 дней до окончания подписки",
+      "profileDeletionDescription": "Удалять профили через 30 дней после окончания подписки",
+      "sendBulkNotification": "Отправить массовое уведомление",
+      "contactInformation": "Контактная информация",
+      "contactInfoNote": "Эта информация будет отображаться на сайте",
+      "socialMediaLinks": "Социальные сети",
+      "notificationTitle": "Заголовок уведомления",
+      "notificationMessage": "Текст уведомления",
+      "priorityLevel": "Уровень приоритета",
+      "sendToAllActiveUsers": "Отправить всем активным пользователям",
+      "tabs": {
+        "general": "Общие",
+        "subscription": "Подписка",
+        "payment": "Оплата",
+        "notification": "Уведомления",
+        "system": "Система",
+        "subscriptionSettings": "Настройки подписки",
+        "examSettings": "Настройки экзамена",
+        "notifications": "Уведомления",
+        "contactInfo": "Контактная информация"
+      },
+      "messages": {
+        "loadError": "Ошибка загрузки настроек",
+        "saveSuccess": "Настройки успешно сохранены",
+        "saveError": "Ошибка сохранения настроек",
+        "notificationSuccess": "Сообщение успешно отправлено",
+        "notificationError": "Ошибка отправки сообщения"
+      },
+      "labels": {
+        "questionsCount": "Количество вопросов",
+        "timeLimit": "Ограничение времени (минуты)",
+        "subscriptionWarnings": "Предупреждения о подписке",
+        "profileDeletionPeriod": "Период удаления профиля (дни)",
+        "phoneNumber": "Номер телефона",
+        "contactUrl": "Ссылка для связи",
+        "email": "Email адрес",
+        "address": "Адрес",
+        "title": "Заголовок",
+        "message": "Текст сообщения",
+        "priority": "Приоритет"
+      },
+      "placeholders": {
+        "address": "Введите полный адрес"
+      },
+      "priority": {
+        "low": "Низкий",
+        "medium": "Средний",
+        "high": "Высокий"
+      },
+      "notes": {
+        "priceNote": "Цены указаны в сумах",
+        "examNote": "Настройки экзамена влияют на все экзаменационные тесты"
+      },
+      "general": {
+        "site_name": "Название сайта",
+        "site_description": "Описание сайта",
+        "contact_email": "Контактный email",
+        "contact_phone": "Контактный телефон",
+        "address": "Адрес",
+        "timezone": "Часовой пояс",
+        "language": "Язык"
+      },
+      "subscription": {
+        "types": {
+        "15_days_full": "15 дней (полный доступ)",
+        "1_month_full": "1 месяц (полный доступ)",
+        "3_months_full": "3 месяца (полный доступ)"
+      },
+      "types": "Типы подписок",
+        "prices": "Цены",
+        "duration": "Продолжительность",
+        "features": "Возможности",
+        "trial_period": "Пробный период",
+        "auto_renewal": "Автоматическое продление"
+      },
+      "payment": {
+        "methods": "Способы оплаты",
+        "currency": "Валюта",
+        "tax_rate": "Налоговая ставка",
+        "payment_gateway": "Платежная система",
+        "api_keys": "API ключи"
+      },
+      "notification": {
+        "email_notifications": "Email уведомления",
+        "sms_notifications": "SMS уведомления",
+        "push_notifications": "Push уведомления",
+        "notification_templates": "Шаблоны уведомлений"
+      },
+      "system": {
+        "maintenance_mode": "Режим обслуживания",
+        "backup_settings": "Настройки резервного копирования",
+        "security_settings": "Настройки безопасности",
+        "performance": "Производительность",
+        "logs": "Системные журналы"
+      }
+    },
+    "notifications": {
+      "sendBulk": "Массовая рассылка",
+      "recipients": "Получатели",
+      "allUsers": "Всем пользователям",
+      "selectedUsers": "Выбранным пользователям ({{count}})",
+      "priority": "Приоритет",
+      "title": "Заголовок",
+      "message": "Текст сообщения"
+    }
+  },
+  "payment": {
+    "title": "Оплата",
+    "select_plan": "Выберите план подписки",
+    "plans": {
+      "15_days": {
+        "name": "15 дней",
+        "price": "30,000 сум",
+        "features": [
+          "Доступ ко всем темам",
+          "Неограниченная сдача тестов",
+          "Анализ результатов",
+          "Поддержка 24/7"
+        ]
+      },
+      "1_month": {
+        "name": "1 месяц",
+        "price": "50,000 сум",
+        "features": [
+          "Доступ ко всем темам",
+          "Неограниченная сдача тестов",
+          "Анализ результатов",
+          "Поддержка 24/7",
+          "Специальные материалы для подготовки"
+        ],
+        "popular": true
+      },
+      "3_months": {
+        "name": "3 месяца",
+        "price": "120,000 сум",
+        "features": [
+          "Доступ ко всем темам",
+          "Неограниченная сдача тестов",
+          "Анализ результатов",
+          "Поддержка 24/7",
+          "Специальные материалы для подготовки",
+          "Личная консультация преподавателя"
+        ],
+        "discount": "Экономия 20%"
+      }
+    },
+    "payment_methods": {
+      "title": "Выберите способ оплаты",
+      "click": "Click",
+      "payme": "Payme",
+      "cash": "Наличные"
+    },
+    "process": {
+      "processing": "Обработка платежа...",
+      "success": "Платеж успешно выполнен!",
+      "failed": "Платеж не удался. Попробуйте снова.",
+      "pending": "Ожидание платежа..."
+    },
+    "invoice": {
+      "title": "Счет-фактура",
+      "invoice_number": "Номер счета",
+      "date": "Дата",
+      "due_date": "Срок оплаты",
+      "bill_to": "Получатель",
+      "description": "Описание",
+      "amount": "Сумма",
+      "subtotal": "Итого",
+      "tax": "Налог",
+      "total": "Общая сумма",
+      "payment_method": "Способ оплаты",
+      "transaction_id": "ID транзакции"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "Страница не найдена",
+      "message": "Извините, страница, которую вы ищете, не найдена.",
+      "button": "Вернуться на главную"
+    },
+    "500": {
+      "title": "Ошибка сервера",
+      "message": "Извините, на сервере произошла ошибка. Пожалуйста, попробуйте позже.",
+      "button": "Обновить страницу"
+    },
+    "403": {
+      "title": "Доступ запрещен",
+      "message": "Извините, у вас нет доступа к этой странице.",
+      "button": "Вернуться назад"
+    },
+    "network": {
+      "title": "Сетевая ошибка",
+      "message": "Проверьте подключение к интернету и попробуйте снова.",
+      "button": "Повторить попытку"
+    },
+    "general": {
+      "title": "Произошла ошибка",
+      "message": "Произошла непредвиденная ошибка. Пожалуйста, попробуйте снова.",
+      "button": "Повторить попытку"
+    },
+    "boundary": {
+      "title": "Произошла ошибка",
+      "message": "Произошла неожиданная ошибка. Пожалуйста, обновите страницу или попробуйте позже.",
+      "button": "Повторить попытку",
+      "stackTrace": "Трассировка стека"
+    },
+    "loadingUser": "Ошибка загрузки данных пользователя",
+    "loginFailed": "Ошибка входа",
+    "registrationFailed": "Ошибка регистрации",
+    "logoutFailed": "Ошибка выхода",
+    "passwordUpdateFailed": "Ошибка обновления пароля",
+    "tooManyAttempts": "{{message}}",
+    "deviceChanged": "Обнаружена смена устройства. Для безопасности войдите снова.",
+    "sessionExpired": "Сессия истекла. Войдите снова.",
+    "subscriptionRequired": "Для использования этой функции нужна подписка",
+    "unauthorized": "Не авторизован",
+    "dataNotFound": "Данные не найдены",
+    "server": "Ошибка сервера",
+    "networkConnection": "Проверьте интернет-соединение",
+    "somethingWentWrong": "Что-то пошло не так",
+    "validation": {
+      "required": "Это поле обязательно для заполнения",
+      "email": "Введите правильный email адрес",
+      "phone": "Введите правильный номер телефона",
+      "phoneLength": "Номер телефона должен состоять из 9 цифр",
+      "min_length": "Минимум {{min}} символов",
+      "max_length": "Максимум {{max}} символов",
+      "min_value": "Значение должно быть не менее {{min}}",
+      "max_value": "Значение должно быть не более {{max}}",
+      "pattern": "Неверный формат",
+      "password_match": "Пароли не совпадают",
+      "password_mismatch": "Пароли не совпадают",
+      "unique": "Это значение уже существует"
+    }
+  },
+  "footer": {
+    "description": "Платформа профессиональной подготовки к экзамену по вождению",
+    "quickLinks": "Быстрые ссылки",
+    "contactTitle": "Контакты",
+    "socialMedia": "Социальные сети",
+    "rights": "Все права защищены",
+    "address": "Республика Каракалпакстан, Берунийский район",
+    "phone": "+998 93 365 50 60",
+    "email": "info@behzodavtoustoz.uz",
+    "about": {
+      "title": "О нас",
+      "description": "Behzod Avtoustoz - современная онлайн платформа для подготовки к экзамену на водительские права.",
+      "mission": "Наша миссия - предоставить качественное образование каждому ученику и успешно подготовить к экзамену."
+    },
+    "links": {
+      "title": "Полезные ссылки",
+      "home": "Главная",
+      "about": "О нас",
+      "contact": "Контакты",
+      "privacy": "Политика конфиденциальности",
+      "terms": "Условия использования",
+      "faq": "Часто задаваемые вопросы"
+    },
+    "contact": {
+      "title": "Контакты",
+      "phone": "Телефон",
+      "email": "Email",
+      "address": "Адрес",
+      "working_hours": "Часы работы",
+      "monday_friday": "Понедельник - Пятница",
+      "saturday": "Суббота",
+      "sunday": "Воскресенье"
+    },
+    "social": {
+      "title": "Социальные сети",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "youtube": "YouTube"
+    },
+    "copyright": "© {{year}} Behzod Avtoustoz. Все права защищены.",
+    "developed_by": "Разработано"
+  },
+  "toast": {
+    "success": {
+      "login": "Вы успешно вошли в систему",
+      "register": "Регистрация прошла успешно",
+      "logout": "Вы вышли из системы",
+      "passwordUpdated": "Пароль успешно обновлен"
+    }
+  },
+  "placeholders": {
+    "address": "Введите полный адрес"
+  },
+  "test": {
+    "types": {
+      "topic": "По теме",
+      "ticket": "По билету",
+      "random": "Случайный",
+      "exam": "Экзамен"
+    }
+  },
+  "payment": {
+    "status": {
+      "completed": "Оплачено",
+      "pending": "Ожидается",
+      "cancelled": "Отменено"
+    },
+    "methods": {
+      "cash": "Наличные",
+      "card": "Банковская карта",
+      "online": "Онлайн оплата",
+      "payme": "Payme"
+    }
+  },
+  "subscription": {
+    "types": {
+      "15_days": "15 дней",
+      "1_month": "1 месяц",
+      "3_months": "3 месяца"
+    }
+  }
+}
