@@ -25,7 +25,12 @@ function removeSocket(userId, socketId) {
 function initSocket(httpServer) {
   io = new Server(httpServer, {
     cors: {
-      origin: env.CLIENT_URL.split(',').map((s) => s.trim()),
+      origin: (origin, callback) => {
+        const normalized = String(origin || '').replace(/\/$/, '');
+        const configured = env.CLIENT_URL.split(',').map((s) => s.trim().replace(/\/$/, ''));
+        const isVercelPreview = /^https:\/\/behzod-avtoustoz(?:-git-[a-z0-9-]+)?-zamonsoftit-maxs-projects\.vercel\.app$/i.test(normalized);
+        callback(null, !origin || configured.includes(normalized) || isVercelPreview);
+      },
       credentials: true,
     },
   });

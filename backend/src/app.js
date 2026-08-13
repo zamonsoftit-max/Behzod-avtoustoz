@@ -21,13 +21,24 @@ app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 app.use(compression());
 
 // CORS — frontend bilan cookie almashish uchun credentials
-const allowedOrigins = env.CLIENT_URL.split(',').map((s) => s.trim()).filter(Boolean);
+const allowedOrigins = env.CLIENT_URL
+  .split(',')
+  .map((s) => s.trim().replace(/\/$/, ''))
+  .filter(Boolean);
+
+// Vercel preview URL'lari har deployda o'zgarishi mumkin. Shu project'ning
+// preview domenlariga ruxsat beramiz; qolgan domenlar CLIENT_URL orqali beriladi.
+const isAllowedVercelPreview = (origin) => (
+  /^https:\/\/behzod-avtoustoz(?:-git-[a-z0-9-]+)?-zamonsoftit-maxs-projects\.vercel\.app$/i.test(origin)
+);
 app.use(
   cors({
     origin(origin, cb) {
       // origin yo'q (Postman, server-server, health check) — ruxsat
       if (!origin) return cb(null, true);
-      if (allowedOrigins.includes(origin)) return cb(null, true);
+      if (allowedOrigins.includes(origin.replace(/\/$/, '')) || isAllowedVercelPreview(origin)) {
+        return cb(null, true);
+      }
       // Dev rejimda har qanday origin'ga ruxsat (qulaylik uchun)
       if (!env.isProd) return cb(null, true);
       // Production: faqat CLIENT_URL ro'yxatidagilar
