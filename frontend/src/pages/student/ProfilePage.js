@@ -112,7 +112,7 @@ const ProfilePage = () => {
 
   const handleLanguageChange = async (newLanguage) => {
     await i18n.changeLanguage(newLanguage);
-    const result = await dispatch(updateLanguage(newLanguage));
+    await dispatch(updateLanguage(newLanguage));
   };
 
   const handleThemeChange = async (newTheme) => {

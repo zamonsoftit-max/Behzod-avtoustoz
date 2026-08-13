@@ -118,4 +118,6 @@ class TestService {
   }
 }
 
-export default new TestService();
+const testService = new TestService();
+
+export default testService;

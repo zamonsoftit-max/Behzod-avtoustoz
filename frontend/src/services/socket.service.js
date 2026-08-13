@@ -3,7 +3,6 @@ import store from '../store/store';
 import { logout } from '../store/slices/authSlice';
 import { 
   addNotification, 
-  incrementUnreadCount, 
   updateNotificationRead,
   markAllRead 
 } from '../store/slices/notificationSlice';

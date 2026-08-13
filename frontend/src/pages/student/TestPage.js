@@ -490,7 +490,7 @@ const TestPage = () => {
     } finally {
       setSubmitting(false);
     }
-  }, [answers, questions, testConfig, type, startTime, navigate, submitting, showConfirmModal, t, isOfflineMode, serverTimeOffset]);
+  }, [answers, questions, testConfig, type, startTime, navigate, submitting, showConfirmModal, t, isOfflineMode, serverTimeOffset, searchParams]);
 
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);

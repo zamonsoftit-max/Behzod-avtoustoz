@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import {
-  FiCheckCircle,
-  FiXCircle,
-  FiPercent,
-  FiClock,
-  FiAward,
   FiAlertCircle,
-  FiChevronDown,
-  FiChevronUp,
 } from 'react-icons/fi';
 import api from '../../services/api';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
@@ -25,7 +17,6 @@ const ResultsPage = () => {
   const { id } = useParams();
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [expandedQuestions, setExpandedQuestions] = useState({});
 
   useEffect(() => {
     let mounted = true;
@@ -98,14 +89,6 @@ const ResultsPage = () => {
     };
   }, [id, navigate, t]);
 
-  const toggleQuestionExpanded = (questionId) => {
-    setExpandedQuestions({
-      ...expandedQuestions,
-      [questionId]: !expandedQuestions[questionId],
-    });
-  };
-
-
   if (loading) {
     return <LoadingSpinner fullScreen />;
   }
@@ -126,9 +109,6 @@ const ResultsPage = () => {
       </div>
     );
   }
-
-  const isPassed = result.isPassed;
-  const passPercentage = result.testType === 'exam' ? 90 : 70;
 
   return (
     <div className="space-y-6">
