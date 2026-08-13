@@ -30,7 +30,7 @@ const PublicHeader = () => {
     const fetchContactInfo = async () => {
       try {
         const response = await api.get('/public/settings');
-        setContactInfo(response.data.data.contactInfo);
+        setContactInfo(response.data?.data?.contactInfo || null);
       } catch (error) {
         console.error('Error fetching contact info:', error);
       }
