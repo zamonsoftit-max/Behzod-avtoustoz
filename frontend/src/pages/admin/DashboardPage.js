@@ -351,7 +351,7 @@ const DashboardPage = () => {
                     {new Date(user.createdAt).toLocaleDateString('uz-UZ')}
                   </p>
                   <p className="text-xs font-medium text-primary-600 dark:text-primary-400">
-                    {user.subscription.isActive ? t('admin.dashboard.status.active') : t('admin.dashboard.status.inactive')}
+                    {user.subscription?.isActive ? t('admin.dashboard.status.active') : t('admin.dashboard.status.inactive')}
                   </p>
                 </div>
               </div>

@@ -183,15 +183,15 @@ const UserDetailsPage = () => {
               <p className="text-sm text-gray-600 dark:text-gray-400">{t('admin.users.fields.subscriptionStatus')}</p>
               <span
                 className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
-                  user.subscription.isActive
+                  user.subscription?.isActive
                     ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400'
                     : 'bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400'
                 }`}
               >
-                {user.subscription.isActive ? t('admin.users.subscription.active') : t('admin.users.subscription.inactive')}
+                {user.subscription?.isActive ? t('admin.users.subscription.active') : t('admin.users.subscription.inactive')}
               </span>
             </div>
-            {user.subscription.isActive && (
+            {user.subscription?.isActive && (
               <>
                 <div>
                   <p className="text-sm text-gray-600 dark:text-gray-400">{t('admin.users.fields.startDate')}</p>

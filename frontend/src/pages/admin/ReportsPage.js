@@ -187,8 +187,8 @@ const ReportsPage = () => {
                           <td className="py-3 text-sm text-gray-900 dark:text-white">{user.fullName}</td>
                           <td className="py-3 text-sm text-gray-900 dark:text-white">{user.phoneNumber}</td>
                           <td className="py-3 text-sm">
-                            <span className={`badge ${user.subscription.isActive ? 'badge-green' : 'badge-gray'}`}>
-                              {user.subscription.isActive ? t('admin.reports.status.active') : t('admin.reports.status.inactive')}
+                            <span className={`badge ${user.subscription?.isActive ? 'badge-green' : 'badge-gray'}`}>
+                              {user.subscription?.isActive ? t('admin.reports.status.active') : t('admin.reports.status.inactive')}
                             </span>
                           </td>
                           <td className="py-3 text-sm text-gray-900 dark:text-white">{formatDate(user.createdAt)}</td>

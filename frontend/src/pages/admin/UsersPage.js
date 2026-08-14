@@ -142,7 +142,7 @@ const UsersPage = () => {
   };
 
   const getSubscriptionBadge = (subscription) => {
-    if (!subscription.isActive) {
+    if (!subscription?.isActive) {
       return <span className="badge badge-gray">{t('admin.users.status.inactive')}</span>;
     }
 
