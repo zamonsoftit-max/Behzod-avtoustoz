@@ -127,21 +127,12 @@ exports.login = asyncHandler(async (req, res) => {
   const match = await user.comparePassword(password || '');
   if (!match) throw ApiError.badRequest('Telefon raqami yoki parol noto\'g\'ri');
 
-  // Har bir login uchun yangi SMS tasdiqlash talab qilinadi.
-  const code = smsService.generateCode();
-  user.verification = { code, expiresAt: new Date(Date.now() + 5 * 60 * 1000), attempts: 0, purpose: 'login' };
-  await user.save();
-  const smsResult = await smsService.sendVerificationCode(phoneNumber, code, user.language);
-  if (!smsResult.ok) {
-    throw ApiError.serviceUnavailable('SMS kodi yuborilmadi. Iltimos, birozdan keyin qayta urinib ko\'ring.');
-  }
-
+  const { accessToken } = await issueSession(res, user);
   return res.json({
     success: true,
-    message: 'SMS tasdiqlash kodi yuborildi',
-    requiresSms: true,
-    verificationPurpose: 'login',
-    phoneNumber,
+    message: 'Tizimga muvaffaqiyatli kirdingiz',
+    token: accessToken,
+    user: user.toJSON(),
   });
 });
 
