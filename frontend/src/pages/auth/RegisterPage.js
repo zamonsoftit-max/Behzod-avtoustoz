@@ -5,8 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import { FiUser, FiPhone, FiLock, FiEye, FiEyeOff } from 'react-icons/fi';
-import { register as registerUser, clearError } from '../../store/slices/authSlice';
+import { register as registerUser, verifyRegistration, resendRegistrationCode, clearError } from '../../store/slices/authSlice';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
+import SMSVerification from '../../components/auth/SMSVerification';
 
 const RegisterPage = () => {
   const { t } = useTranslation();
@@ -15,6 +16,9 @@ const RegisterPage = () => {
   const { loading, error, isAuthenticated } = useSelector((state) => state.auth);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [smsStep, setSmsStep] = useState(false);
+  const [registrationData, setRegistrationData] = useState(null);
+  const [resendAttempts, setResendAttempts] = useState(0);
 
   const {
     register,
@@ -53,11 +57,41 @@ const RegisterPage = () => {
       ? `+${formattedPhone}` 
       : `+998${formattedPhone}`;
 
-    dispatch(registerUser({
-      fullName: data.fullName,
+    const nameParts = data.fullName.trim().split(/\s+/);
+    const payload = {
+      firstName: nameParts.shift() || '',
+      lastName: nameParts.join(' '),
       phoneNumber: phoneWithCode,
       password: data.password,
-    }));
+    };
+    setRegistrationData(payload);
+    try {
+      const result = await dispatch(registerUser(payload)).unwrap();
+      if (result.requiresSms) {
+        setSmsStep(true);
+        setResendAttempts(0);
+      }
+    } catch (submitError) {
+      // Redux thunk xatoni form toastida ko‘rsatadi.
+    }
+  };
+
+  const handleVerify = async (code) => {
+    try {
+      await dispatch(verifyRegistration({ phoneNumber: registrationData.phoneNumber, code })).unwrap();
+    } catch (verifyError) {
+      // Redux thunk xatoni toast orqali ko‘rsatadi.
+    }
+  };
+
+  const handleResend = async () => {
+    if (!registrationData) return;
+    try {
+      await dispatch(resendRegistrationCode(registrationData.phoneNumber)).unwrap();
+      setResendAttempts((value) => value + 1);
+    } catch (resendError) {
+      // Redux thunk xatoni toast orqali ko‘rsatadi.
+    }
   };
 
   const formatPhoneNumber = (value) => {
@@ -70,6 +104,19 @@ const RegisterPage = () => {
     if (numbers.length <= 9) return `${numbers.slice(0, 2)} ${numbers.slice(2, 5)} ${numbers.slice(5, 7)} ${numbers.slice(7)}`;
     return `${numbers.slice(0, 2)} ${numbers.slice(2, 5)} ${numbers.slice(5, 7)} ${numbers.slice(7, 9)}`;
   };
+
+  if (smsStep && registrationData) {
+    return (
+      <SMSVerification
+        phoneNumber={registrationData.phoneNumber.replace(/^\+/, '')}
+        onVerify={handleVerify}
+        onResend={handleResend}
+        onChangeNumber={() => { setSmsStep(false); setRegistrationData(null); }}
+        loading={loading}
+        resendAttempts={resendAttempts}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-primary-100 dark:from-dark-bg dark:to-gray-900 px-4 py-12">

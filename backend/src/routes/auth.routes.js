@@ -4,6 +4,8 @@ const { protect } = require('../middleware/auth');
 const { authLimiter } = require('../middleware/rateLimiter');
 
 router.post('/register', authLimiter, ctrl.register);
+router.post('/resend-registration-code', authLimiter, ctrl.resendRegistrationCode);
+router.post('/verify-registration', authLimiter, ctrl.verifyRegistration);
 router.post('/login', authLimiter, ctrl.login);
 router.post('/verify-login', authLimiter, ctrl.verifyLogin);
 router.post('/logout', ctrl.logout);

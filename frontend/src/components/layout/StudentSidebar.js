@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   FiHome,
@@ -10,9 +11,13 @@ import {
   FiUser,
   FiX,
 } from 'react-icons/fi';
+import { getSafeImageUrl, handleImageError } from '../../utils/imageUtils';
 
 const StudentSidebar = ({ isOpen, setIsOpen }) => {
   const { t } = useTranslation();
+  const user = useSelector((state) => state.auth.user);
+  const displayName = user?.fullName || [user?.firstName, user?.lastName].filter(Boolean).join(' ') || 'Foydalanuvchi';
+  const avatarUrl = getSafeImageUrl(user?.avatar);
 
   const navigation = [
     { name: t('navigation.dashboard'), href: '/student', icon: FiHome },
@@ -55,6 +60,22 @@ const StudentSidebar = ({ isOpen, setIsOpen }) => {
             >
               <FiX className="w-5 h-5 text-gray-600 dark:text-gray-400" />
             </button>
+          </div>
+
+          <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-200 dark:border-gray-700">
+            <div className="h-11 w-11 shrink-0 overflow-hidden rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center">
+              {avatarUrl ? (
+                <img src={avatarUrl} alt={displayName} onError={handleImageError} className="h-full w-full object-cover" />
+              ) : (
+                <span className="text-lg font-semibold text-primary-600 dark:text-primary-400">
+                  {displayName.charAt(0).toUpperCase()}
+                </span>
+              )}
+            </div>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold text-gray-900 dark:text-white">{displayName}</p>
+              <p className="truncate text-xs text-gray-500 dark:text-gray-400">{user?.phoneNumber || ''}</p>
+            </div>
           </div>
 
           {/* Navigation */}

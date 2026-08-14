@@ -63,13 +63,49 @@ exports.register = asyncHandler(async (req, res) => {
   await user.save();
   smsService.sendVerificationCode(phoneNumber, code, req.lang).catch(() => {});
 
-  const { accessToken } = await issueSession(res, user);
   return res.status(201).json({
     success: true,
-    message: 'Ro\'yxatdan muvaffaqiyatli o\'tdingiz',
-    token: accessToken,
+    message: 'SMS tasdiqlash kodi yuborildi',
+    requiresSms: true,
+    verificationPurpose: 'registration',
+    phoneNumber,
     user: user.toJSON(),
   });
+});
+
+// POST /auth/resend-registration-code { phoneNumber }
+exports.resendRegistrationCode = asyncHandler(async (req, res) => {
+  const phoneNumber = normalizePhone(req.body.phoneNumber);
+  const user = await User.findOne({ phoneNumber });
+  if (!user) throw ApiError.notFound('Foydalanuvchi topilmadi');
+
+  const code = smsService.generateCode();
+  user.verification = { code, expiresAt: new Date(Date.now() + 5 * 60 * 1000), attempts: 0, purpose: 'registration' };
+  await user.save();
+  await smsService.sendVerificationCode(phoneNumber, code, user.language).catch(() => {});
+  return ok(res, { requiresSms: true, phoneNumber }, 'SMS kodi qayta yuborildi');
+});
+
+// POST /auth/verify-registration { phoneNumber, code }
+exports.verifyRegistration = asyncHandler(async (req, res) => {
+  const phoneNumber = normalizePhone(req.body.phoneNumber);
+  const { code } = req.body;
+  const user = await User.findOne({ phoneNumber }).select('+verification.code +verification.expiresAt +verification.attempts +verification.purpose');
+  if (!user) throw ApiError.notFound('Foydalanuvchi topilmadi');
+  const v = user.verification || {};
+  if (v.purpose !== 'registration' || !v.code || !v.expiresAt || new Date(v.expiresAt) < new Date()) {
+    throw ApiError.badRequest('SMS kodi muddati tugagan. Qayta yuboring.');
+  }
+  if (String(code) !== String(v.code)) {
+    user.verification.attempts = (v.attempts || 0) + 1;
+    await user.save();
+    throw ApiError.badRequest('SMS tasdiqlash kodi noto\'g\'ri');
+  }
+
+  user.isVerified = true;
+  user.verification = { code: undefined, expiresAt: undefined, attempts: 0, purpose: undefined };
+  const { accessToken } = await issueSession(res, user);
+  return res.json({ success: true, message: 'Telefon raqami tasdiqlandi', token: accessToken, user: user.toJSON() });
 });
 
 // POST /auth/login

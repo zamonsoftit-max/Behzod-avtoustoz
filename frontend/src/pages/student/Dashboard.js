@@ -53,6 +53,7 @@ const StudentDashboard = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
   const { dashboardStats, dashboardLoading } = useSelector((state) => state.user);
+  const displayName = user?.fullName || [user?.firstName, user?.lastName].filter(Boolean).join(' ') || 'Foydalanuvchi';
 
   useEffect(() => {
     dispatch(fetchDashboardStats())
@@ -235,7 +236,7 @@ const StudentDashboard = () => {
             {t('student.dashboard.title')}
           </h1>
           <p className="text-gray-600 dark:text-gray-400 mt-1">
-            {t('student.dashboard.welcome', { name: user?.fullName })}
+            {t('student.dashboard.welcome', { name: displayName })}
           </p>
         </div>
         <div className="text-right">

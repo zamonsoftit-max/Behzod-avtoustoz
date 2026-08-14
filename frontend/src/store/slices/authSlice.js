@@ -72,10 +72,36 @@ export const register = createAsyncThunk(
   async (userData, { rejectWithValue }) => {
     try {
       const response = await api.post('/auth/register', userData);
+      if (response.data.requiresSms) return response.data;
       localStorage.setItem('token', response.data.token);
       
       // Session ID is now handled via secure cookies automatically
       
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response?.data?.message || i18n.t('errors.registrationFailed'));
+    }
+  }
+);
+
+export const verifyRegistration = createAsyncThunk(
+  'auth/verifyRegistration',
+  async ({ phoneNumber, code }, { rejectWithValue }) => {
+    try {
+      const response = await api.post('/auth/verify-registration', { phoneNumber, code });
+      localStorage.setItem('token', response.data.token);
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response?.data?.message || i18n.t('errors.registrationFailed'));
+    }
+  }
+);
+
+export const resendRegistrationCode = createAsyncThunk(
+  'auth/resendRegistrationCode',
+  async (phoneNumber, { rejectWithValue }) => {
+    try {
+      const response = await api.post('/auth/resend-registration-code', { phoneNumber });
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || i18n.t('errors.registrationFailed'));
@@ -189,12 +215,29 @@ const authSlice = createSlice({
       })
       .addCase(register.fulfilled, (state, action) => {
         state.loading = false;
+        if (action.payload.requiresSms) return;
         state.isAuthenticated = true;
         state.user = action.payload.user;
         state.token = action.payload.token;
         toast.success(i18n.t('toast.success.register'));
       })
       .addCase(register.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+        toast.error(action.payload);
+      })
+      .addCase(verifyRegistration.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(verifyRegistration.fulfilled, (state, action) => {
+        state.loading = false;
+        state.isAuthenticated = true;
+        state.user = action.payload.user;
+        state.token = action.payload.token;
+        toast.success(i18n.t('toast.success.register'));
+      })
+      .addCase(verifyRegistration.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
         toast.error(action.payload);
