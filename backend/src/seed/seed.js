@@ -69,7 +69,7 @@ const QUESTIONS = [
 
 // ===== Narx rejalari =====
 const PLANS = [
-  { key: 'monthly', name: { uz: '1 oylik', 'uz-Cyrl': '1 ойлик', ru: '1 месяц' }, price: 29000, durationDays: 30, type: 'premium', features: ['Barcha testlar', 'Statistika', 'Xato savollar'] },
+  { key: 'monthly', name: { uz: '1 oylik', 'uz-Cyrl': '1 ойлик', ru: '1 месяц' }, price: 45000, durationDays: 30, type: 'premium', features: ['Barcha testlar', 'Statistika', 'Xato savollar'] },
   { key: 'quarterly', name: { uz: '3 oylik', 'uz-Cyrl': '3 ойлик', ru: '3 месяца' }, price: 75000, durationDays: 90, type: 'premium', popular: true, features: ['Barcha testlar', 'Statistika', 'Xato savollar', '20% chegirma'] },
   { key: 'yearly', name: { uz: '1 yillik', 'uz-Cyrl': '1 йиллик', ru: '1 год' }, price: 250000, durationDays: 365, type: 'pro', features: ['Barcha testlar', 'Statistika', 'Xato savollar', 'Eng yaxshi narx'] },
 ];

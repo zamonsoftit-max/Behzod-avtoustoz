@@ -17,10 +17,12 @@ exports.getPlans = asyncHandler(async (req, res) => {
   const plans = settings.subscriptionPlans
     .filter((p) => p.isActive)
     .map((p) => ({
+      id: p.key,
       key: p.key,
       name: pick(p.name, req.lang) || p.key,
       nameMulti: p.name,
       price: p.price,
+      days: p.durationDays,
       durationDays: p.durationDays,
       type: p.type,
       features: p.features,

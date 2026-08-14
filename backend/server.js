@@ -4,9 +4,16 @@ const connectDB = require('./src/config/db');
 const app = require('./src/app');
 const { initSocket } = require('./src/socket');
 const { deactivateExpired } = require('./src/services/subscription.service');
+const Settings = require('./src/models/Settings');
 
 async function start() {
   await connectDB();
+
+  // Amaldagi bazadagi 1 oylik tarif narxini yangilash.
+  await Settings.updateOne(
+    { singleton: 'main', 'subscriptionPlans.key': 'monthly' },
+    { $set: { 'subscriptionPlans.$.price': 45000 } }
+  );
 
   const server = http.createServer(app);
   initSocket(server);

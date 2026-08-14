@@ -69,8 +69,8 @@ const PaymentsPage = () => {
     try {
       setProcessingPayment(true);
       const response = await api.post('/payments/create', {
-        subscriptionType: selectedPlan.id,
-        paymentMethod
+        plan: selectedPlan.key,
+        paymentMethod: paymentMethod === 'cash' ? 'manual' : paymentMethod,
       });
 
       const { paymentUrl, paymentId } = response.data.data;
@@ -300,9 +300,7 @@ const PaymentsPage = () => {
             <div className="p-5">
               <div className="text-center mb-4">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
-                  {plan.id === '15_days' && (i18n.language === 'ru' ? '15 дневная' : i18n.language === 'uz-Cyrl' ? '15 кунлик' : '15 kunlik')}
-                  {plan.id === '1_month' && (i18n.language === 'ru' ? '1 месячная' : i18n.language === 'uz-Cyrl' ? '1 ойлик' : '1 oylik')}
-                  {plan.id === '3_months' && (i18n.language === 'ru' ? '3 месячная' : i18n.language === 'uz-Cyrl' ? '3 ойлик' : '3 oylik')}
+                  {plan.name}
                 </h3>
                 <div className="flex items-center justify-center">
                   <FiDollarSign className="w-5 h-5 text-gray-400" />
@@ -443,9 +441,7 @@ const PaymentsPage = () => {
               <div className="p-6">
                 <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                   <h4 className="font-medium text-gray-900 dark:text-white mb-1">
-                    {selectedPlan.id === '15_days' && (i18n.language === 'ru' ? '15 дневная' : i18n.language === 'uz-Cyrl' ? '15 кунлик' : '15 kunlik')}
-                    {selectedPlan.id === '1_month' && (i18n.language === 'ru' ? '1 месячная' : i18n.language === 'uz-Cyrl' ? '1 ойлик' : '1 oylik')}
-                    {selectedPlan.id === '3_months' && (i18n.language === 'ru' ? '3 месячная' : i18n.language === 'uz-Cyrl' ? '3 ойлик' : '3 oylik')}
+                    {selectedPlan.name}
                   </h4>
                   <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">
                     {formatPrice(selectedPlan.price)}
@@ -457,17 +453,17 @@ const PaymentsPage = () => {
 
                 <div className="space-y-3 mb-6">
                   {[
-                    { id: 'click', name: t('student.payments.paymentMethods.click'), icon: '💳', color: 'blue' },
-                    { id: 'payme', name: t('student.payments.paymentMethods.payme'), icon: '💰', color: 'green' },
+                    { id: 'click', name: t('student.payments.paymentMethods.click'), icon: '💳', color: 'blue', comingSoon: true },
+                    { id: 'payme', name: t('student.payments.paymentMethods.payme'), icon: '💰', color: 'green', comingSoon: true },
                     { id: 'cash', name: t('student.payments.paymentMethods.cash'), icon: '💵', color: 'yellow' }
                   ].map((method) => (
                     <label
                       key={method.id}
-                      className={`flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                      className={`flex items-center p-4 border-2 rounded-lg transition-all ${
                         paymentMethod === method.id
                           ? `border-${method.color}-500 bg-${method.color}-50 dark:bg-${method.color}-900/20`
                           : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
-                      }`}
+                      } ${method.comingSoon ? 'cursor-not-allowed opacity-60' : 'cursor-pointer'}`}
                     >
                       <input
                         type="radio"
@@ -475,11 +471,17 @@ const PaymentsPage = () => {
                         value={method.id}
                         checked={paymentMethod === method.id}
                         onChange={(e) => setPaymentMethod(e.target.value)}
+                        disabled={method.comingSoon}
                         className="sr-only"
                       />
                       <span className="text-2xl mr-3">{method.icon}</span>
                       <span className="flex-1 font-medium text-gray-900 dark:text-white">
                         {method.name}
+                        {method.comingSoon && (
+                          <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">
+                            (tez kunda qo'shiladi)
+                          </span>
+                        )}
                       </span>
                       {paymentMethod === method.id && (
                         <FiCheckCircle className="w-5 h-5 text-primary-600 dark:text-primary-400" />

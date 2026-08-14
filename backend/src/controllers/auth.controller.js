@@ -61,7 +61,11 @@ exports.register = asyncHandler(async (req, res) => {
   const code = smsService.generateCode();
   user.verification = { code, expiresAt: new Date(Date.now() + 5 * 60 * 1000), attempts: 0, purpose: 'registration' };
   await user.save();
-  smsService.sendVerificationCode(phoneNumber, code, req.lang).catch(() => {});
+  const smsResult = await smsService.sendVerificationCode(phoneNumber, code, req.lang);
+  if (!smsResult.ok) {
+    await User.deleteOne({ _id: user._id });
+    throw ApiError.serviceUnavailable('SMS kodi yuborilmadi. Iltimos, birozdan keyin qayta urinib ko\'ring.');
+  }
 
   return res.status(201).json({
     success: true,
@@ -82,7 +86,10 @@ exports.resendRegistrationCode = asyncHandler(async (req, res) => {
   const code = smsService.generateCode();
   user.verification = { code, expiresAt: new Date(Date.now() + 5 * 60 * 1000), attempts: 0, purpose: 'registration' };
   await user.save();
-  await smsService.sendVerificationCode(phoneNumber, code, user.language).catch(() => {});
+  const smsResult = await smsService.sendVerificationCode(phoneNumber, code, user.language);
+  if (!smsResult.ok) {
+    throw ApiError.serviceUnavailable('SMS kodi yuborilmadi. Iltimos, birozdan keyin qayta urinib ko\'ring.');
+  }
   return ok(res, { requiresSms: true, phoneNumber }, 'SMS kodi qayta yuborildi');
 });
 
@@ -124,7 +131,10 @@ exports.login = asyncHandler(async (req, res) => {
   const code = smsService.generateCode();
   user.verification = { code, expiresAt: new Date(Date.now() + 5 * 60 * 1000), attempts: 0, purpose: 'login' };
   await user.save();
-  await smsService.sendVerificationCode(phoneNumber, code, user.language).catch(() => {});
+  const smsResult = await smsService.sendVerificationCode(phoneNumber, code, user.language);
+  if (!smsResult.ok) {
+    throw ApiError.serviceUnavailable('SMS kodi yuborilmadi. Iltimos, birozdan keyin qayta urinib ko\'ring.');
+  }
 
   return res.json({
     success: true,
