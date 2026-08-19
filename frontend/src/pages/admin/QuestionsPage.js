@@ -13,11 +13,16 @@ import {
   FiEyeOff,
   FiPlusCircle,
   FiMinusCircle,
+  FiX,
+  FiCheckCircle,
+  FiInfo,
+  FiGlobe,
 } from 'react-icons/fi';
 import api from '../../services/api';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import Pagination from '../../components/common/Pagination';
 import toast from 'react-hot-toast';
+import { sanitizeImageUrl, handleImageError } from '../../utils/imageUtils';
 
 const QuestionsPage = () => {
   const { t, i18n } = useTranslation();
@@ -37,6 +42,8 @@ const QuestionsPage = () => {
   });
   const [showModal, setShowModal] = useState(false);
   const [editingQuestion, setEditingQuestion] = useState(null);
+  const [viewingQuestion, setViewingQuestion] = useState(null);
+  const [viewLang, setViewLang] = useState('uz');
   const [formData, setFormData] = useState({
     text: { uz: '', 'uz-Cyrl': '', ru: '' },
     options: [
@@ -505,8 +512,18 @@ const QuestionsPage = () => {
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                     <div className="flex items-center justify-end space-x-2">
                       <button
-                        onClick={() => handleOpenModal(question)}
+                        onClick={() => {
+                          setViewingQuestion(question);
+                          setViewLang(i18n.language || 'uz');
+                        }}
                         className="p-1.5 rounded-lg text-blue-600 hover:text-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/30 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                        title={t('admin.questions.table.view') || "Ko'rish"}
+                      >
+                        <FiEye className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={() => handleOpenModal(question)}
+                        className="p-1.5 rounded-lg text-amber-600 hover:text-amber-800 hover:bg-amber-50 dark:hover:bg-amber-900/30 dark:text-amber-400 dark:hover:text-amber-300 transition-colors"
                         title={t('admin.questions.table.edit') || "Tahrirlash"}
                       >
                         <FiEdit className="w-4 h-4" />
@@ -774,6 +791,230 @@ const QuestionsPage = () => {
         </div>
       )}
       
+      {/* Question Details View Modal */}
+      {viewingQuestion && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 overflow-y-auto flex items-center justify-center p-4">
+          <motion.div
+            initial={{ scale: 0.95, opacity: 0, y: 10 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            className="bg-white dark:bg-dark-card rounded-2xl p-6 max-w-3xl w-full my-8 max-h-[90vh] overflow-y-auto relative shadow-2xl border border-gray-100 dark:border-gray-800 space-y-6"
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                  <FiEye className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    Savol tafsilotlari
+                  </h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Savol matni, to'g'ri javob va to'liq izohlar
+                  </p>
+                </div>
+              </div>
+
+              {/* Language switcher & Close button */}
+              <div className="flex items-center space-x-2">
+                <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-lg p-1 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => setViewLang('uz')}
+                    className={`px-2.5 py-1 rounded-md font-medium transition-all ${
+                      viewLang === 'uz'
+                        ? 'bg-blue-600 text-white shadow-sm'
+                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+                    }`}
+                  >
+                    O'zbek
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setViewLang('uz-Cyrl')}
+                    className={`px-2.5 py-1 rounded-md font-medium transition-all ${
+                      viewLang === 'uz-Cyrl'
+                        ? 'bg-blue-600 text-white shadow-sm'
+                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+                    }`}
+                  >
+                    Ўзбек
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setViewLang('ru')}
+                    className={`px-2.5 py-1 rounded-md font-medium transition-all ${
+                      viewLang === 'ru'
+                        ? 'bg-blue-600 text-white shadow-sm'
+                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+                    }`}
+                  >
+                    Русский
+                  </button>
+                </div>
+
+                <button
+                  onClick={() => setViewingQuestion(null)}
+                  className="p-2 rounded-xl text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                >
+                  <FiX className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Badges / Meta info */}
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
+                <FiGlobe className="w-3 h-3 mr-1.5" />
+                Mavzu: {viewingQuestion.topic?.name?.[viewLang] || viewingQuestion.topic?.name?.uz || viewingQuestion.topic?.name || 'Mavzu'}
+              </span>
+
+              <span
+                className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${
+                  viewingQuestion.difficulty === 'easy'
+                    ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
+                    : viewingQuestion.difficulty === 'medium'
+                    ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400'
+                    : 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400'
+                }`}
+              >
+                Daraja: {t(`admin.questions.filters.${viewingQuestion.difficulty}`) || viewingQuestion.difficulty}
+              </span>
+
+              <span
+                className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${
+                  viewingQuestion.isActive
+                    ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400'
+                    : 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-400'
+                }`}
+              >
+                {viewingQuestion.isActive ? 'Faol' : 'Nofaol'}
+              </span>
+            </div>
+
+            {/* Question Text */}
+            <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/80">
+              <div className="text-xs uppercase font-semibold text-gray-500 dark:text-gray-400 mb-1">
+                Savol matni ({viewLang === 'uz' ? "O'zbekcha" : viewLang === 'uz-Cyrl' ? "Ўзбекча (Кирилл)" : "Русский"}):
+              </div>
+              <p className="text-base font-medium text-gray-900 dark:text-white leading-relaxed">
+                {viewingQuestion.question?.[viewLang] ||
+                  viewingQuestion.question?.uz ||
+                  viewingQuestion.text?.[viewLang] ||
+                  viewingQuestion.text?.uz ||
+                  viewingQuestion.text ||
+                  "Matn mavjud emas"}
+              </p>
+            </div>
+
+            {/* Question Image (if present) */}
+            {(viewingQuestion.imageUrl || viewingQuestion.image) && (
+              <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-900/5 dark:bg-gray-900/40 p-2 flex justify-center">
+                <img
+                  src={sanitizeImageUrl(viewingQuestion.imageUrl || viewingQuestion.image)}
+                  alt="Savol rasmi"
+                  className="max-h-72 w-auto object-contain rounded-lg shadow-sm"
+                  onError={handleImageError}
+                />
+              </div>
+            )}
+
+            {/* Options / Variants */}
+            <div>
+              <div className="text-sm font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                <span>Javob variantlari</span>
+                <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">
+                  ({viewingQuestion.options?.length || 0} ta variant)
+                </span>
+              </div>
+
+              <div className="space-y-2.5">
+                {viewingQuestion.options?.map((opt, idx) => {
+                  const letter = String.fromCharCode(65 + idx); // A, B, C, D...
+                  const isCorrect = opt.isCorrect || idx === viewingQuestion.correctAnswer;
+                  const optionText =
+                    (typeof opt.text === 'object'
+                      ? opt.text?.[viewLang] || opt.text?.uz || opt.text?.ru || opt.text?.['uz-Cyrl']
+                      : opt.text) || `Variant ${letter}`;
+
+                  return (
+                    <div
+                      key={idx}
+                      className={`flex items-center justify-between p-3.5 rounded-xl border transition-all ${
+                        isCorrect
+                          ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400 dark:border-emerald-700/80 text-emerald-950 dark:text-emerald-100 shadow-sm'
+                          : 'bg-white dark:bg-dark-card border-gray-200 dark:border-gray-700/80 text-gray-800 dark:text-gray-200'
+                      }`}
+                    >
+                      <div className="flex items-center space-x-3">
+                        <span
+                          className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold ${
+                            isCorrect
+                              ? 'bg-emerald-500 text-white shadow-sm'
+                              : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+                          }`}
+                        >
+                          {letter}
+                        </span>
+                        <span className="text-sm font-medium">{optionText}</span>
+                      </div>
+
+                      {isCorrect && (
+                        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300">
+                          <FiCheckCircle className="w-3.5 h-3.5 mr-1" />
+                          To'g'ri javob
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Explanation Section */}
+            <div className="p-4 rounded-xl bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 space-y-2">
+              <div className="flex items-center text-blue-900 dark:text-blue-300 font-semibold text-sm">
+                <FiInfo className="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" />
+                <span>Savol izohi:</span>
+              </div>
+              <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed pl-6">
+                {viewingQuestion.explanation?.[viewLang] ||
+                  viewingQuestion.explanation?.uz ||
+                  viewingQuestion.explanation?.['uz-Cyrl'] ||
+                  viewingQuestion.explanation?.ru || (
+                    <span className="italic text-gray-400 dark:text-gray-500">
+                      Ushbu savol uchun izoh kiritilmagan.
+                    </span>
+                  )}
+              </p>
+            </div>
+
+            {/* Modal Actions */}
+            <div className="flex items-center justify-end space-x-3 pt-3 border-t border-gray-200 dark:border-gray-800">
+              <button
+                type="button"
+                onClick={() => setViewingQuestion(null)}
+                className="btn-secondary"
+              >
+                Yopish
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  const toEdit = viewingQuestion;
+                  setViewingQuestion(null);
+                  handleOpenModal(toEdit);
+                }}
+                className="btn-primary flex items-center"
+              >
+                <FiEdit className="w-4 h-4 mr-2" />
+                Tahrirlash
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
       {/* Delete Confirmation Modal */}
       <DeleteModal
         isOpen={deleteModal.isOpen}
