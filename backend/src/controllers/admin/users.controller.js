@@ -135,7 +135,11 @@ exports.remove = asyncHandler(async (req, res) => {
   if (!user) throw ApiError.notFound('Foydalanuvchi topilmadi');
   if (user.role === 'admin') throw ApiError.badRequest('Admin hisobini o\'chirib bo\'lmaydi');
 
-  await TestResult.deleteMany({ user: user._id });
+  socket.forceLogout(user._id, 'Hisobingiz admin tomonidan o\'chirildi');
+  await Promise.all([
+    TestResult.deleteMany({ user: user._id }),
+    Payment.deleteMany({ user: user._id }),
+  ]);
   await user.deleteOne();
   return ok(res, null, 'Foydalanuvchi o\'chirildi');
 });

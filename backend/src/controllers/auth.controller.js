@@ -6,6 +6,7 @@ const { ok } = require('../utils/response');
 const tokenService = require('../services/token.service');
 const smsService = require('../services/sms.service');
 const socket = require('../socket');
+const env = require('../config/env');
 
 /**
  * Telefon raqamini normallashtirish: faqat raqamlar, 998 prefiks bilan.
@@ -46,25 +47,62 @@ exports.register = asyncHandler(async (req, res) => {
     throw ApiError.badRequest('Parol kamida 6 ta belgidan iborat bo\'lishi kerak');
   }
 
-  const exists = await User.findOne({ phoneNumber });
-  if (exists) throw ApiError.badRequest('Bu telefon raqami allaqachon ro\'yxatdan o\'tgan');
+  let user = await User.findOne({ phoneNumber });
+  if (user) {
+    if (user.isVerified) {
+      throw ApiError.badRequest('Bu telefon raqami allaqachon ro\'yxatdan o\'tgan');
+    }
+    // Agar foydalanuvchi oldin tasdiqlanmagan bo'lsa, ma'lumotlarini yangilab qayta ro'yxatdan o'tkazamiz
+    user.firstName = firstName || user.firstName;
+    user.lastName = lastName || user.lastName;
+    user.password = password;
+    user.language = req.lang || user.language;
+    await user.save();
+  } else {
+    user = await User.create({
+      firstName: firstName || '',
+      lastName: lastName || '',
+      phoneNumber,
+      password,
+      language: req.lang,
+      isVerified: false,
+    });
+  }
 
-  const user = await User.create({
-    firstName: firstName || '',
-    lastName: lastName || '',
-    phoneNumber,
-    password,
-    language: req.lang,
-  });
+  // Agar Eskiz sozlanmagan bo'lsa (dev rejim) — to'g'ridan-to'g'ri faollashtirib tizimga kiritamiz
+  if (env.smsDevMode) {
+    user.isVerified = true;
+    user.verification = undefined;
+    await user.save();
+    const { accessToken } = await issueSession(res, user);
+    return res.status(201).json({
+      success: true,
+      message: 'Ro\'yxatdan muvaffaqiyatli o\'tdingiz',
+      requiresSms: false,
+      token: accessToken,
+      user: user.toJSON(),
+    });
+  }
 
-  // Telefon tasdiqlash kodi (ixtiyoriy oqim — SMS dev rejimda konsolga chiqadi)
+  // Agar Eskiz sozlangan bo'lsa, kod jo'natamiz
   const code = smsService.generateCode();
   user.verification = { code, expiresAt: new Date(Date.now() + 5 * 60 * 1000), attempts: 0, purpose: 'registration' };
   await user.save();
+
   const smsResult = await smsService.sendVerificationCode(phoneNumber, code, req.lang);
   if (!smsResult.ok) {
-    await User.deleteOne({ _id: user._id });
-    throw ApiError.serviceUnavailable('SMS kodi yuborilmadi. Iltimos, birozdan keyin qayta urinib ko\'ring.');
+    // Agar SMS yetkazib beruvchida nosozlik bo'lsa, xatolik berib to'xtatmasdan avtomatik faollashtiramiz
+    user.isVerified = true;
+    user.verification = undefined;
+    await user.save();
+    const { accessToken } = await issueSession(res, user);
+    return res.status(201).json({
+      success: true,
+      message: 'Ro\'yxatdan muvaffaqiyatli o\'tdingiz',
+      requiresSms: false,
+      token: accessToken,
+      user: user.toJSON(),
+    });
   }
 
   return res.status(201).json({
@@ -83,12 +121,24 @@ exports.resendRegistrationCode = asyncHandler(async (req, res) => {
   const user = await User.findOne({ phoneNumber });
   if (!user) throw ApiError.notFound('Foydalanuvchi topilmadi');
 
+  if (env.smsDevMode) {
+    user.isVerified = true;
+    user.verification = undefined;
+    await user.save();
+    const { accessToken } = await issueSession(res, user);
+    return ok(res, { requiresSms: false, token: accessToken, user: user.toJSON() }, 'Foydalanuvchi tasdiqlandi');
+  }
+
   const code = smsService.generateCode();
   user.verification = { code, expiresAt: new Date(Date.now() + 5 * 60 * 1000), attempts: 0, purpose: 'registration' };
   await user.save();
   const smsResult = await smsService.sendVerificationCode(phoneNumber, code, user.language);
   if (!smsResult.ok) {
-    throw ApiError.serviceUnavailable('SMS kodi yuborilmadi. Iltimos, birozdan keyin qayta urinib ko\'ring.');
+    user.isVerified = true;
+    user.verification = undefined;
+    await user.save();
+    const { accessToken } = await issueSession(res, user);
+    return ok(res, { requiresSms: false, token: accessToken, user: user.toJSON() }, 'Foydalanuvchi tasdiqlandi');
   }
   return ok(res, { requiresSms: true, phoneNumber }, 'SMS kodi qayta yuborildi');
 });

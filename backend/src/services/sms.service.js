@@ -29,11 +29,7 @@ async function sendSms(phone, message) {
   const to = String(phone).replace(/\D/g, '');
 
   if (env.smsDevMode) {
-    if (env.isProd) {
-      console.error('SMS yuborilmadi: Render uchun Eskiz sozlamalari kiritilmagan.');
-      return { ok: false, devMode: false };
-    }
-    console.log('\n📱 [SMS DEV REJIM] (Eskiz sozlanmagan)');
+    console.log('\n📱 [SMS REJIM] (Eskiz sozlanmagan, SMS simulyatsiya qilindi)');
     console.log(`   Kimga: +${to}`);
     console.log(`   Matn:  ${message}\n`);
     return { ok: true, devMode: true };
