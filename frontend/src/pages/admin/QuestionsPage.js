@@ -9,7 +9,6 @@ import {
   FiEdit,
   FiTrash2,
   FiImage,
-  FiMoreVertical,
   FiEye,
   FiEyeOff,
   FiPlusCircle,
@@ -504,41 +503,22 @@ const QuestionsPage = () => {
                       )}
                     </button>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right">
-                    <div className="relative inline-block text-left">
+                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <div className="flex items-center justify-end space-x-2">
                       <button
-                        onClick={() => setShowDropdown(showDropdown === question._id ? null : question._id)}
-                        className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                        onClick={() => handleOpenModal(question)}
+                        className="p-1.5 rounded-lg text-blue-600 hover:text-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/30 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                        title={t('admin.questions.table.edit') || "Tahrirlash"}
                       >
-                        <FiMoreVertical className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                        <FiEdit className="w-4 h-4" />
                       </button>
-
-                      {showDropdown === question._id && (
-                        <div className="absolute right-0 z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-dark-card ring-1 ring-black ring-opacity-5">
-                          <div className="py-1">
-                            <button
-                              onClick={() => {
-                                handleOpenModal(question);
-                                setShowDropdown(null);
-                              }}
-                              className="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                            >
-                              <FiEdit className="w-4 h-4 mr-2" />
-                              {t('admin.questions.table.edit')}
-                            </button>
-                            <button
-                              onClick={() => {
-                                openDeleteModal(question._id);
-                                setShowDropdown(null);
-                              }}
-                              className="flex items-center w-full px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-700"
-                            >
-                              <FiTrash2 className="w-4 h-4 mr-2" />
-                              {t('admin.questions.table.delete')}
-                            </button>
-                          </div>
-                        </div>
-                      )}
+                      <button
+                        onClick={() => openDeleteModal(question._id)}
+                        className="p-1.5 rounded-lg text-red-600 hover:text-red-800 hover:bg-red-50 dark:hover:bg-red-900/30 dark:text-red-400 dark:hover:text-red-300 transition-colors"
+                        title={t('admin.questions.table.delete') || "O'chirish"}
+                      >
+                        <FiTrash2 className="w-4 h-4" />
+                      </button>
                     </div>
                   </td>
                 </motion.tr>
