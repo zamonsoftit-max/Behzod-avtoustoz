@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 /**
  * Custom hook for handling API calls with automatic cleanup and race condition prevention

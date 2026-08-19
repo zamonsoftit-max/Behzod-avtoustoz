@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import { FiPhone, FiLock, FiEye, FiEyeOff, FiShield } from 'react-icons/fi';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import api from '../../services/api';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import SMSVerification from '../../components/auth/SMSVerification';

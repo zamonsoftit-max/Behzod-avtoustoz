@@ -94,7 +94,7 @@ const TestPage = () => {
             ticketId: searchParams.get('ticketId'),
           });
           setLoading(false);
-          toast.info(t('student.test.offlineMode'));
+          toast(t('student.test.offlineMode'), { icon: 'ℹ️' });
           return;
         } else {
           toast.error(t('student.test.noOfflineData'));

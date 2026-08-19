@@ -148,7 +148,7 @@ class SocketService {
 
     this.socket.on('notification:broadcast', (message) => {
       console.log('Broadcast notification:', message);
-      toast.info(message);
+      toast(message, { icon: '📢' });
     });
 
     // User updates

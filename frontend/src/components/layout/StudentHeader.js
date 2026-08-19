@@ -16,7 +16,7 @@ import {
 import { logout } from '../../store/slices/authSlice';
 import { format } from 'date-fns';
 import userService from '../../services/user.service';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import { sanitizeImageUrl, handleImageError } from '../../utils/imageUtils';
 
 const StudentHeader = ({ setSidebarOpen }) => {

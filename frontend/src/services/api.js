@@ -215,9 +215,9 @@ api.interceptors.response.use(
           // Don't show toast for test endpoints when subscription is required
           if (!originalRequest.url.includes('/tests/')) {
             if (error.response.data.subscriptionRequired) {
-              toast.warning(i18n.t('errors.subscriptionRequired'));
-            } else {
-              toast.error(i18n.t('errors.unauthorized'));
+              toast(i18n.t('errors.subscriptionRequired') || "Bu bo'lim uchun faol obuna talab qilinadi", { icon: '⚠️' });
+            } else if (!originalRequest.url.includes('/admin/')) {
+              toast.error(error.response.data.message || i18n.t('errors.unauthorized'));
             }
           }
           break;

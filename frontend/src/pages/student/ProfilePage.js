@@ -22,7 +22,7 @@ import {
   FiCheckCircle,
 } from 'react-icons/fi';
 import { format } from 'date-fns';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import { 
   fetchUserProfile, 
   updateUserProfile, 

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX, FiGlobe, FiSun, FiMoon } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
 import userService from '../../services/user.service';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import api from '../../services/api';
 
 const PublicHeader = () => {

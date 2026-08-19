@@ -9,7 +9,7 @@ import {
   FiCheckCircle,
   FiAlertCircle,
 } from 'react-icons/fi';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import testService from '../../services/test.service';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 

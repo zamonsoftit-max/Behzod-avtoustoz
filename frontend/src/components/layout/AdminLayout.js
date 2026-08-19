@@ -26,7 +26,7 @@ import {
 } from 'react-icons/fi';
 import { logout, updateUser } from '../../store/slices/authSlice';
 import { useTranslation } from 'react-i18next';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import api from '../../services/api';
 
 const AdminLayout = () => {

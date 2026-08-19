@@ -129,6 +129,7 @@ function App() {
         <Route element={<PrivateRoute allowedRoles={['admin']} />}>
           <Route element={<ErrorBoundary><AdminLayout /></ErrorBoundary>}>
             <Route path="/admin" element={<ErrorBoundary><AdminDashboard /></ErrorBoundary>} />
+            <Route path="/admin/dashboard" element={<ErrorBoundary><AdminDashboard /></ErrorBoundary>} />
             <Route path="/admin/users" element={<ErrorBoundary><UsersManagement /></ErrorBoundary>} />
             <Route path="/admin/users/:id" element={<ErrorBoundary><UserDetailsPage /></ErrorBoundary>} />
             <Route path="/admin/users/:id/edit" element={<ErrorBoundary><UserEditPage /></ErrorBoundary>} />

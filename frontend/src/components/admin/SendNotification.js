@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiSend, FiX } from 'react-icons/fi';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import api from '../../services/api';
 
 const SendNotification = ({ isOpen, onClose, selectedUsers = [] }) => {

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import api from '../../services/api';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import i18n from '../../i18n';
 
 // Load user
@@ -248,7 +248,7 @@ const authSlice = createSlice({
         state.token = null;
         state.isAuthenticated = false;
         state.loading = false;
-        toast.info(i18n.t('toast.success.logout'));
+        toast.success(i18n.t('toast.success.logout'));
       })
       // Update password
       .addCase(updatePassword.fulfilled, (state) => {

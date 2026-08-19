@@ -7,11 +7,13 @@ router.post('/click/prepare', ctrl.clickPrepare);
 router.post('/click/complete', ctrl.clickComplete);
 router.post('/payme', ctrl.paymeGateway); // Payme JSON-RPC gateway
 
+// ===== Ommaviy tariflar (auth talab qilinmaydi) =====
+router.get('/plans', ctrl.getPlans);
+router.get('/subscription-types', ctrl.getPlans);
+
 // ===== Foydalanuvchi (auth majburiy) =====
 router.use(protect);
 
-router.get('/plans', ctrl.getPlans);
-router.get('/subscription-types', ctrl.getPlans);
 router.post('/create', ctrl.create);
 router.get('/history', ctrl.history);
 
