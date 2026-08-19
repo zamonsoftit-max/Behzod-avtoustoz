@@ -18,8 +18,13 @@ import {
   FiSun,
   FiChevronDown,
   FiGlobe,
+  FiUser,
+  FiLock,
+  FiEye,
+  FiEyeOff,
+  FiCheck,
 } from 'react-icons/fi';
-import { logout } from '../../store/slices/authSlice';
+import { logout, updateUser } from '../../store/slices/authSlice';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
 import api from '../../services/api';
@@ -35,6 +40,79 @@ const AdminLayout = () => {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const [showLanguages, setShowLanguages] = useState(false);
+  const [showProfileModal, setShowProfileModal] = useState(false);
+  const [adminName, setAdminName] = useState(user?.fullName || '');
+  const [isSavingName, setIsSavingName] = useState(false);
+  const [passwords, setPasswords] = useState({
+    currentPassword: '',
+    newPassword: '',
+    confirmPassword: '',
+  });
+  const [showCurrentPassword, setShowCurrentPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [isSavingPassword, setIsSavingPassword] = useState(false);
+
+  useEffect(() => {
+    if (user?.fullName) {
+      setAdminName(user.fullName);
+    }
+  }, [user]);
+
+  const handleSaveName = async (e) => {
+    e.preventDefault();
+    if (!adminName.trim()) {
+      toast.error("Ism bo'sh bo'lishi mumkin emas");
+      return;
+    }
+    try {
+      setIsSavingName(true);
+      const parts = adminName.trim().split(/\s+/);
+      const firstName = parts[0] || '';
+      const lastName = parts.slice(1).join(' ') || '';
+      const response = await api.put('/users/profile', {
+        fullName: adminName.trim(),
+        firstName,
+        lastName,
+      });
+      const updatedData = response.data.data || { fullName: adminName.trim(), firstName, lastName };
+      dispatch(updateUser(updatedData));
+      toast.success("Profil ma'lumotlari muvaffaqiyatli saqlandi");
+    } catch (error) {
+      toast.error(error.response?.data?.message || "Profilni yangilashda xatolik yuz berdi");
+    } finally {
+      setIsSavingName(false);
+    }
+  };
+
+  const handleSavePassword = async (e) => {
+    e.preventDefault();
+    if (passwords.newPassword.length < 6) {
+      toast.error("Yangi parol kamida 6 ta belgidan iborat bo'lishi kerak");
+      return;
+    }
+    if (passwords.newPassword !== passwords.confirmPassword) {
+      toast.error("Yangi parollar bir-biriga mos kelmadi");
+      return;
+    }
+    try {
+      setIsSavingPassword(true);
+      await api.put('/auth/update-password', {
+        currentPassword: passwords.currentPassword,
+        newPassword: passwords.newPassword,
+      });
+      toast.success("Parol muvaffaqiyatli o'zgartirildi");
+      setPasswords({
+        currentPassword: '',
+        newPassword: '',
+        confirmPassword: '',
+      });
+    } catch (error) {
+      toast.error(error.response?.data?.message || "Parolni o'zgartirishda xatolik yuz berdi");
+    } finally {
+      setIsSavingPassword(false);
+    }
+  };
 
   useEffect(() => {
     fetchNotifications();
@@ -348,18 +426,38 @@ const AdminLayout = () => {
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="absolute right-0 mt-2 w-48 bg-white dark:bg-dark-card rounded-lg shadow-lg border border-gray-200 dark:border-gray-700"
+                    className="absolute right-0 mt-2 w-56 bg-white dark:bg-dark-card rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden z-50"
                   >
-                    <div className="p-2">
-                      <div className="px-3 py-2 text-sm text-gray-600 dark:text-gray-400">
-                        {user?.email || user?.phone}
+                    <div className="p-3 bg-blue-50/50 dark:bg-blue-950/30 border-b border-gray-100 dark:border-gray-700/60">
+                      <div className="flex items-center space-x-2">
+                        <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">
+                          {t('common.admin')}
+                        </span>
                       </div>
-                      <hr className="my-1 border-gray-200 dark:border-gray-700" />
+                      <p className="text-sm font-semibold text-gray-900 dark:text-white mt-1 truncate">
+                        {user?.fullName}
+                      </p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                        {user?.phoneNumber || user?.email}
+                      </p>
+                    </div>
+                    <div className="p-1.5 space-y-1">
+                      <button
+                        onClick={() => {
+                          setShowProfile(false);
+                          setShowProfileModal(true);
+                        }}
+                        className="w-full flex items-center px-3 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors font-medium cursor-pointer"
+                      >
+                        <FiUser className="w-4 h-4 mr-2.5 text-blue-500" />
+                        {t('navigation.profile') || 'Profil'}
+                      </button>
+                      <div className="border-t border-gray-100 dark:border-gray-700/60 my-1" />
                       <button
                         onClick={handleLogout}
-                        className="w-full flex items-center px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
+                        className="w-full flex items-center px-3 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 rounded-lg transition-colors font-medium cursor-pointer"
                       >
-                        <FiLogOut className="w-4 h-4 mr-2" />
+                        <FiLogOut className="w-4 h-4 mr-2.5" />
                         {t('common.logout')}
                       </button>
                     </div>
@@ -375,6 +473,201 @@ const AdminLayout = () => {
           <Outlet />
         </main>
       </div>
+
+      {/* Admin Profile Modal */}
+      {showProfileModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 10 }}
+            className="w-full max-w-lg bg-white dark:bg-dark-card rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden my-8"
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50/70 dark:bg-gray-800/70">
+              <div className="flex items-center space-x-3">
+                <div className="p-2.5 rounded-xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400">
+                  <FiUser className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    {t('navigation.profile') || 'Profil sozlamalari'}
+                  </h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Ism va parolni tahrirlash
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowProfileModal(false)}
+                className="p-2 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer"
+              >
+                <FiX className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 space-y-6 max-h-[calc(85vh-120px)] overflow-y-auto">
+              {/* Profile Info Form */}
+              <form onSubmit={handleSaveName} className="space-y-4">
+                <div className="flex items-center justify-between pb-2 border-b border-gray-100 dark:border-gray-700">
+                  <h4 className="text-sm font-semibold text-gray-900 dark:text-white flex items-center">
+                    <FiUser className="w-4 h-4 mr-2 text-primary-500" />
+                    Asosiy ma'lumotlar
+                  </h4>
+                  <span className="text-xs px-2.5 py-1 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-medium">
+                    {t('common.admin')}
+                  </span>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                    {t('common.fullName') || 'To\'liq ism'}
+                  </label>
+                  <input
+                    type="text"
+                    value={adminName}
+                    onChange={(e) => setAdminName(e.target.value)}
+                    required
+                    placeholder="Ismingizni kiriting"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                    {t('common.phoneNumber') || 'Telefon raqami'}
+                  </label>
+                  <input
+                    type="text"
+                    value={user?.phoneNumber || ''}
+                    disabled
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800/50 text-gray-500 dark:text-gray-400 cursor-not-allowed"
+                  />
+                </div>
+
+                <div className="flex justify-end pt-1">
+                  <button
+                    type="submit"
+                    disabled={isSavingName}
+                    className="px-4 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 disabled:opacity-50 rounded-xl shadow-sm hover:shadow transition-all flex items-center space-x-2 cursor-pointer"
+                  >
+                    {isSavingName ? (
+                      <span>{t('common.loading') || 'Saqlanmoqda...'}</span>
+                    ) : (
+                      <>
+                        <FiCheck className="w-4 h-4" />
+                        <span>Ismni saqlash</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+              </form>
+
+              {/* Password Change Form */}
+              <form onSubmit={handleSavePassword} className="space-y-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                <div className="pb-2 border-b border-gray-100 dark:border-gray-700">
+                  <h4 className="text-sm font-semibold text-gray-900 dark:text-white flex items-center">
+                    <FiLock className="w-4 h-4 mr-2 text-primary-500" />
+                    Parolni o'zgartirish
+                  </h4>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                    Xavfsizlik uchun parolingizni yangilab turing
+                  </p>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                    Joriy parol
+                  </label>
+                  <div className="relative">
+                    <input
+                      type={showCurrentPassword ? 'text' : 'password'}
+                      value={passwords.currentPassword}
+                      onChange={(e) => setPasswords({ ...passwords, currentPassword: e.target.value })}
+                      required
+                      placeholder="Joriy parolingiz"
+                      className="w-full px-3.5 py-2.5 pr-10 text-sm rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowCurrentPassword(!showCurrentPassword)}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 cursor-pointer"
+                    >
+                      {showCurrentPassword ? <FiEyeOff className="w-4 h-4" /> : <FiEye className="w-4 h-4" />}
+                    </button>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                    Yangi parol
+                  </label>
+                  <div className="relative">
+                    <input
+                      type={showNewPassword ? 'text' : 'password'}
+                      value={passwords.newPassword}
+                      onChange={(e) => setPasswords({ ...passwords, newPassword: e.target.value })}
+                      required
+                      minLength={6}
+                      placeholder="Yangi parol (kamida 6 ta belgi)"
+                      className="w-full px-3.5 py-2.5 pr-10 text-sm rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowNewPassword(!showNewPassword)}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 cursor-pointer"
+                    >
+                      {showNewPassword ? <FiEyeOff className="w-4 h-4" /> : <FiEye className="w-4 h-4" />}
+                    </button>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                    Yangi parolni tasdiqlash
+                  </label>
+                  <div className="relative">
+                    <input
+                      type={showConfirmPassword ? 'text' : 'password'}
+                      value={passwords.confirmPassword}
+                      onChange={(e) => setPasswords({ ...passwords, confirmPassword: e.target.value })}
+                      required
+                      minLength={6}
+                      placeholder="Yangi parolni qayta kiriting"
+                      className="w-full px-3.5 py-2.5 pr-10 text-sm rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 cursor-pointer"
+                    >
+                      {showConfirmPassword ? <FiEyeOff className="w-4 h-4" /> : <FiEye className="w-4 h-4" />}
+                    </button>
+                  </div>
+                </div>
+
+                <div className="flex justify-end pt-1">
+                  <button
+                    type="submit"
+                    disabled={isSavingPassword}
+                    className="px-4 py-2 text-sm font-medium text-white bg-green-600 hover:bg-green-700 disabled:opacity-50 rounded-xl shadow-sm hover:shadow transition-all flex items-center space-x-2 cursor-pointer"
+                  >
+                    {isSavingPassword ? (
+                      <span>{t('common.loading') || 'Yangilanmoqda...'}</span>
+                    ) : (
+                      <>
+                        <FiLock className="w-4 h-4" />
+                        <span>Parolni yangilash</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </motion.div>
+        </div>
+      )}
 
       {/* Mobile sidebar overlay */}
       {sidebarOpen && (

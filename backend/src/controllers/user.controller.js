@@ -16,6 +16,11 @@ exports.updateProfile = asyncHandler(async (req, res) => {
   allowed.forEach((f) => {
     if (req.body[f] !== undefined) req.user[f] = req.body[f];
   });
+  if (req.body.fullName !== undefined) {
+    const parts = String(req.body.fullName).trim().split(/\s+/);
+    req.user.firstName = parts[0] || '';
+    req.user.lastName = parts.slice(1).join(' ') || '';
+  }
   await req.user.save();
   return ok(res, req.user.toJSON(), 'Profil yangilandi');
 });
