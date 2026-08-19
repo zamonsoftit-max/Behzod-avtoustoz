@@ -49,7 +49,6 @@ const QuestionsPage = () => {
     isActive: true,
   });
   const [imageFile, setImageFile] = useState(null);
-  const [showDropdown, setShowDropdown] = useState(null);
 
   // Debounced search function
   // lodash debounce returns a wrapped function whose dependencies cannot be inferred.
