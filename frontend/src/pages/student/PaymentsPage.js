@@ -85,7 +85,7 @@ const PaymentsPage = () => {
   const [subscriptionTypes, setSubscriptionTypes] = useState(DEFAULT_FRONTEND_PLANS);
   const [paymentHistory, setPaymentHistory] = useState([]);
   const [selectedPlan, setSelectedPlan] = useState(null);
-  const [paymentMethod, setPaymentMethod] = useState('click');
+  const [paymentMethod, setPaymentMethod] = useState('cash');
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   const [processingPayment, setProcessingPayment] = useState(false);
 
@@ -574,40 +574,78 @@ const PaymentsPage = () => {
                   </div>
 
                   {[
-                    { id: 'click', name: 'Click Up', desc: "Click ilovasi yoki karta orqali to'lash", icon: '💳', color: 'blue' },
-                    { id: 'payme', name: 'Payme', desc: "Payme ilovasi yoki karta orqali to'lash", icon: '💰', color: 'emerald' },
-                    { id: 'cash', name: 'Naqd / Karta (Admin orqali)', desc: "Admin bilan bog'lanib faollashtirish", icon: '💵', color: 'amber' }
-                  ].map((method) => (
-                    <label
-                      key={method.id}
-                      className={`flex items-center p-4 border-2 rounded-xl cursor-pointer transition-all ${
-                        paymentMethod === method.id
-                          ? 'border-blue-600 bg-blue-50/50 dark:bg-blue-950/30 dark:border-blue-500'
-                          : 'border-gray-200 dark:border-gray-700/80 hover:border-gray-300 dark:hover:border-gray-600'
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="paymentMethod"
-                        value={method.id}
-                        checked={paymentMethod === method.id}
-                        onChange={(e) => setPaymentMethod(e.target.value)}
-                        className="sr-only"
-                      />
-                      <span className="text-2xl mr-3">{method.icon}</span>
-                      <div className="flex-1">
-                        <p className="font-bold text-gray-900 dark:text-white text-sm">
-                          {method.name}
-                        </p>
-                        <p className="text-xs text-gray-500 dark:text-gray-400">
-                          {method.desc}
-                        </p>
-                      </div>
-                      {paymentMethod === method.id && (
-                        <FiCheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 ml-2" />
-                      )}
-                    </label>
-                  ))}
+                    { 
+                      id: 'cash', 
+                      name: 'Naqd pul / Karta (Admin orqali)', 
+                      desc: "Admin bilan bog'lanib, tezkor faollashtirish", 
+                      icon: '💵', 
+                      color: 'emerald',
+                      available: true 
+                    },
+                    { 
+                      id: 'click', 
+                      name: 'Click Up', 
+                      desc: "Click ilovasi yoki karta orqali to'lash", 
+                      icon: '💳', 
+                      color: 'blue',
+                      available: false,
+                      badge: 'Tez kunda'
+                    },
+                    { 
+                      id: 'payme', 
+                      name: 'Payme', 
+                      desc: "Payme ilovasi yoki karta orqali to'lash", 
+                      icon: '💰', 
+                      color: 'emerald',
+                      available: false,
+                      badge: 'Tez kunda'
+                    }
+                  ].map((method) => {
+                    const isSelected = paymentMethod === method.id;
+                    const isAvailable = method.available;
+
+                    return (
+                      <label
+                        key={method.id}
+                        className={`relative flex items-center p-4 border-2 rounded-xl transition-all ${
+                          !isAvailable
+                            ? 'opacity-60 bg-gray-50/50 dark:bg-gray-800/30 border-gray-200 dark:border-gray-700/50 cursor-not-allowed'
+                            : isSelected
+                            ? 'border-blue-600 bg-blue-50/50 dark:bg-blue-950/30 dark:border-blue-500 cursor-pointer shadow-sm'
+                            : 'border-gray-200 dark:border-gray-700/80 hover:border-gray-300 dark:hover:border-gray-600 cursor-pointer'
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name="paymentMethod"
+                          value={method.id}
+                          checked={isSelected}
+                          disabled={!isAvailable}
+                          onChange={(e) => isAvailable && setPaymentMethod(e.target.value)}
+                          className="sr-only"
+                        />
+                        <span className="text-2xl mr-3">{method.icon}</span>
+                        <div className="flex-1">
+                          <div className="flex items-center space-x-2">
+                            <p className="font-bold text-gray-900 dark:text-white text-sm">
+                              {method.name}
+                            </p>
+                            {!isAvailable && method.badge && (
+                              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700/50">
+                                ⏳ {method.badge}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                            {method.desc}
+                          </p>
+                        </div>
+                        {isAvailable && isSelected && (
+                          <FiCheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 ml-2 flex-shrink-0" />
+                        )}
+                      </label>
+                    );
+                  })}
                 </div>
 
                 {/* Secure Payment Note */}
