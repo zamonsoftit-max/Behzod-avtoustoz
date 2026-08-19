@@ -7,7 +7,7 @@ const ApiError = require('../utils/ApiError');
 const uploadRoot = path.join(__dirname, '..', '..', env.UPLOAD_DIR);
 
 // Kichik papkalarni yaratish
-['avatars', 'questions'].forEach((sub) => {
+['avatars', 'questions', 'topics'].forEach((sub) => {
   const dir = path.join(uploadRoot, sub);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 });
@@ -40,5 +40,6 @@ function createUploader(subfolder) {
 module.exports = {
   uploadAvatar: createUploader('avatars').single('avatar'),
   uploadQuestionImage: createUploader('questions').single('image'),
+  uploadTopicImage: createUploader('topics').single('image'),
   uploadRoot,
 };

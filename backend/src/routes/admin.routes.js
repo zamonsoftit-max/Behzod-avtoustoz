@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { protect, authorize } = require('../middleware/auth');
-const { uploadQuestionImage } = require('../middleware/upload');
+const { uploadQuestionImage, uploadTopicImage } = require('../middleware/upload');
 
 const dashboard = require('../controllers/admin/dashboard.controller');
 const users = require('../controllers/admin/users.controller');
@@ -34,8 +34,8 @@ router.delete('/questions/:id', questions.remove);
 
 // Topics
 router.get('/topics', topics.list);
-router.post('/topics', topics.create);
-router.put('/topics/:id', topics.update);
+router.post('/topics', uploadTopicImage, topics.create);
+router.put('/topics/:id', uploadTopicImage, topics.update);
 router.delete('/topics/:id', topics.remove);
 
 // Tickets
