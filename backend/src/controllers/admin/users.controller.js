@@ -7,19 +7,44 @@ const { ok } = require('../../utils/response');
 const { getPaging } = require('../../utils/pagination');
 const socket = require('../../socket');
 
-// GET /admin/users?search=&status=&role=&page=&limit=
+// GET /admin/users?search=&status=&subscriptionStatus=&role=&page=&limit=
 exports.list = asyncHandler(async (req, res) => {
   const { page, limit, skip } = getPaging(req.query);
   const filter = {};
+
+  // Search filter
   if (req.query.search) {
     const rx = new RegExp(req.query.search.trim(), 'i');
     filter.$or = [{ firstName: rx }, { lastName: rx }, { phoneNumber: rx }];
   }
-  if (req.query.status) filter.status = req.query.status;
+
+  // Status filter: frontend sends 'active' or 'inactive' (mapped to 'blocked' in DB)
+  if (req.query.status) {
+    if (req.query.status === 'inactive') {
+      filter.status = 'blocked';
+    } else {
+      filter.status = req.query.status; // 'active' or 'blocked'
+    }
+  }
+
+  // Role filter
   if (req.query.role) filter.role = req.query.role;
-  if (req.query.subscription === 'active') {
+
+  // Subscription filter
+  const now = new Date();
+  const soonDate = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 days from now
+  const subStatus = req.query.subscriptionStatus || req.query.subscription;
+  if (subStatus === 'active') {
     filter['subscription.isActive'] = true;
-    filter['subscription.endDate'] = { $gt: new Date() };
+    filter['subscription.endDate'] = { $gt: now };
+  } else if (subStatus === 'expired') {
+    filter.$or = [
+      { 'subscription.isActive': false },
+      { 'subscription.endDate': { $lte: now } },
+    ];
+  } else if (subStatus === 'expiring') {
+    filter['subscription.isActive'] = true;
+    filter['subscription.endDate'] = { $gt: now, $lte: soonDate };
   }
 
   const [items, total] = await Promise.all([
@@ -27,11 +52,12 @@ exports.list = asyncHandler(async (req, res) => {
     User.countDocuments(filter),
   ]);
 
+  const pages = Math.max(1, Math.ceil(total / limit));
   const data = items.map((u) => ({ ...u.toJSON(), isOnline: socket.isUserOnline(u._id) }));
   return res.json({
     success: true,
     data,
-    pagination: { total, page, limit, totalPages: Math.max(1, Math.ceil(total / limit)) },
+    pagination: { total, page, limit, pages, totalPages: pages },
   });
 });
 

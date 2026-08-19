@@ -181,7 +181,7 @@ const UsersPage = () => {
           >
             <option value="">{t('admin.users.filters.all')}</option>
             <option value="active">{t('admin.users.status.active')}</option>
-            <option value="inactive">{t('admin.users.status.inactive')}</option>
+            <option value="blocked">{t('admin.users.status.blocked')}</option>
           </select>
 
           <select
@@ -345,7 +345,7 @@ const UsersPage = () => {
             <div className="text-sm text-gray-600 dark:text-gray-400">
               {t('common.showing')} {(pagination.page - 1) * pagination.limit + 1}-{Math.min(pagination.page * pagination.limit, pagination.total)} {t('common.of')} {pagination.total} {t('common.items')}
             </div>
-            {pagination.pages > 1 && (
+            {(pagination.pages || pagination.totalPages) > 1 && (
               <Pagination
                 currentPage={pagination.page}
                 totalPages={pagination.pages}
