@@ -331,17 +331,17 @@ const AdminLayout = () => {
               <div className="relative profile-dropdown">
                 <button
                   onClick={() => setShowProfile(!showProfile)}
-                  className="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                  className="flex items-center space-x-2.5 px-3 py-1.5 rounded-full bg-blue-50/90 hover:bg-blue-100 dark:bg-blue-950/50 dark:hover:bg-blue-900/60 border border-blue-200 dark:border-blue-700/70 shadow-sm transition-all duration-200 hover:shadow"
                 >
-                  <div className="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-900/20 flex items-center justify-center">
-                    <span className="text-primary-600 dark:text-primary-400 font-medium text-sm">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-sm font-semibold text-sm ring-2 ring-white dark:ring-gray-800">
+                    <span>
                       {user?.fullName?.charAt(0).toUpperCase()}
                     </span>
                   </div>
-                  <span className="hidden md:block text-sm font-medium text-gray-700 dark:text-gray-300">
+                  <span className="hidden md:block text-sm font-semibold text-blue-900 dark:text-blue-200">
                     {user?.fullName}
                   </span>
-                  <FiChevronDown className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                  <FiChevronDown className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </button>
 
                 {showProfile && (

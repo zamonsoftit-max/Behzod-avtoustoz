@@ -247,9 +247,9 @@ const StudentHeader = ({ setSidebarOpen }) => {
             <div className="relative profile-dropdown">
               <button
                 onClick={() => setShowProfile(!showProfile)}
-                className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                className="flex items-center space-x-2.5 px-3 py-1.5 rounded-full bg-blue-50/90 hover:bg-blue-100 dark:bg-blue-950/50 dark:hover:bg-blue-900/60 border border-blue-200 dark:border-blue-700/70 shadow-sm transition-all duration-200 hover:shadow"
               >
-                <div className="w-8 h-8 rounded-full overflow-hidden bg-primary-100 dark:bg-primary-900/20">
+                <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-sm ring-2 ring-white dark:ring-gray-800">
                   {user?.profileImage ? (
                     <img
                       src={sanitizeImageUrl(user.profileImage)}
@@ -258,21 +258,21 @@ const StudentHeader = ({ setSidebarOpen }) => {
                       onError={(e) => {
                         handleImageError(e);
                         e.target.style.display = 'none';
-                        e.target.parentElement.innerHTML = `<div class="w-full h-full flex items-center justify-center"><span class="text-primary-600 dark:text-primary-400 font-medium text-sm">${user?.fullName?.charAt(0).toUpperCase()}</span></div>`;
+                        e.target.parentElement.innerHTML = `<div class="w-full h-full flex items-center justify-center"><span class="text-white font-semibold text-sm">${user?.fullName?.charAt(0).toUpperCase()}</span></div>`;
                       }}
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
-                      <span className="text-primary-600 dark:text-primary-400 font-medium text-sm">
+                      <span className="text-white font-semibold text-sm">
                         {user?.fullName?.charAt(0).toUpperCase()}
                       </span>
                     </div>
                   )}
                 </div>
-                <span className="hidden md:block text-sm font-medium text-gray-700 dark:text-gray-300">
+                <span className="hidden md:block text-sm font-semibold text-blue-900 dark:text-blue-200">
                   {user?.fullName}
                 </span>
-                <FiChevronDown className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                <FiChevronDown className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               </button>
 
               <AnimatePresence>
